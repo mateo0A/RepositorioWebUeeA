@@ -204,6 +204,7 @@ body.menuHover{
   left: -100px;
   z-index: 100;
 }
+
 .nav-cont.open{
   width: 260px;
 }
@@ -402,7 +403,7 @@ body.menuHover{
 }
 
 .buttonMobile{
-  display: flex;
+  display: none;
   position: fixed;
   width: 40px;
   height: 40px;
@@ -418,7 +419,10 @@ body.menuHover{
   padding: 2px;
   align-items: center;
   font-size: 30px;
+  cursor: pointer;
+  z-index: 300;
 }
+
 .buttonMobile i{
   position: absolute;
   top: 50%;
@@ -427,16 +431,24 @@ body.menuHover{
 }
 .bi-x{
   opacity: 0;
+  transition: .2s ease;
 }
-.buttonMobile.open .bi-x{
+.buttonMobile.openn .bi-x{
   opacity: 1;
+}
+.bi-list{
+  transition: .2s ease;
+}
+.buttonMobile.openn .bi-list{
+  opacity: 0;
 }
 
 @media (max-width: 720px) {
-  body{
+  body {
     grid-template-columns: 1fr;
   }
   .main {
+    grid-column: 1/3;
     grid-template-columns: 1fr;
     grid-template-areas:
       "header"
@@ -452,5 +464,9 @@ body.menuHover{
   }
   .objectsAbs{
     position: relative;
+  }
+  .buttonMobile{
+    display: flex;
+    position: fixed;
   }
 }
