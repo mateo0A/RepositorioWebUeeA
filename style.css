@@ -31,6 +31,7 @@ a{
   list-style: none;
   color: var(--color-basis);
   scroll-behavior: smooth;
+  user-select: none;
 }
 
 body{
@@ -202,7 +203,7 @@ body.menuHover{
   user-select: none;
   transition: .4s ease;
   left: -100px;
-  z-index: 200;
+  z-index: 400;
 }
 
 .nav-cont.open{
@@ -421,7 +422,7 @@ body.menuHover{
   align-items: center;
   font-size: 30px;
   cursor: pointer;
-  z-index: 300;
+  z-index: 600;
 }
 
 .buttonMobile i{
