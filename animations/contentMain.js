@@ -12,13 +12,16 @@ anime({
 });
 anime({
   targets: '.tittleText',
-  top: '50%',
-  duration: 1100,
-  delay: 1100
+  top:"50%",
+  duration: 1000,
+  delay:1000,
+  ease:'outExpo'
+
+  
 });
 anime({
   targets: '.descApp',
-  left: '50%',
+  left: "50%",
   duration: 1200,
   delay: 1100
 });
