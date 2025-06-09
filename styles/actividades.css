@@ -47,6 +47,8 @@
     position: relative;
     overflow: hidden;
     position: absolute;
+    top: 30px;
+    opacity: 0;
 }
 .actividadesCard .haz{
     position: absolute;

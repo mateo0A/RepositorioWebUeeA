@@ -202,6 +202,7 @@ body.menuHover{
   overflow-x: hidden;
   user-select: none;
   transition: .4s ease;
+  left: -100px;
   z-index: 100;
 }
 .nav-cont.open{
