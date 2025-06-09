@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 :root{
   --body-bck:#DDD;
   --menu-bck:#FFF;
@@ -263,6 +262,7 @@ body.menuHover{
   border-radius: 10px;
   white-space: nowrap;
   overflow: hidden;
+  top: -10%;
 }
 /*------------------------------*/
 /*Descripcion*/
@@ -399,4 +399,58 @@ body.menuHover{
   justify-content: center;
   align-items: center;
   font-size: 19px;
+}
+
+.buttonMobile{
+  display: flex;
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  background: #fffdfd;
+  border: 1px ;
+  box-shadow: 0 0 10px #000;
+  top: 5px;
+  left: 5px;
+  border-radius: 3px;
+  z-index: 200;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 2px;
+  align-items: center;
+  font-size: 30px;
+}
+.buttonMobile i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.bi-x{
+  opacity: 0;
+}
+.buttonMobile.open .bi-x{
+  opacity: 1;
+}
+
+@media (max-width: 720px) {
+  body{
+    grid-template-columns: 1fr;
+  }
+  .main {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "descript"
+      "imagen"
+      "sbT"
+      "content"
+      "foot";
+    grid-template-rows: 90px auto auto 80px auto 100px;
+  }
+  .imgwP{
+    position: relative;
+  }
+  .objectsAbs{
+    position: relative;
+  }
 }

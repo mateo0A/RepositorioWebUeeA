@@ -1,0 +1,99 @@
+@import './style.css';
+body{
+     display: grid;
+  grid-template-columns: 90px 1fr;
+  min-height: 100vh;
+  background: var(--body-bck);
+  transition: .4s ease;
+  overflow-x: hidden;
+}
+.main3{
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.infDoc{
+    display: grid;  
+    grid-template-columns: 1fr 400px;
+    grid-template-rows:40px auto auto ;
+    min-width: 100%;
+    max-width: 100%;
+    grid-template-areas:
+    "subt subt"
+    "res igDo"
+    "desc desc"
+    ;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
+.subtTema{
+    grid-area: subt;
+    background: red;
+    width: 100%;
+    height: 100%;
+    overflow: ellipsis;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background: #FFF;
+    border-radius: 10px ;
+    box-sizing: border-box;
+    padding: 10px 10px 10px 25px;
+}
+.textInf{
+    grid-area: res; 
+    width: 100%;
+    height: 100%;
+    padding: 10px; 
+    box-sizing: border-box;
+    background: #FFF;
+     width: 100%;
+    height: 100%;
+}
+.textInf p{
+    width: 90%;
+    height: 90%;
+    background: #DDD;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.imDoc{
+    grid-area: igDo;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 10px; 
+    width: 100%;
+    height: 100%;
+}
+.imDoc img{
+    max-width: 200px;
+}
+.descDev{
+    grid-area: desc;
+        background: #FFF;
+
+    min-height: 100px;
+    box-sizing: border-box;
+    padding: 10px; 
+
+}
+@media (max-width: 720px) {
+    body{
+        grid-template-columns: 1fr;
+    }
+  .infDoc {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "subt"
+      "res"
+      "igDo"
+      "desc";
+  }
+}
