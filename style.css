@@ -9,6 +9,27 @@
   --links-subM:#c0c0c0;
   --color-basis:#1c1c1c;
   --color-Hover:#FFF;
+  --main-bck:#e9e9e9;
+  --bck-ContMain:#FFF;
+  --bck-btnF:#FFF;
+  --ps-cards:#000;
+  --bck-card:#f81b1b;
+}
+body.darkmode{
+  --body-bck:#0e0d0d;
+  --menu-bck:#1b1b1b;
+  --color-links:#000;
+  --link-bck:#e72121;
+  --link-select:#e72121af;
+  --shadow-links:#1f030356;
+  --links-subM:#535353;
+  --color-basis:#ffffff;
+  --color-Hover:#FFF;
+  --main-bck:#4e4e4e;
+  --bck-ContMain:#0a0909;
+  --ps-cards:#000000;
+  --bck-btnF:#1f1e1e; 
+  --bck-card:#800080;
 
 }
 /*LINK INSTANCE*/
@@ -32,6 +53,8 @@ a{
   color: var(--color-basis);
   scroll-behavior: smooth;
   user-select: none;
+  transition: all .3s ease-in-out;
+
 }
 
 body{
@@ -41,6 +64,7 @@ body{
   background: var(--body-bck);
   transition: .4s ease;
   overflow-x: hidden;
+  transition: all .3s ease-in-out;
 }
 
 body.menuHover{
@@ -221,12 +245,12 @@ body.menuHover{
 /*Contenido del index*/
 .main{
   grid-column: 2/3;
-  background: #e9e9e9;
+  background: var(--main-bck);
   min-height: 100dvh;
-
+  box-sizing: border-box;
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  padding: 2PX;
+  padding: 10px;
   grid-template-areas:
   "header header"
   "descript imagen"
@@ -258,7 +282,7 @@ body.menuHover{
 }
 .tittleText{
   position: absolute;
-  background: #FFF;
+  background: var(--bck-ContMain);
   height: 90%;
   width: 80%;
   border-radius: 10px;
@@ -272,7 +296,7 @@ body.menuHover{
   grid-area: descript;
 }
 .descApp{
-  background: #FFF;
+  background: var(--bck-ContMain);
   width: 100%;
   height: 100%;
   border-radius: 30px;
@@ -290,7 +314,7 @@ body.menuHover{
   width: 95%;
   object-fit: contain;
   border-radius: 5px;
-  background: #FFF;
+  background: var(--bck-ContMain);
   padding: 14px;
   border-radius: 10px;
   left: 150%;
@@ -301,7 +325,7 @@ body.menuHover{
 /*Explicacion*/
 .subtittle{
   grid-area: sbT;
-  background-color: #DDD;
+  background-color: var(--bck-ContMain);
   border-radius: 10px;
 }
 .sbTh2{
@@ -325,7 +349,7 @@ body.menuHover{
 }
 .contentWepp aside{
   width: 300px;
-  background:#f81b1b;
+  background:var(--bck-card);
   margin: auto;
   height: 350px;
   border-radius: 10px;
@@ -336,7 +360,14 @@ body.menuHover{
   position: relative;
   overflow: hidden;
   box-shadow: 0 10px 10px #000;
+  
   transition: .4s ease-in-out;
+}
+body.darkmode .contentWepp aside{
+  background: linear-gradient(var(--bck-card),#000  );
+}
+body.darkmode .contentWepp aside *{
+  color: #FFF; 
 }
 .contentWepp aside:hover {
   box-shadow: 0 0px 10px #000;
@@ -345,7 +376,7 @@ body.menuHover{
 .contentWepp aside P{
   font-size: 25px;
   font-weight: 500;
-  color: #FFF;
+  color: var(--bck-ContMain);
   
 }
 .descSub{
@@ -355,9 +386,9 @@ body.menuHover{
   transform: translate(-50%,-50%);
   z-index: -1;
   transition: 0.7s ease ;
-  color: #FFF;
   opacity: 0;
   width: 90%;
+  color: var(--color-basis);
   height: 80%;
 }
 .contentWepp aside::after{
@@ -365,7 +396,7 @@ body.menuHover{
   position: absolute;
   width: 100px;
   height: 100px;
-  background: #000000;
+  background: var(--ps-cards);
   border-radius: 10px 100% 30px 0 ;
   bottom: -10px;
   left: -10px;
@@ -376,7 +407,7 @@ body.menuHover{
   position: absolute;
   width: 100px;
   height: 100px;
-  background: hsl(32, 46%, 11%);
+  background: var(--ps-cards);
   border-radius: 0 15px 50px 100%;
   top: -10px;
   right:  -10px;
@@ -409,7 +440,7 @@ body.menuHover{
   position: fixed;
   width: 40px;
   height: 40px;
-  background: #fffdfd;
+  background: var(--bck-btnF);
   border: 1px ;
   box-shadow: 0 0 10px #000;
   top: 5px;
@@ -444,7 +475,44 @@ body.menuHover{
 .buttonMobile.openn .bi-list{
   opacity: 0;
 }
+/*SwitchMode*/
+.switchMode{
+  position: fixed;
+  right: 5px;
+  top: 5px;
+  border-radius: 10px;
+  border: none;
+  z-index: 999;
+  padding: 25px; 
+  cursor: pointer;
+  background: var(--bck-btnF);
+  filter: drop-shadow(0 1px 2px #000);
+}
+.switchMode:active{
+  filter: drop-shadow(0 0px 2px #000);
+}
+.switchMode i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: center;
+  width: auto;
+  height: auto;
+}
 
+.switchMode .bi-brightness-high-fill{
+  opacity: 0;
+  transform: rotate(90deg);
+}
+.switchMode.darkM .bimoon{
+  transform: rotate(90deg);
+}
+.switchMode.darkM .bi-brightness-high-fill{
+  transform: rotate(0deg);
+}
+
+/*-----------------------------------------------*/
 @media (max-width: 720px) {
   body {
     grid-template-columns: 1fr;
@@ -475,5 +543,8 @@ body.menuHover{
     position: fixed;
     top: 0;
     left: 0;
+  }
+  .tittleText{
+    font-size: 110%; 
   }
 }

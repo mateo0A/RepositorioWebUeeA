@@ -5,7 +5,7 @@ if (widt > 720) {
   anime({
     targets: '.nav-cont',
     translateX: '100px',
-    duration: 1000,
+    duration: 1000, 
     easing: 'easeOutCubic'
   });
 }

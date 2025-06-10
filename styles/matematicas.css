@@ -7,6 +7,10 @@
     align-items: center;
     gap: 1rem;
 }
+.tittleAc{
+    background: var(--bck-ContMain);
+    width: 90%; 
+}
 
 
 .infDoc{
@@ -17,7 +21,7 @@
     max-width: 100%;
     grid-template-areas:
     "subt subt"
-    "res igDo"
+    "res igDo" 
     "desc desc"
     ;
     align-items: center;
@@ -35,7 +39,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #FFF;
+    background: var(--bck-ContMain);
+    
     border-radius: 10px ;
     box-sizing: border-box;
 }
@@ -45,7 +50,8 @@
     height: auto;
     padding: 10px; 
     box-sizing: border-box;
-    background: #FFF;
+    background: var(--bck-ContMain);
+    
      width: 100%;
     height: 100%;
     padding: 20px;
@@ -55,13 +61,15 @@
 .textInf p{
     width: 90%;
     height: auto;
-    background: #DDD;
+    background: var(--bck-ContMain);
+    
     overflow: hidden;
     
 }
 .imDoc{
     grid-area: igDo;
-    background: #FFF;
+        background: var(--bck-ContMain);
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,7 +83,8 @@
 }
 .descDev{
     grid-area: desc;
-        background: #FFF;
+    background: var(--bck-ContMain);
+
     display: flex;
     flex-direction: column;
     justify-content: center;
