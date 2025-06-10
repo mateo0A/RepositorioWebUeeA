@@ -23,6 +23,8 @@
     align-items: center;
     gap: 5px;
     justify-content: center;
+    box-sizing: border-box;
+    padding: 15px;
 }
 .subtTema{
     grid-area: subt;
