@@ -10,7 +10,7 @@ if (widt > 720) {
     })
     menuIND.addEventListener('mouseleave', () => {
         menuIND.classList.remove('open')
-        document.querySelector('body').classList.remove('menuHover')
+        document.querySelector('body').classList.remove('menuHover')    
 
     })
 } else {
