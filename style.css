@@ -14,6 +14,8 @@
   --bck-btnF:#FFF;
   --ps-cards:#000;
   --bck-card:#f81b1b;
+  --btnSBT:#d3d3d3;
+  --btnSBT-Hover:#fffafa;
 }
 body.darkmode{
   --body-bck:#0e0d0d;
@@ -30,6 +32,8 @@ body.darkmode{
   --ps-cards:#000000;
   --bck-btnF:#1f1e1e; 
   --bck-card:#800080;
+  --btnSBT:#000;
+  --btnSBT-Hover:#424242;
 
 }
 /*LINK INSTANCE*/

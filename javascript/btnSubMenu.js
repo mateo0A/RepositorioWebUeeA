@@ -1,7 +1,10 @@
 const btnSubTem=document.querySelector('.subTemMenuu')
+const SubTem=document.querySelector('.subTemMenu')
+
 btnSubTem.addEventListener('click',()=>{
-    btnSubTem.classList.add('MenOp')
+    console.log(1);
+    SubTem.classList.add('MenOpp')
 })
-btnSubTem.addEventListener('mouseleave',()=>{
-    btnSubTem.classList.remove('MenOp') 
+SubTem.addEventListener('mouseleave',()=>{
+    SubTem.classList.remove('MenOpp')
 })
