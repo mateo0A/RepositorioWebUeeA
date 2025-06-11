@@ -13,21 +13,31 @@
 </head>
 
 <body>
+    <!-----Menu de subtemas-->
+    <ul class="subTemMenu ">
+        <i class="bi bi-circle subTemMenuu"></i>
+        <div>
+            <a href="#tema1" class="tema">Series numericas</a>
+            <a href="#tema2" class="tema">Logica Numerica y Matematica</a>
+            <a href="#tema3" class="tema">Aritmetica Practica</a>
+            <a href="#tema4" class="tema">Planteamiento de ecuaciones</a>
+        </div>
+    </ul>
+    <!------------------------------------>
+    <!-------Dark Light Mode Switcher-------->
 
-      <!-------Dark Light Mode Switcher-------->
+    <button class="switchMode">
+        <i class="bi bi-moon"></i>
+        <i class="bi bi-brightness-high-fill"></i>
+    </button>
 
-  <button class="switchMode">
-    <i class="bi bi-moon"></i>
-    <i class="bi bi-brightness-high-fill"></i>
-  </button>
-
-  <!---------------------------------------->
-     <!---------Button mobile-->
-  <section class="buttonMobile">
-   <i class="bi bi-list"></i>
-   <i class="bi bi-x"></i>
-  </section>
-  <!---------------------------------------------->
+    <!---------------------------------------->
+    <!---------Button mobile-->
+    <section class="buttonMobile">
+        <i class="bi bi-list"></i>
+        <i class="bi bi-x"></i>
+    </section>
+    <!---------------------------------------------->
     <nav class="nav-cont close">
         <section class="header">
             <img src="../img/Logo-82x82.webp" alt="" class="logoImg">
@@ -106,57 +116,469 @@
         <header class="tittleAc">
             <h1>Matematica</h1>
         </header>
-        <section class="infDoc">
-            <h2 class="subtTema">Logica Matematica</h2>
+        <section class="infDoc" id="tema1">
+            <h2 class="subtTema" id="tema1">Series Numéricas</h2>
             <aside class="textInf">
 
                 <p>
+                    Las series numéricas son secuencias de números organizadas bajo un patrón lógico. Identificar el
+                    patrón permite predecir el siguiente número de la serie. Son fundamentales para desarrollar el
+                    razonamiento lógico-matemático.
+
                 </p>
 
             </aside>
             <aside class="imDoc">
-                <img src="../img/Logo-82x82.webp" alt="">
+                <img src="../img/SerieNumerica.webp" alt="">
             </aside>
-            <p class="descDev"></p>
+            <p class="descDev">
+                <strong>Series aritméticas (suma o resta constante):</strong><br>
+                Son aquellas en las que cada término se obtiene sumando o restando un mismo valor (llamado diferencia
+                común) al término anterior.<br>
+                <b>Ejemplo:</b> 2, 5, 8, 11, 14... (diferencia común: +3).<br>
+                <b>Fórmula general:</b> aₙ = a₁ + (n-1)d, donde a₁ es el primer término y d la diferencia.<br><br>
+                <strong>Ejercicios:</strong><br>
+                1. 4, 7, 10, 13, __<br>
+                2. 15, 12, 9, 6, __<br>
+                3. 20, 25, 30, 35, __<br>
+                4. 5, 2, -1, -4, __<br>
+                5. 100, 90, 80, 70, __<br>
+                6. 3, 8, 13, 18, __<br>
+                7. 50, 45, 40, 35, __<br>
+                8. 1, 4, 7, 10, __<br>
+                9. 0, 5, 10, 15, __<br>
+                10. 8, 16, 24, 32, __<br>
+                <strong>Soluciones:</strong><br>
+                1. 16<br>
+                2. 3<br>
+                3. 40<br>
+                4. -7<br>
+                5. 60<br>
+                6. 23<br>
+                7. 30<br>
+                8. 13<br>
+                9. 20<br>
+                10. 40<br>
+                <br>
+                <strong>Series geométricas (multiplicación o división constante):</strong><br>
+                Cada término se obtiene multiplicando o dividiendo el anterior por un mismo número (razón común).<br>
+                <b>Ejemplo:</b> 3, 6, 12, 24, 48... (razón: ×2).<br>
+                <b>Fórmula general:</b> aₙ = a₁ × rⁿ⁻¹, donde a₁ es el primer término y r la razón.<br><br>
+                <strong>Ejercicios:</strong><br>
+                1. 2, 4, 8, 16, __<br>
+                2. 81, 27, 9, 3, __<br>
+                3. 5, 10, 20, 40, __<br>
+                4. 1, 3, 9, 27, __<br>
+                5. 100, 50, 25, 12.5, __<br>
+                6. 7, 14, 28, 56, __<br>
+                7. 64, 32, 16, 8, __<br>
+                8. 3, 6, 12, 24, __<br>
+                9. 10, 20, 40, 80, __<br>
+                10. 9, 18, 36, 72, __<br>
+                <strong>Soluciones:</strong><br>
+                1. 32<br>
+                2. 1<br>
+                3. 80<br>
+                4. 81<br>
+                5. 6.25<br>
+                6. 112<br>
+                7. 4<br>
+                8. 48<br>
+                9. 160<br>
+                10. 144<br>
+                <br>
+                <strong>Series alternadas:</strong><br>
+                Presentan dos o más patrones que se alternan entre sí. Es importante identificar cada secuencia por
+                separado.<br>
+                <b>Ejemplo:</b> 1, 4, 2, 5, 3, 6... (una secuencia suma 1, la otra suma 1 empezando en 4).<br><br>
+                <strong>Ejercicios:</strong><br>
+                1. 2, 5, 4, 7, 6, __<br>
+                2. 1, 3, 2, 4, 3, __<br>
+                3. 10, 20, 15, 25, 20, __<br>
+                4. 7, 14, 8, 16, 9, __<br>
+                5. 5, 10, 6, 12, 7, __<br>
+                6. 3, 6, 4, 8, 5, __<br>
+                7. 12, 24, 13, 26, 14, __<br>
+                8. 2, 4, 3, 6, 4, __<br>
+                9. 8, 16, 9, 18, 10, __<br>
+                10. 1, 2, 4, 3, 6, __<br>
+                <strong>Soluciones:</strong><br>
+                1. 9<br>
+                2. 5<br>
+                3. 30<br>
+                4. 18<br>
+                5. 14<br>
+                6. 10<br>
+                7. 28<br>
+                8. 8<br>
+                9. 20<br>
+                10. 5<br>
+                <br>
+                <strong>Series cuadráticas o con potencias:</strong><br>
+                Los términos siguen una progresión de cuadrados, cubos u otras potencias.<br>
+                <b>Ejemplo:</b> 1, 4, 9, 16, 25... (cuadrados perfectos: 1², 2², 3², 4², 5²).<br>
+                También pueden ser de cubos: 1, 8, 27, 64... (1³, 2³, 3³, 4³).<br><br>
+                <strong>Ejercicios:</strong><br>
+                1. 1, 4, 9, 16, __<br>
+                2. 8, 27, 64, 125, __<br>
+                3. 2, 4, 8, 16, __<br>
+                4. 9, 16, 25, 36, __<br>
+                5. 27, 64, 125, 216, __<br>
+                6. 1, 8, 27, 64, __<br>
+                7. 4, 16, 36, 64, __<br>
+                8. 3, 9, 27, 81, __<br>
+                9. 5, 25, 125, 625, __<br>
+                10. 2, 8, 18, 32, __<br>
+                <strong>Soluciones:</strong><br>
+                1. 25<br>
+                2. 216<br>
+                3. 32<br>
+                4. 49<br>
+                5. 343<br>
+                6. 125<br>
+                7. 100<br>
+                8. 243<br>
+                9. 3125<br>
+                10. 50<br>
+                <br>
+                <strong>Series basadas en Fibonacci u otras secuencias recurrentes:</strong><br>
+                Cada término se obtiene sumando (o restando) los anteriores según una regla.<br>
+                <b>Ejemplo (Fibonacci):</b> 1, 1, 2, 3, 5, 8, 13... (cada término es la suma de los dos anteriores).<br>
+                Otras recurrencias pueden involucrar más términos o diferentes operaciones.<br><br>
+                <strong>Ejercicios:</strong><br>
+                1. 1, 1, 2, 3, 5, __<br>
+                2. 2, 3, 5, 8, 13, __<br>
+                3. 0, 1, 1, 2, 3, __<br>
+                4. 5, 8, 13, 21, __<br>
+                5. 3, 6, 9, 15, 24, __<br>
+                6. 1, 2, 4, 7, 13, __<br>
+                7. 2, 4, 7, 13, 24, __<br>
+                8. 1, 4, 5, 9, 14, __<br>
+                9. 2, 5, 7, 12, 19, __<br>
+                10. 1, 2, 3, 5, 8, __<br>
+                <strong>Soluciones:</strong><br>
+                1. 8<br>
+                2. 21<br>
+                3. 5<br>
+                4. 34<br>
+                5. 39<br>
+                6. 24<br>
+                7. 44<br>
+                8. 23<br>
+                9. 31<br>
+                10. 13<br>
+                <br>
+                <strong>Series con patrones dobles o triples:</strong><br>
+                Combinan dos o más secuencias entrelazadas, cada una con su propio patrón.<br>
+                <b>Ejemplo:</b> 2, 3, 6, 7, 14, 15, 30... (una secuencia multiplica por 2: 2, 6, 14, 30; la otra suma 1:
+                3, 7, 15).<br>
+                Es clave separar y analizar cada subserie para encontrar la lógica general.
+            </p>
         </section>
-        <section class="infDoc">
-            <h2 class="subtTema">Logica Matematica</h2>
+        <section class="infDoc" id="tema2">
+            <h2 class="subtTema " id="tema2"> Lógica Numérica y Matemática</h2>
             <aside class="textInf">
 
                 <p>
+                    La lógica numérica y matemática implica analizar relaciones, patrones y deducciones entre números o
+                    proposiciones. Es clave para resolver problemas de razonamiento y analogías.
                 </p>
 
             </aside>
             <aside class="imDoc">
-                <img src="../img/Logo-82x82.webp" alt="">
+                <img src="../img/LogicaNumerica.avif" alt="">
             </aside>
-            <p class="descDev"></p>
+            <p class="descDev">
+                <strong>Analogías numéricas:</strong><br>
+                Consisten en encontrar la relación lógica entre dos números y aplicarla a otro par. Por ejemplo, 3 : 27
+                :: 4 : ¿? (la relación es elevar al cubo, así que 4³ = 64).<br><br>
+                <strong>Ejercicios:</strong><br>
+                1. 2 : 8 :: 3 : __<br>
+                2. 4 : 16 :: 5 : __<br>
+                3. 6 : 36 :: 7 : __<br>
+                4. 8 : 64 :: 9 : __<br>
+                5. 10 : 100 :: 11 : __<br>
+                6. 3 : 27 :: 4 : __<br>
+                7. 5 : 25 :: 6 : __<br>
+                8. 7 : 49 :: 8 : __<br>
+                9. 9 : 81 :: 10 : __<br>
+                10. 11 : 121 :: 12 : __<br>
+                <strong>Soluciones:</strong><br>
+                1. 27<br>
+                2. 25<br>
+                3. 49<br>
+                4. 81<br>
+                5. 121<br>
+                6. 64<br>
+                7. 36<br>
+                8. 64<br>
+                9. 100<br>
+                10. 144<br>
+                <br>
+                <strong>Problemas de relaciones numéricas:</strong><br>
+                Se trata de establecer vínculos matemáticos entre diferentes números, como sumas, restas,
+                multiplicaciones o divisiones. Ejemplo: Si A + B = 12 y A – B = 4, entonces A = 8 y B = 4.<br><br>
+                <strong>Ejercicios:</strong><br>
+                1. Si A + B = 10 y A - B = 2, ¿cuánto valen A y B?<br>
+                2. Si X + Y = 20 y X - Y = 4, ¿cuánto valen X y Y?<br>
+                3. Si M + N = 15 y M - N = 5, ¿cuánto valen M y N?<br>
+                4. Si P + Q = 30 y P - Q = 10, ¿cuánto valen P y Q?<br>
+                5. Si S + T = 50 y S - T = 30, ¿cuánto valen S y T?<br>
+                6. Si U + V = 18 y U - V = 2, ¿cuánto valen U y V?<br>
+                7. Si W + Z = 40 y W - Z = 8, ¿cuánto valen W y Z?<br>
+                8. Si C + D = 22 y C - D = 6, ¿cuánto valen C y D?<br>
+                9. Si E + F = 12 y E - F = 4, ¿cuánto valen E y F?<br>
+                10. Si G + H = 16 y G - H = 0, ¿cuánto valen G y H?<br>
+                <strong>Soluciones:</strong><br>
+                1. A = 6, B = 4<br>
+                2. X = 12, Y = 8<br>
+                3. M = 10, N = 5<br>
+                4. P = 20, Q = 10<br>
+                5. S = 40, T = 10<br>
+                6. U = 10, V = 8<br>
+                7. W = 24, Z = 16<br>
+                8. C = 14, D = 8<br>
+                9. E = 8, F = 4<br>
+                10. G = 8, H = 8<br>
+                <br>
+                <strong>Números codificados o cifrados:</strong><br>
+                Aquí se asignan valores numéricos a letras o palabras siguiendo un código específico. Ejemplo: Si "ROJO"
+                = 18–15–10–15, cada letra representa un número según una clave dada.<br><br>
+                <strong>Ejercicios:</strong><br>
+                1. Si "AZUL" = 1–26–21–12, ¿cuánto vale "ROJO"?<br>
+                2. Si "SOL" = 19–15–12, ¿cuánto vale "LUNA"?<br>
+                3. Si "VERDE" = 22–5–18–4–5, ¿cuánto vale "NEGRO"?<br>
+                4. Si "UNO" = 21–14–15, ¿cuánto vale "DOS"?<br>
+                5. Si "MAR" = 13–1–18, ¿cuánto vale "RIO"?<br>
+                6. Si "PERRO" = 16–5–18–18–15, ¿cuánto vale "GATO"?<br>
+                7. Si "CASA" = 3–1–19–1, ¿cuánto vale "HOGAR"?<br>
+                8. Si "SOL" = 19–15–12, ¿cuánto vale "ESTRELLA"?<br>
+                9. Si "AGUA" = 1–7–21–1, ¿cuánto vale "FUEGO"?<br>
+                10. Si "NUBE" = 14–21–2–5, ¿cuánto vale "VIENTO"?<br>
+                <strong>Soluciones:</strong><br>
+                1. 18–15–10–15<br>
+                2. 12–21–14–1<br>
+                3. 14–5–7–18–15<br>
+                4. 4–15–19<br>
+                5. 18–9–15<br>
+                6. 7–1–20–15<br>
+                7. 8–15–7–1–18<br>
+                8. 5–19–20–18–5–12–12–1<br>
+                9. 6–21–5–7–15<br>
+                10. 22–9–5–14–20–15<br>
+                <br>
+                <strong>Problemas de lógica proposicional (tipo verdadero/falso):</strong><br>
+                Se presentan enunciados lógicos y se debe determinar si una conclusión es verdadera o falsa. Ejemplo: Si
+                todos los gatos son animales y algunos animales son negros, ¿se deduce que algunos gatos son negros? (No
+                necesariamente, la conclusión es falsa).<br><br>
+                <strong>Ejercicios:</strong><br>
+                1. Si todos los perros son animales y algunos animales son blancos, ¿se deduce que algunos perros son
+                blancos?<br>
+                2. Si ningún pez vuela y todos los salmones son peces, ¿se deduce que ningún salmón vuela?<br>
+                3. Si todos los estudiantes aprobaron y Juan es estudiante, ¿se deduce que Juan aprobó?<br>
+                4. Si algunos gatos son negros y todos los gatos son animales, ¿se deduce que algunos animales son
+                negros?<br>
+                5. Si ningún libro es azul y este objeto es un libro, ¿se deduce que no es azul?<br>
+                6. Si todos los árboles tienen hojas y este objeto no tiene hojas, ¿se deduce que no es un árbol?<br>
+                7. Si todos los pájaros vuelan y este animal vuela, ¿se deduce que es un pájaro?<br>
+                8. Si algunos niños son altos y Pedro es niño, ¿se deduce que Pedro es alto?<br>
+                9. Si todos los autos son vehículos y este objeto es un auto, ¿se deduce que es un vehículo?<br>
+                10. Si ningún pez es mamífero y este animal es un pez, ¿se deduce que no es mamífero?<br>
+                <strong>Soluciones:</strong><br>
+                1. No necesariamente<br>
+                2. Sí<br>
+                3. Sí<br>
+                4. Sí<br>
+                5. Sí<br>
+                6. Sí<br>
+                7. No necesariamente<br>
+                8. No necesariamente<br>
+                9. Sí<br>
+                10. Sí<br>
+            </p>
         </section>
-        <section class="infDoc">
-            <h2 class="subtTema">Logica Matematica</h2>
+        <section class="infDoc" id="tema3">
+            <h2 class="subtTema" id="tema3">Aritmética Práctica</h2>
             <aside class="textInf">
 
                 <p>
+                    La aritmética práctica se enfoca en operaciones y problemas cotidianos: porcentajes, proporciones,
+                    intereses y reglas de tres. Es esencial para la vida diaria y exámenes laborales.
                 </p>
 
             </aside>
             <aside class="imDoc">
-                <img src="../img/Logo-82x82.webp" alt="">
+                <img src="../img/AritmeticaPractica.webp" alt="">
             </aside>
-            <p class="descDev"></p>
+            <p class="descDev">
+                <strong>Porcentajes, descuentos y aumentos:</strong><br>
+                El porcentaje representa una fracción de 100. Se usa para calcular descuentos, aumentos y proporciones
+                en la vida diaria.<br>
+                <b>Ejemplo:</b> Si un producto cuesta $200 y tiene un 15% de descuento, el descuento es $30 y el precio
+                final es $170.<br>
+                <b>Fórmula:</b> (porcentaje × cantidad) / 100.<br><br>
+                <strong>Ejercicios:</strong><br>
+                1. ¿Cuál es el 20% de 150?<br>
+                2. Si un producto cuesta $80 y tiene un 25% de descuento, ¿cuál es el precio final?<br>
+                3. ¿Qué porcentaje es 30 de 120?<br>
+                4. Si un artículo cuesta $200 y sube un 10%, ¿cuál es el nuevo precio?<br>
+                5. ¿Cuál es el 15% de 60?<br>
+                6. Si un producto cuesta $50 y baja un 20%, ¿cuál es el precio final?<br>
+                7. ¿Qué porcentaje es 45 de 90?<br>
+                8. Si un artículo cuesta $120 y tiene un 30% de descuento, ¿cuál es el precio final?<br>
+                9. ¿Cuál es el 5% de 500?<br>
+                10. Si un producto cuesta $300 y sube un 15%, ¿cuál es el nuevo precio?<br>
+                <strong>Soluciones:</strong><br>
+                1. 30<br>
+                2. $60<br>
+                3. 25%<br>
+                4. $220<br>
+                5. 9<br>
+                6. $40<br>
+                7. 50%<br>
+                8. $84<br>
+                9. 25<br>
+                10. $345<br>
+                <br>
+                <strong>Interés simple y compuesto:</strong><br>
+                El interés simple se calcula solo sobre el capital inicial, mientras que el compuesto se calcula sobre
+                el capital más los intereses acumulados.<br>
+                <b>Interés simple:</b> I = C × r × t, donde C = capital, r = tasa, t = tiempo.<br>
+                <b>Interés compuesto:</b> M = C × (1 + r)^t, donde M = monto final.<br><br>
+                <strong>Ejercicios:</strong><br>
+                1. Si inviertes $100 a una tasa del 5% anual durante 2 años, ¿cuánto interés simple obtienes?<br>
+                2. Si inviertes $200 a una tasa del 10% anual durante 3 años, ¿cuánto interés simple obtienes?<br>
+                3. Si inviertes $500 a una tasa del 8% anual durante 1 año, ¿cuánto interés simple obtienes?<br>
+                4. Si inviertes $1000 a una tasa del 6% anual durante 4 años, ¿cuánto interés simple obtienes?<br>
+                5. Si inviertes $150 a una tasa del 12% anual durante 2 años, ¿cuánto interés simple obtienes?<br>
+                6. Si inviertes $250 a una tasa del 7% anual durante 5 años, ¿cuánto interés simple obtienes?<br>
+                7. Si inviertes $300 a una tasa del 9% anual durante 3 años, ¿cuánto interés simple obtienes?<br>
+                8. Si inviertes $400 a una tasa del 4% anual durante 2 años, ¿cuánto interés simple obtienes?<br>
+                9. Si inviertes $600 a una tasa del 11% anual durante 1 año, ¿cuánto interés simple obtienes?<br>
+                10. Si inviertes $350 a una tasa del 15% anual durante 2 años, ¿cuánto interés simple obtienes?<br>
+                <strong>Soluciones:</strong><br>
+                1. $10<br>
+                2. $60<br>
+                3. $40<br>
+                4. $240<br>
+                5. $36<br>
+                6. $87.5<br>
+                7. $81<br>
+                8. $32<br>
+                9. $66<br>
+                10. $105<br>
+                <br>
+                <strong>Regla de tres simple y compuesta:</strong><br>
+                Permite resolver problemas de proporcionalidad directa o inversa entre tres o más valores.<br>
+                <b>Simple directa:</b> Si 2 libros cuestan $10, ¿cuánto cuestan 5 libros? (Respuesta: $25).<br>
+                <b>Compuesta:</b> Involucra más de dos magnitudes relacionadas.<br><br>
+                <strong>Ejercicios:</strong><br>
+                1. Si 3 manzanas cuestan $6, ¿cuánto cuestan 8 manzanas?<br>
+                2. Si 5 cuadernos cuestan $15, ¿cuánto cuestan 12 cuadernos?<br>
+                3. Si 2 litros de leche cuestan $4, ¿cuánto cuestan 7 litros?<br>
+                4. Si 4 camisetas cuestan $20, ¿cuánto cuestan 10 camisetas?<br>
+                5. Si 6 entradas cuestan $30, ¿cuánto cuestan 15 entradas?<br>
+                6. Si 7 libros cuestan $21, ¿cuánto cuestan 14 libros?<br>
+                7. Si 9 lápices cuestan $18, ¿cuánto cuestan 27 lápices?<br>
+                8. Si 2 boletos cuestan $8, ¿cuánto cuestan 5 boletos?<br>
+                9. Si 10 galletas cuestan $5, ¿cuánto cuestan 25 galletas?<br>
+                10. Si 8 cuadernos cuestan $32, ¿cuánto cuestan 20 cuadernos?<br>
+                <strong>Soluciones:</strong><br>
+                1. $16<br>
+                2. $36<br>
+                3. $14<br>
+                4. $50<br>
+                5. $75<br>
+                6. $42<br>
+                7. $54<br>
+                8. $20<br>
+                9. $12.5<br>
+                10. $80<br>
+                <br>
+                <strong>Promedios y medias:</strong><br>
+                El promedio (media aritmética) se obtiene sumando todos los valores y dividiendo entre la cantidad de
+                datos.<br>
+                <b>Ejemplo:</b> Las notas 8, 9 y 10 tienen promedio (8+9+10)/3 = 9.<br>
+                Se usa para analizar datos y tomar decisiones informadas.
+
+            </p>
         </section>
-        <section class="infDoc">
-            <h2 class="subtTema">Logica Matematica</h2>
+        <section class="infDoc" id="tema4">
+            <h2 class="subtTema" id="tema4">Planteamiento de ecuaciones</h2>
             <aside class="textInf">
 
                 <p>
+                    El planteamiento de ecuaciones consiste en traducir problemas verbales o situaciones reales a
+                    expresiones matemáticas, permitiendo encontrar soluciones de manera lógica y ordenada.
                 </p>
 
             </aside>
             <aside class="imDoc">
-                <img src="../img/Logo-82x82.webp" alt="">
+                <img src="../img/planteo-de-ecuaciones-1.webp" alt="">
             </aside>
-            <p class="descDev"></p>
+            <p class="descDev">
+                <strong>Planteamiento de ecuaciones con edades:</strong><br>
+                Este tipo de problemas consiste en traducir situaciones de la vida real, como la relación de edades
+                entre personas en diferentes momentos del tiempo, a ecuaciones matemáticas.<br><br>
+                <b>Ejemplo típico:</b> “Dentro de 5 años, Juan tendrá el doble de edad que su hijo”.<br>
+                <b>Ejemplo resuelto:</b><br>
+                Si actualmente Juan tiene x años y su hijo y años, y dentro de 5 años Juan tendrá el doble de la edad de
+                su hijo:<br>
+                x + 5 = 2(y + 5)<br>
+                <i>Luego se resuelve la ecuación según los datos adicionales del problema.</i><br><br>
+                <b>Traducción a ecuaciones:</b> Se usan variables para representar las edades actuales y se plantean
+                ecuaciones según la información del problema.<br>
+                <b>Edades en el pasado o futuro:</b> Se suman o restan años a las variables para reflejar el paso del
+                tiempo.<br>
+                <b>Relaciones de múltiplos:</b> Se plantean ecuaciones cuando una edad es el doble, triple, etc., de
+                otra.<br>
+                <b>Problemas con varias personas:</b> Se pueden plantear sistemas de ecuaciones si hay más de dos
+                personas involucradas.<br><br>
+                <strong>Ejercicios:</strong>
+
+                <b>Dentro de 8 años, Ana tendrá el triple de la edad que tenía su hija hace 4 años. Si Ana tiene 32
+                    años, ¿qué edad tiene su hija?</b>
+                <br><br>
+                <b>Hace 5 años, la edad de Pedro era la mitad de la edad que tendrá su hijo dentro de 7 años. Si Pedro
+                    tiene 40 años, ¿qué edad tiene su hijo?</b>
+                <br><br>
+                <b>La suma de las edades de un padre y su hijo es 50 años. Dentro de 10 años, el padre tendrá el doble
+                    de la edad del hijo. ¿Cuántos años tiene cada uno?</b>
+                <br><br>
+                <b>Hace 3 años, la edad de Laura era el triple de la edad de su hija. Si ahora Laura tiene 36 años, ¿qué
+                    edad tiene su hija?</b>
+                <br><br>
+                <b>Dentro de 6 años, la suma de las edades de un padre y su hijo será 60 años. Si actualmente el padre
+                    tiene 38 años, ¿qué edad tiene el hijo?</b>
+                <br><br>
+                <b>La edad de un padre es el cuádruple de la de su hijo. Dentro de 10 años, la edad del padre será el
+                    doble de la del hijo. ¿Cuántos años tiene cada uno?</b>
+                <br><br>
+                <b>Hace 2 años, la suma de las edades de una madre y su hija era 40 años. Si la madre tiene 30 años,
+                    ¿qué edad tiene la hija?</b>
+                <br><br>
+                <b>Dentro de 5 años, la edad de un hermano será el triple de la edad de su hermana. Si actualmente la
+                    hermana tiene 7 años, ¿qué edad tiene el hermano?</b>
+                <br><br>
+                <b>La diferencia de edades entre un padre y su hijo es 28 años. Dentro de 4 años, el padre tendrá el
+                    triple de la edad del hijo. ¿Cuántos años tiene cada uno?</b>
+                <br><br>
+                <b>Hace 6 años, la edad de un padre era el doble de la edad de su hijo. Si ahora el hijo tiene 18 años,
+                    ¿qué edad tiene el padre?</b>
+                <br><br>
+                <strong>Soluciones:</strong><br>
+                1. <b>La hija de Ana tiene 8 años.</b><br>
+                2. <b>El hijo de Pedro tiene 18 años.</b><br>
+                3. <b>Padre: 36 años, Hijo: 14 años.</b><br>
+                4. <b>La hija de Laura tiene 9 años.</b><br>
+                5. <b>El hijo tiene 16 años.</b><br>
+                6. <b>Padre: 40 años, Hijo: 10 años.</b><br>
+                7. <b>La hija tiene 8 años.</b><br>
+                8. <b>El hermano tiene 16 años.</b><br>
+                9. <b>Padre: 42 años, Hijo: 14 años.</b><br>
+                10. <b>El padre tiene 30 años.</b><br>
+                <br>
+            </p>
         </section>
 
         <footer class="footer">
