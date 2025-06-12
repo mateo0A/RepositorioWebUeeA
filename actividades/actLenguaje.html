@@ -110,12 +110,121 @@
 
     <footer class="footer">
       <div>
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicios de Lengua y Literatura</title>
+=======
+
+
+
+</head>
+<body>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+ 
+  
+  <div class="section">
+    <h2>Figuras Literarias</h2>
+    <div class="question">
+      <p>1. ¿Qué figura literaria se emplea en "Tus ojos son dos luceros"?</p>
+      <input type="radio" name="fig1" value="correct"> Metáfora<br>
+      <input type="radio" name="fig1"> Hipérbole<br>
+      <input type="radio" name="fig1"> Anáfora<br>
+      <div class="result" id="res1"></div>
+    </div>
+    <div class="question">
+      <p>2. ¿Qué figura literaria se repite en "Corre, corre, que te alcanza"?</p>
+      <input type="radio" name="fig2" value="correct"> Reiteración<br>
+      <input type="radio" name="fig2"> Onomatopeya<br>
+      <input type="radio" name="fig2"> Aliteración<br>
+      <div class="result" id="res2"></div>
+    </div>
+    <button class="btn" onclick="checkAnswers('fig', 2)">Revisar</button>
+  </div>
+
+  <div class="section">
+    <h2>El Debate</h2>
+    <div class="question">
+      <p>1. ¿Cuál es el objetivo principal de un debate?</p>
+      <input type="radio" name="deb1" value="correct"> Defender una postura con argumentos<br>
+      <input type="radio" name="deb1"> Divertir al público<br>
+      <input type="radio" name="deb1"> Contar una historia<br>
+      <div class="result" id="deb1res"></div>
+    </div>
+    <div class="question">
+      <p>2. ¿Quién modera un debate?</p>
+      <input type="radio" name="deb2" value="correct"> El moderador<br>
+      <input type="radio" name="deb2"> El público<br>
+      <input type="radio" name="deb2"> El orador principal<br>
+      <div class="result" id="deb2res"></div>
+    </div>
+    <button class="btn" onclick="checkAnswers('deb', 2)">Revisar</button>
+  </div>
+
+  <div class="section">
+    <h2>Párrafos Argumentativos</h2>
+    <div class="question">
+      <p>1. ¿Cuál es la estructura básica de un párrafo argumentativo?</p>
+      <input type="radio" name="arg1" value="correct"> Tesis, argumento y conclusión<br>
+      <input type="radio" name="arg1"> Introducción, narración y final<br>
+      <input type="radio" name="arg1"> Saludo, desarrollo y despedida<br>
+      <div class="result" id="arg1res"></div>
+    </div>
+    <div class="question">
+      <p>2. ¿Qué función cumple el argumento?</p>
+      <input type="radio" name="arg2" value="correct"> Convencer al lector<br>
+      <input type="radio" name="arg2"> Embellecer el texto<br>
+      <input type="radio" name="arg2"> Divertir al lector<br>
+      <div class="result" id="arg2res"></div>
+    </div>
+    <button class="btn" onclick="checkAnswers('arg', 2)">Revisar</button>
+  </div>
+
+  <div class="section">
+    <h2>El Conversatorio</h2>
+    <div class="question">
+      <p>1. ¿Qué es un conversatorio?</p>
+      <input type="radio" name="conv1" value="correct"> Un diálogo informal sobre un tema<br>
+      <input type="radio" name="conv1"> Una pelea entre expertos<br>
+      <input type="radio" name="conv1"> Un monólogo<br>
+      <div class="result" id="conv1res"></div>
+    </div>
+    <div class="question">
+      <p>2. ¿Qué actitud se espera de los participantes?</p>
+      <input type="radio" name="conv2" value="correct"> Participar respetuosamente<br>
+      <input type="radio" name="conv2"> Discutir sin escuchar<br>
+      <input type="radio" name="conv2"> Estar en silencio sin opinar<br>
+      <div class="result" id="conv2res"></div>
+    </div>
+    <button class="btn" onclick="checkAnswers('conv', 2)">Revisar</button>
+  </div>
+
+  <script>
+    function checkAnswers(prefix, total) {
+      for (let i = 1; i <= total; i++) {
+        const radios = document.getElementsByName(prefix + i);
+        let correct = false;
+        for (let radio of radios) {
+          if (radio.checked && radio.value === "correct") {
+            correct = true;
+          }
+        }
+        document.getElementById(prefix + i + "res").textContent = correct ? "✅ Correcto" : "❌ Incorrecto";
+        document.getElementById(prefix + i + "res").style.color = correct ? "green" : "red";
+      }
+    }
+  </script>
+
+</body>
+
+  
+
+  <div class="section">
+    <h2>Figuras Literarias</h2>
+>>>>>>> 72de0e8ffea25759b2259a4f34a266a1a347f5b5
     
 </head>
 <body>
