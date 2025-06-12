@@ -61,7 +61,7 @@
             <li><a href="../docs/Lenguaje.html">Lenguaje</a></li>
             <li><a href="../docs/quimica.html">Quimica</a></li>
             <li><a href="../docs/EstudiosSociales.html">Estudios Sociales</a></li>
-            <li><a href="../docs/Ciencias.html">Ciencias Naturales</a></li>
+            <li><a href="../docs/CienciasNaturales.html">Ciencias Naturales</a></li>
 
           </div>
         </ul> 
@@ -100,6 +100,12 @@
 
 
 
+
+
+
+
+
+
   <!-----Content Index-->
 
   <main class="main">
@@ -110,6 +116,446 @@
 
     <footer class="footer">
       <div>
+
+
+  <style>
+    body { 
+      font-family: Arial, sans-serif; 
+      margin: 0; 
+      background-color: #f4f4f9; 
+      color: #333; 
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      flex-direction: column;
+      padding: 20px;
+    }
+    h2 { color: #2c3e50; text-align: center; }
+    .section { 
+      width: 100%;
+      max-width: 700px;
+      margin-bottom: 40px; 
+      padding: 20px; 
+      background: white; 
+      border-radius: 10px; 
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    }
+    .question { margin-bottom: 15px; }
+    .btn { 
+      margin-top: 10px; 
+      padding: 8px 12px; 
+      border: none; 
+      background: #3498db; 
+      color: white; 
+      border-radius: 5px; 
+      cursor: pointer; 
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .result { font-weight: bold; margin-top: 5px; }
+  </style>
+</head>
+<body>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+ 
+  <style>
+    body { 
+      font-family: Arial, sans-serif; 
+      margin: 0; 
+      background-color: #f4f4f9; 
+      color: #333; 
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      flex-direction: column;
+      padding: 20px;
+    }
+    h2 { color: #2c3e50; text-align: center; }
+    .section { 
+      width: 100%;
+      max-width: 700px;
+      margin-bottom: 40px; 
+      padding: 20px; 
+      background: white; 
+      border-radius: 10px; 
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    }
+    .question { margin-bottom: 15px; }
+    .btn { 
+      margin-top: 10px; 
+      padding: 8px 12px; 
+      border: none; 
+      background: #3498db; 
+      color: white; 
+      border-radius: 5px; 
+      cursor: pointer; 
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .result { font-weight: bold; margin-top: 5px; }
+  </style>
+</head>
+<body>
+
+  <div class="section">
+    <h2>Figuras Literarias</h2>
+    <div class="question">
+      <p>1. ¿Qué figura literaria se emplea en "Tus ojos son dos luceros"?</p>
+      <input type="radio" name="fig1" value="correct"> Metáfora<br>
+      <input type="radio" name="fig1"> Hipérbole<br>
+      <input type="radio" name="fig1"> Anáfora<br>
+      <div class="result" id="res1"></div>
+    </div>
+    <div class="question">
+      <p>2. ¿Qué figura literaria se repite en "Corre, corre, que te alcanza"?</p>
+      <input type="radio" name="fig2" value="correct"> Reiteración<br>
+      <input type="radio" name="fig2"> Onomatopeya<br>
+      <input type="radio" name="fig2"> Aliteración<br>
+      <div class="result" id="res2"></div>
+    </div>
+    <button class="btn" onclick="checkAnswers('fig', 2)">Revisar</button>
+  </div>
+
+  <div class="section">
+    <h2>El Debate</h2>
+    <div class="question">
+      <p>1. ¿Cuál es el objetivo principal de un debate?</p>
+      <input type="radio" name="deb1" value="correct"> Defender una postura con argumentos<br>
+      <input type="radio" name="deb1"> Divertir al público<br>
+      <input type="radio" name="deb1"> Contar una historia<br>
+      <div class="result" id="deb1res"></div>
+    </div>
+    <div class="question">
+      <p>2. ¿Quién modera un debate?</p>
+      <input type="radio" name="deb2" value="correct"> El moderador<br>
+      <input type="radio" name="deb2"> El público<br>
+      <input type="radio" name="deb2"> El orador principal<br>
+      <div class="result" id="deb2res"></div>
+    </div>
+    <button class="btn" onclick="checkAnswers('deb', 2)">Revisar</button>
+  </div>
+
+  <div class="section">
+    <h2>Párrafos Argumentativos</h2>
+    <div class="question">
+      <p>1. ¿Cuál es la estructura básica de un párrafo argumentativo?</p>
+      <input type="radio" name="arg1" value="correct"> Tesis, argumento y conclusión<br>
+      <input type="radio" name="arg1"> Introducción, narración y final<br>
+      <input type="radio" name="arg1"> Saludo, desarrollo y despedida<br>
+      <div class="result" id="arg1res"></div>
+    </div>
+    <div class="question">
+      <p>2. ¿Qué función cumple el argumento?</p>
+      <input type="radio" name="arg2" value="correct"> Convencer al lector<br>
+      <input type="radio" name="arg2"> Embellecer el texto<br>
+      <input type="radio" name="arg2"> Divertir al lector<br>
+      <div class="result" id="arg2res"></div>
+    </div>
+    <button class="btn" onclick="checkAnswers('arg', 2)">Revisar</button>
+  </div>
+
+  <div class="section">
+    <h2>El Conversatorio</h2>
+    <div class="question">
+      <p>1. ¿Qué es un conversatorio?</p>
+      <input type="radio" name="conv1" value="correct"> Un diálogo informal sobre un tema<br>
+      <input type="radio" name="conv1"> Una pelea entre expertos<br>
+      <input type="radio" name="conv1"> Un monólogo<br>
+      <div class="result" id="conv1res"></div>
+    </div>
+    <div class="question">
+      <p>2. ¿Qué actitud se espera de los participantes?</p>
+      <input type="radio" name="conv2" value="correct"> Participar respetuosamente<br>
+      <input type="radio" name="conv2"> Discutir sin escuchar<br>
+      <input type="radio" name="conv2"> Estar en silencio sin opinar<br>
+      <div class="result" id="conv2res"></div>
+    </div>
+    <button class="btn" onclick="checkAnswers('conv', 2)">Revisar</button>
+  </div>
+
+  <script>
+    function checkAnswers(prefix, total) {
+      for (let i = 1; i <= total; i++) {
+        const radios = document.getElementsByName(prefix + i);
+        let correct = false;
+        for (let radio of radios) {
+          if (radio.checked && radio.value === "correct") {
+            correct = true;
+          }
+        }
+        document.getElementById(prefix + i + "res").textContent = correct ? "✅ Correcto" : "❌ Incorrecto";
+        document.getElementById(prefix + i + "res").style.color = correct ? "green" : "red";
+      }
+    }
+  </script>
+
+</body>
+
+  
+
+  <div class="section">
+    <h2>Figuras Literarias</h2>
+    
+    <div class="question">
+      <p>1. ¿Qué figura se presenta en "Te llamé mil veces y no contestaste"?</p>
+      <input type="radio" name="fig3" value="correct"> Hipérbole<br>
+      <input type="radio" name="fig3"> Símil<br>
+      <input type="radio" name="fig3"> Ironía<br>
+      <div class="result" id="res3"></div>
+    </div>
+    <div class="question">
+      <p>2. ¿Qué figura usa comparación explícita?</p>
+      <input type="radio" name="fig4" value="correct"> Símil<br>
+      <input type="radio" name="fig4"> Metonimia<br>
+      <input type="radio" name="fig4"> Hipérbaton<br>
+      <div class="result" id="res4"></div>
+    </div>
+    <button class="btn" onclick="checkAnswers('fig', 4)">Revisar</button>
+  </div>
+
+  <div class="section">
+    <h2>El Debate</h2>
+  
+    <div class="question">
+      <p>1. ¿Qué parte del debate permite refutar al oponente?</p>
+      <input type="radio" name="deb3" value="correct"> Ronda de refutación<br>
+      <input type="radio" name="deb3"> Introducción<br>
+      <input type="radio" name="deb3"> Conclusión<br>
+      <div class="result" id="deb3res"></div>
+    </div>
+    <div class="question">
+      <p>2. ¿Qué se valora en un buen debate?</p>
+      <input type="radio" name="deb4" value="correct"> Claridad, respeto y evidencia<br>
+      <input type="radio" name="deb4"> Humor y rapidez<br>
+      <input type="radio" name="deb4"> Interrupciones frecuentes<br>
+      <div class="result" id="deb4res"></div>
+    </div>
+    <button class="btn" onclick="checkAnswers('deb', 4)">Revisar</button>
+  </div>
+
+  <div class="section">
+    <h2>Párrafos Argumentativos</h2>
+
+    <div class="question">
+      <p>1. ¿Cuál es un conector argumentativo?</p>
+      <input type="radio" name="arg3" value="correct"> Por lo tanto<br>
+      <input type="radio" name="arg3"> Entonces qué<br>
+      <input type="radio" name="arg3"> Así fue<br>
+      <div class="result" id="arg3res"></div>
+    </div>
+    <div class="question">
+      <p>2. ¿Qué debe evitarse en un párrafo argumentativo?</p>
+      <input type="radio" name="arg4" value="correct"> Falta de evidencia<br>
+      <input type="radio" name="arg4"> Uso de conectores<br>
+      <input type="radio" name="arg4"> Cierre claro<br>
+      <div class="result" id="arg4res"></div>
+    </div>
+    <button class="btn" onclick="checkAnswers('arg', 4)">Revisar</button>
+  </div>
+
+  <div class="section">
+    <h2>El Conversatorio</h2>
+    <div class="question">
+      <p>1. ¿Qué rol cumple el moderador en un conversatorio?</p>
+      <input type="radio" name="conv3" value="correct"> Ordenar las intervenciones<br>
+      <input type="radio" name="conv3"> Interrumpir constantemente<br>
+      <input type="radio" name="conv3"> Opinar sin límite<br>
+      <div class="result" id="conv3res"></div>
+    </div>
+    <div class="question">
+      <p>2. ¿Cuál es una característica del conversatorio?</p>
+      <input type="radio" name="conv4" value="correct"> Escucha activa<br>
+      <input type="radio" name="conv4"> Monólogos extensos<br>
+      <input type="radio" name="conv4"> Interrupciones frecuentes<br>
+      <div class="result" id="conv4res"></div>
+    </div>
+    <button class="btn" onclick="checkAnswers('conv', 4)">Revisar</button>
+  </div>
+
+  <script>
+    function checkAnswers(prefix, total) {
+      for (let i = 1; i <= total; i++) {
+        const radios = document.getElementsByName(prefix + i);
+        let correct = false;
+        for (let radio of radios) {
+          if (radio.checked && radio.value === "correct") {
+            correct = true;
+          }
+        }
+        document.getElementById(prefix + i + "res").textContent = correct ? "✅ Correcto" : "❌ Incorrecto";
+        document.getElementById(prefix + i + "res").style.color = correct ? "green" : "red";
+      }
+    }
+  </script>
+
+
+  <style>
+    body { 
+      font-family: Arial, sans-serif; 
+      margin: 0; 
+      background-color: #f4f4f9; 
+      color: #333; 
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      flex-direction: column;
+      padding: 20px;
+    }
+    h2 { color: #2c3e50; text-align: center; }
+    .section { 
+      width: 100%;
+      max-width: 700px;
+      margin-bottom: 40px; 
+      padding: 20px; 
+      background: white; 
+      border-radius: 10px; 
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    }
+    .question { margin-bottom: 15px; }
+    .btn { 
+      margin-top: 10px; 
+      padding: 8px 12px; 
+      border: none; 
+      background: #3498db; 
+      color: white; 
+      border-radius: 5px; 
+      cursor: pointer; 
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .result { font-weight: bold; margin-top: 5px; }
+  </style>
+</head>
+<body>
+
+<!-- Secciones anteriores omitidas por brevedad -->
+
+  <div class="section">
+    <h2>Ensayo Argumentativo</h2>
+    <div class="question">
+      <p>1. ¿Cuál es una característica principal del ensayo argumentativo?</p>
+      <input type="radio" name="ens1" value="correct"> Presenta una tesis que se defiende<br>
+      <input type="radio" name="ens1"> Se basa en hechos ficticios<br>
+      <input type="radio" name="ens1"> Es un texto poético<br>
+      <div class="result" id="ens1res"></div>
+    </div>
+    <div class="question">
+      <p>2. ¿Qué debe tener un buen ensayo argumentativo?</p>
+      <input type="radio" name="ens2" value="correct"> Coherencia y evidencia<br>
+      <input type="radio" name="ens2"> Ilustraciones<br>
+      <input type="radio" name="ens2"> Humor exagerado<br>
+      <div class="result" id="ens2res"></div>
+    </div>
+    <button class="btn" onclick="checkAnswers('ens', 2)">Revisar</button>
+  </div>
+
+  <div class="section">
+    <h2>El Texto Expositivo</h2>
+    <div class="question">
+      <p>1. ¿Cuál es la función principal del texto expositivo?</p>
+      <input type="radio" name="exp1" value="correct"> Informar o explicar un tema<br>
+      <input type="radio" name="exp1"> Entretener al lector<br>
+      <input type="radio" name="exp1"> Convencer con opiniones<br>
+      <div class="result" id="exp1res"></div>
+    </div>
+    <div class="question">
+      <p>2. ¿Qué tipo de lenguaje usa el texto expositivo?</p>
+      <input type="radio" name="exp2" value="correct"> Claro y objetivo<br>
+      <input type="radio" name="exp2"> Subjetivo y metafórico<br>
+      <input type="radio" name="exp2"> Informal y emotivo<br>
+      <div class="result" id="exp2res"></div>
+    </div>
+    <button class="btn" onclick="checkAnswers('exp', 2)">Revisar</button>
+  </div>
+
+  <div class="section">
+    <h2>La Monografía</h2>
+    <div class="question">
+      <p>1. ¿Qué es una monografía?</p>
+      <input type="radio" name="mon1" value="correct"> Un estudio profundo sobre un tema<br>
+      <input type="radio" name="mon1"> Una entrevista informal<br>
+      <input type="radio" name="mon1"> Una novela corta<br>
+      <div class="result" id="mon1res"></div>
+    </div>
+    <div class="question">
+      <p>2. ¿Qué debe incluir una monografía?</p>
+      <input type="radio" name="mon2" value="correct"> Introducción, desarrollo y conclusión<br>
+      <input type="radio" name="mon2"> Solo datos sueltos<br>
+      <input type="radio" name="mon2"> Opiniones sin respaldo<br>
+      <div class="result" id="mon2res"></div>
+    </div>
+    <button class="btn" onclick="checkAnswers('mon', 2)">Revisar</button>
+  </div>
+
+  <div class="section">
+    <h2>Escritura de Párrafos</h2>
+    <div class="question">
+      <p>1. ¿Qué debe tener todo párrafo bien estructurado?</p>
+      <input type="radio" name="par1" value="correct"> Una idea principal y desarrollo<br>
+      <input type="radio" name="par1"> Solo una lista de ideas<br>
+      <input type="radio" name="par1"> Frases sin relación<br>
+      <div class="result" id="par1res"></div>
+    </div>
+    <div class="question">
+      <p>2. ¿Qué ayuda a la coherencia entre párrafos?</p>
+      <input type="radio" name="par2" value="correct"> Uso de conectores<br>
+      <input type="radio" name="par2"> Cambiar de tema<br>
+      <input type="radio" name="par2"> Frases muy cortas<br>
+      <div class="result" id="par2res"></div>
+    </div>
+    <button class="btn" onclick="checkAnswers('par', 2)">Revisar</button>
+  </div>
+
+  <script>
+    function checkAnswers(prefix, total) {
+      for (let i = 1; i <= total; i++) {
+        const radios = document.getElementsByName(prefix + i);
+        let correct = false;
+        for (let radio of radios) {
+          if (radio.checked && radio.value === "correct") {
+            correct = true;
+          }
+        }
+        document.getElementById(prefix + i + "res").textContent = correct ? "✅ Correcto" : "❌ Incorrecto";
+        document.getElementById(prefix + i + "res").style.color = correct ? "green" : "red";
+      }
+    }
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <a href="">
           <span>
