@@ -61,7 +61,7 @@
             <li><a href="../docs/Lenguaje.html">Lenguaje</a></li>
             <li><a href="../docs/quimica.html">Quimica</a></li>
             <li><a href="../docs/EstudiosSociales.html">Estudios Sociales</a></li>
-            <li><a href="../docs/CienciasNaturales.html">Ciencias Naturales</a></li>
+            <li><a href="../docs/Ciencias.html">Ciencias Naturales</a></li>
 
           </div>
         </ul> 
@@ -100,12 +100,6 @@
 
 
 
-
-
-
-
-
-
   <!-----Content Index-->
 
   <main class="main">
@@ -116,348 +110,1422 @@
 
     <footer class="footer">
       <div>
-
-
-
-</head>
-<body>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
- 
-  
-
-  <div class="section">
-    <h2>Figuras Literarias</h2>
-    <div class="question">
-      <p>1. ¿Qué figura literaria se emplea en "Tus ojos son dos luceros"?</p>
-      <input type="radio" name="fig1" value="correct"> Metáfora<br>
-      <input type="radio" name="fig1"> Hipérbole<br>
-      <input type="radio" name="fig1"> Anáfora<br>
-      <div class="result" id="res1"></div>
-    </div>
-    <div class="question">
-      <p>2. ¿Qué figura literaria se repite en "Corre, corre, que te alcanza"?</p>
-      <input type="radio" name="fig2" value="correct"> Reiteración<br>
-      <input type="radio" name="fig2"> Onomatopeya<br>
-      <input type="radio" name="fig2"> Aliteración<br>
-      <div class="result" id="res2"></div>
-    </div>
-    <button class="btn" onclick="checkAnswers('fig', 2)">Revisar</button>
-  </div>
-
-  <div class="section">
-    <h2>El Debate</h2>
-    <div class="question">
-      <p>1. ¿Cuál es el objetivo principal de un debate?</p>
-      <input type="radio" name="deb1" value="correct"> Defender una postura con argumentos<br>
-      <input type="radio" name="deb1"> Divertir al público<br>
-      <input type="radio" name="deb1"> Contar una historia<br>
-      <div class="result" id="deb1res"></div>
-    </div>
-    <div class="question">
-      <p>2. ¿Quién modera un debate?</p>
-      <input type="radio" name="deb2" value="correct"> El moderador<br>
-      <input type="radio" name="deb2"> El público<br>
-      <input type="radio" name="deb2"> El orador principal<br>
-      <div class="result" id="deb2res"></div>
-    </div>
-    <button class="btn" onclick="checkAnswers('deb', 2)">Revisar</button>
-  </div>
-
-  <div class="section">
-    <h2>Párrafos Argumentativos</h2>
-    <div class="question">
-      <p>1. ¿Cuál es la estructura básica de un párrafo argumentativo?</p>
-      <input type="radio" name="arg1" value="correct"> Tesis, argumento y conclusión<br>
-      <input type="radio" name="arg1"> Introducción, narración y final<br>
-      <input type="radio" name="arg1"> Saludo, desarrollo y despedida<br>
-      <div class="result" id="arg1res"></div>
-    </div>
-    <div class="question">
-      <p>2. ¿Qué función cumple el argumento?</p>
-      <input type="radio" name="arg2" value="correct"> Convencer al lector<br>
-      <input type="radio" name="arg2"> Embellecer el texto<br>
-      <input type="radio" name="arg2"> Divertir al lector<br>
-      <div class="result" id="arg2res"></div>
-    </div>
-    <button class="btn" onclick="checkAnswers('arg', 2)">Revisar</button>
-  </div>
-
-  <div class="section">
-    <h2>El Conversatorio</h2>
-    <div class="question">
-      <p>1. ¿Qué es un conversatorio?</p>
-      <input type="radio" name="conv1" value="correct"> Un diálogo informal sobre un tema<br>
-      <input type="radio" name="conv1"> Una pelea entre expertos<br>
-      <input type="radio" name="conv1"> Un monólogo<br>
-      <div class="result" id="conv1res"></div>
-    </div>
-    <div class="question">
-      <p>2. ¿Qué actitud se espera de los participantes?</p>
-      <input type="radio" name="conv2" value="correct"> Participar respetuosamente<br>
-      <input type="radio" name="conv2"> Discutir sin escuchar<br>
-      <input type="radio" name="conv2"> Estar en silencio sin opinar<br>
-      <div class="result" id="conv2res"></div>
-    </div>
-    <button class="btn" onclick="checkAnswers('conv', 2)">Revisar</button>
-  </div>
-
-  <script>
-    function checkAnswers(prefix, total) {
-      for (let i = 1; i <= total; i++) {
-        const radios = document.getElementsByName(prefix + i);
-        let correct = false;
-        for (let radio of radios) {
-          if (radio.checked && radio.value === "correct") {
-            correct = true;
-          }
-        }
-        document.getElementById(prefix + i + "res").textContent = correct ? "✅ Correcto" : "❌ Incorrecto";
-        document.getElementById(prefix + i + "res").style.color = correct ? "green" : "red";
-      }
-    }
-  </script>
-
-</body>
-
-  
-
-  <div class="section">
-    <h2>Figuras Literarias</h2>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de Lengua y Literatura</title>
     
-    <div class="question">
-      <p>1. ¿Qué figura se presenta en "Te llamé mil veces y no contestaste"?</p>
-      <input type="radio" name="fig3" value="correct"> Hipérbole<br>
-      <input type="radio" name="fig3"> Símil<br>
-      <input type="radio" name="fig3"> Ironía<br>
-      <div class="result" id="res3"></div>
-    </div>
-    <div class="question">
-      <p>2. ¿Qué figura usa comparación explícita?</p>
-      <input type="radio" name="fig4" value="correct"> Símil<br>
-      <input type="radio" name="fig4"> Metonimia<br>
-      <input type="radio" name="fig4"> Hipérbaton<br>
-      <div class="result" id="res4"></div>
-    </div>
-    <button class="btn" onclick="checkAnswers('fig', 4)">Revisar</button>
-  </div>
-
-  <div class="section">
-    <h2>El Debate</h2>
-  
-    <div class="question">
-      <p>1. ¿Qué parte del debate permite refutar al oponente?</p>
-      <input type="radio" name="deb3" value="correct"> Ronda de refutación<br>
-      <input type="radio" name="deb3"> Introducción<br>
-      <input type="radio" name="deb3"> Conclusión<br>
-      <div class="result" id="deb3res"></div>
-    </div>
-    <div class="question">
-      <p>2. ¿Qué se valora en un buen debate?</p>
-      <input type="radio" name="deb4" value="correct"> Claridad, respeto y evidencia<br>
-      <input type="radio" name="deb4"> Humor y rapidez<br>
-      <input type="radio" name="deb4"> Interrupciones frecuentes<br>
-      <div class="result" id="deb4res"></div>
-    </div>
-    <button class="btn" onclick="checkAnswers('deb', 4)">Revisar</button>
-  </div>
-
-  <div class="section">
-    <h2>Párrafos Argumentativos</h2>
-
-    <div class="question">
-      <p>1. ¿Cuál es un conector argumentativo?</p>
-      <input type="radio" name="arg3" value="correct"> Por lo tanto<br>
-      <input type="radio" name="arg3"> Entonces qué<br>
-      <input type="radio" name="arg3"> Así fue<br>
-      <div class="result" id="arg3res"></div>
-    </div>
-    <div class="question">
-      <p>2. ¿Qué debe evitarse en un párrafo argumentativo?</p>
-      <input type="radio" name="arg4" value="correct"> Falta de evidencia<br>
-      <input type="radio" name="arg4"> Uso de conectores<br>
-      <input type="radio" name="arg4"> Cierre claro<br>
-      <div class="result" id="arg4res"></div>
-    </div>
-    <button class="btn" onclick="checkAnswers('arg', 4)">Revisar</button>
-  </div>
-
-  <div class="section">
-    <h2>El Conversatorio</h2>
-    <div class="question">
-      <p>1. ¿Qué rol cumple el moderador en un conversatorio?</p>
-      <input type="radio" name="conv3" value="correct"> Ordenar las intervenciones<br>
-      <input type="radio" name="conv3"> Interrumpir constantemente<br>
-      <input type="radio" name="conv3"> Opinar sin límite<br>
-      <div class="result" id="conv3res"></div>
-    </div>
-    <div class="question">
-      <p>2. ¿Cuál es una característica del conversatorio?</p>
-      <input type="radio" name="conv4" value="correct"> Escucha activa<br>
-      <input type="radio" name="conv4"> Monólogos extensos<br>
-      <input type="radio" name="conv4"> Interrupciones frecuentes<br>
-      <div class="result" id="conv4res"></div>
-    </div>
-    <button class="btn" onclick="checkAnswers('conv', 4)">Revisar</button>
-  </div>
-
-  <script>
-    function checkAnswers(prefix, total) {
-      for (let i = 1; i <= total; i++) {
-        const radios = document.getElementsByName(prefix + i);
-        let correct = false;
-        for (let radio of radios) {
-          if (radio.checked && radio.value === "correct") {
-            correct = true;
-          }
-        }
-        document.getElementById(prefix + i + "res").textContent = correct ? "✅ Correcto" : "❌ Incorrecto";
-        document.getElementById(prefix + i + "res").style.color = correct ? "green" : "red";
-      }
-    }
-  </script>
-
-
-  
 </head>
 <body>
-
-<!-- Secciones anteriores omitidas por brevedad -->
-
-  <div class="section">
-    <h2>Ensayo Argumentativo</h2>
-    <div class="question">
-      <p>1. ¿Cuál es una característica principal del ensayo argumentativo?</p>
-      <input type="radio" name="ens1" value="correct"> Presenta una tesis que se defiende<br>
-      <input type="radio" name="ens1"> Se basa en hechos ficticios<br>
-      <input type="radio" name="ens1"> Es un texto poético<br>
-      <div class="result" id="ens1res"></div>
+   <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+   <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    <div class="container">
+        <h1>📚 Ejercicios de Lengua y Literatura</h1><br>
+        
+        <!-- FIGURAS LITERARIAS -->
+        <div class="section">
+            <h2>🎭 Figuras Literarias</h2><br>
+            
+            <div class="exercise">
+                <h3>Ejercicio 1: Identificar Figuras Literarias</h3><br>
+                <div class="question">
+                    <p><strong>Lee el siguiente verso e identifica la figura literaria:</strong></p>
+                    <div class="example-text">"Sus ojos eran dos luceros brillantes en la noche"</div>
+                    <div class="options">
+                        <label><input type="radio" name="fig1" value="metafora"> Metáfora</label><br>
+                        <label><input type="radio" name="fig1" value="simil"> Símil</label><br>
+                        <label><input type="radio" name="fig1" value="personificacion"> Personificación</label><br>
+                        <label><input type="radio" name="fig1" value="hiperbole"> Hipérbole</label>
+                    </div>
+                    <button onclick="checkAnswer('fig1', 'metafora', 'result1')">Verificar</button>
+                    <div id="result1" class="result"></div><br>
+                </div>
+            </div>
+            
+            <div class="exercise">
+                <h3>Ejercicio 2: Crear Figuras Literarias</h3><br>
+                <div class="question">
+                    <p><strong>Escribe un ejemplo de cada figura literaria solicitada:</strong></p>
+                    <p>1. Una metáfora sobre el tiempo:</p>
+                    <textarea id="metaphor" placeholder="Ejemplo: El tiempo es un río que nunca retrocede..."></textarea>
+                    
+                    <p>2. Una personificación sobre la naturaleza:</p>
+                    <textarea id="personification" placeholder="Ejemplo: El viento susurraba secretos entre las hojas..."></textarea>
+                    <br>
+                    <button onclick="evaluateCreative()">Mostrar ejemplos</button>
+                    <div id="creative-result" class="result"></div>
+                </div>
+            </div>
+        </div><br>
+        
+        <!-- EL DEBATE -->
+        <div class="section">
+            <h2>🗣️ El Debate</h2><br>
+            
+            <div class="exercise">
+                <h3>Ejercicio 1: Estructura del Debate</h3><br>
+                <div class="question">
+                    <p><strong>Ordena las fases de un debate formal:</strong></p>
+                    <div class="options">
+                        <label><input type="checkbox" name="debate1" value="1"> Apertura y presentación del tema</label><br>
+                        <label><input type="checkbox" name="debate1" value="4"> Conclusiones y cierre</label><br>
+                        <label><input type="checkbox" name="debate1" value="2"> Exposición de argumentos</label><br>
+                        <label><input type="checkbox" name="debate1" value="3"> Refutación y contraargumentos</label><br>
+                    </div>
+                    <button onclick="checkDebateOrder()">Verificar orden</button>
+                    <div id="debate-result1" class="result"></div>
+                </div>
+            </div>
+            <br>
+            <div class="exercise">
+                <h3>Ejercicio 2: Preparar un Argumento</h3><br>
+                <div class="question">
+                    <p><strong>Tema de debate:</strong> <br>"¿Deberían los estudiantes usar uniformes escolares?"</p>
+                    <p>Elige tu posición y desarrolla un argumento:</p>
+                    <div class="options">
+                        <label><input type="radio" name="position" value="favor"> A favor del uniforme</label><br>
+                        <label><input type="radio" name="position" value="contra"> En contra del uniforme</label><br>
+                    </div>
+                    <p>Escribe tu argumento principal:</p>
+                    <textarea id="argument" placeholder="Desarrolla tu argumento con evidencias y ejemplos..."></textarea><br>
+                    <button onclick="evaluateArgument()">Evaluar argumento</button>
+                    <div id="argument-result" class="result"></div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <!-- PÁRRAFOS ARGUMENTATIVOS -->
+        <div class="section">
+            <h2>📝 Párrafos Argumentativos</h2><br>
+            
+            <div class="exercise">
+                <h3>Ejercicio 1: Identificar Elementos</h3><br>
+                <div class="question">
+                    <p><strong>Lee el siguiente párrafo e identifica sus elementos:</strong></p>
+                    <div class="example-text">
+                        "La lectura diaria es fundamental para el desarrollo intelectual. En primer lugar, mejora el vocabulario y la comprensión lectora. Además, diversos estudios demuestran que las personas que leen regularmente tienen mejor capacidad de concentración. Por ejemplo, un estudio de la Universidad de Stanford mostró que los lectores habituales obtienen mejores resultados en pruebas de atención. Por tanto, es evidente que dedicar tiempo a la lectura diaria beneficia significativamente nuestras capacidades cognitivas."
+                    </div>
+                    <p>¿Cuál es la tesis del párrafo?</p>
+                    <div class="options">
+                        <label><input type="radio" name="thesis" value="correct"> La lectura diaria es fundamental para el desarrollo intelectual</label><br>
+                        <label><input type="radio" name="thesis" value="wrong1"> Los estudios universitarios son importantes</label><br>
+                        <label><input type="radio" name="thesis" value="wrong2"> La concentración es una habilidad básica</label><br>
+                    </div>
+                    <button onclick="checkAnswer('thesis', 'correct', 'thesis-result')">Verificar</button>
+                    <div id="thesis-result" class="result"></div>
+                </div>
+            </div>
+            <br>
+            <div class="exercise">
+                <h3>Ejercicio 2: Escribir un Párrafo Argumentativo</h3><br>
+                <div class="question">
+                    <p><strong>Tema:</strong> <br>"La importancia del deporte en la educación"</p>
+                    <p>Escribe un párrafo argumentativo que incluya:</p>
+                    <ul style="margin: 10px 0 10px 20px;">
+                        <li>Tesis clara</li>
+                        <li>Al menos dos argumentos</li>
+                        <li>Un ejemplo o evidencia</li>
+                        <li>Conclusión</li>
+                    </ul>
+                    <textarea id="argumentative-paragraph" placeholder="Desarrolla tu párrafo argumentativo aquí..."></textarea>
+                   <br> <button onclick="evaluateParagraph()">Evaluar párrafo</button>
+                    <div id="paragraph-result" class="result"></div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!-- EL CONVERSATORIO -->
+        <div class="section">
+            <h2>💬 El Conversatorio</h2><br>
+            
+            <div class="exercise">
+                <h3>Ejercicio 1: Características del Conversatorio</h3><br>
+                <div class="question">
+                    <p><strong>¿Cuáles son las características principales de un conversatorio?</strong></p>
+                    <div class="options">
+                        <label><input type="checkbox" name="conv1" value="correct1"> Intercambio informal de ideas</label><br>
+                        <label><input type="checkbox" name="conv1" value="wrong1"> Competencia entre participantes</label><br>
+                        <label><input type="checkbox" name="conv1" value="correct2"> Participación de expertos y público</label><br>
+                        <label><input type="checkbox" name="conv1" value="correct3"> Moderador que guía la conversación</label><br>
+                        <label><input type="checkbox" name="conv1" value="wrong2"> Formato rígido y formal</label>
+                    </div><br>
+                    <button onclick="checkConversatorio()">Verificar</button>
+                    <div id="conv-result1" class="result"></div>
+                </div>
+            </div>
+            <br>
+            <div class="exercise">
+                <h3>Ejercicio 2: Planificar un Conversatorio</h3><br>
+                <div class="question">
+                    <p><strong>Imagina que debes organizar un conversatorio sobre "Tecnología y Educación"</strong></p>
+                    
+                    <p>1. Propón 3 preguntas clave para el conversatorio:</p>
+                    <textarea id="questions" placeholder="1. ¿Cómo ha transformado la tecnología la forma de aprender?
+2. ...
+3. ..."></textarea>
+                    
+                    <p>2. ¿Qué tipo de participantes invitarías?</p>
+                    <textarea id="participants" placeholder="Describe el perfil de los participantes (educadores, estudiantes, expertos en tecnología, etc.)"></textarea>
+                    <br>
+                    <button onclick="evaluateConversatorio()">Evaluar propuesta</button>
+                    <div id="conv-result2" class="result"></div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="question">
-      <p>2. ¿Qué debe tener un buen ensayo argumentativo?</p>
-      <input type="radio" name="ens2" value="correct"> Coherencia y evidencia<br>
-      <input type="radio" name="ens2"> Ilustraciones<br>
-      <input type="radio" name="ens2"> Humor exagerado<br>
-      <div class="result" id="ens2res"></div>
-    </div>
-    <button class="btn" onclick="checkAnswers('ens', 2)">Revisar</button>
-  </div>
-
-  <div class="section">
-    <h2>El Texto Expositivo</h2>
-    <div class="question">
-      <p>1. ¿Cuál es la función principal del texto expositivo?</p>
-      <input type="radio" name="exp1" value="correct"> Informar o explicar un tema<br>
-      <input type="radio" name="exp1"> Entretener al lector<br>
-      <input type="radio" name="exp1"> Convencer con opiniones<br>
-      <div class="result" id="exp1res"></div>
-    </div>
-    <div class="question">
-      <p>2. ¿Qué tipo de lenguaje usa el texto expositivo?</p>
-      <input type="radio" name="exp2" value="correct"> Claro y objetivo<br>
-      <input type="radio" name="exp2"> Subjetivo y metafórico<br>
-      <input type="radio" name="exp2"> Informal y emotivo<br>
-      <div class="result" id="exp2res"></div>
-    </div>
-    <button class="btn" onclick="checkAnswers('exp', 2)">Revisar</button>
-  </div>
-
-  <div class="section">
-    <h2>La Monografía</h2>
-    <div class="question">
-      <p>1. ¿Qué es una monografía?</p>
-      <input type="radio" name="mon1" value="correct"> Un estudio profundo sobre un tema<br>
-      <input type="radio" name="mon1"> Una entrevista informal<br>
-      <input type="radio" name="mon1"> Una novela corta<br>
-      <div class="result" id="mon1res"></div>
-    </div>
-    <div class="question">
-      <p>2. ¿Qué debe incluir una monografía?</p>
-      <input type="radio" name="mon2" value="correct"> Introducción, desarrollo y conclusión<br>
-      <input type="radio" name="mon2"> Solo datos sueltos<br>
-      <input type="radio" name="mon2"> Opiniones sin respaldo<br>
-      <div class="result" id="mon2res"></div>
-    </div>
-    <button class="btn" onclick="checkAnswers('mon', 2)">Revisar</button>
-  </div>
-
-  <div class="section">
-    <h2>Escritura de Párrafos</h2>
-    <div class="question">
-      <p>1. ¿Qué debe tener todo párrafo bien estructurado?</p>
-      <input type="radio" name="par1" value="correct"> Una idea principal y desarrollo<br>
-      <input type="radio" name="par1"> Solo una lista de ideas<br>
-      <input type="radio" name="par1"> Frases sin relación<br>
-      <div class="result" id="par1res"></div>
-    </div>
-    <div class="question">
-      <p>2. ¿Qué ayuda a la coherencia entre párrafos?</p>
-      <input type="radio" name="par2" value="correct"> Uso de conectores<br>
-      <input type="radio" name="par2"> Cambiar de tema<br>
-      <input type="radio" name="par2"> Frases muy cortas<br>
-      <div class="result" id="par2res"></div>
-    </div>
-    <button class="btn" onclick="checkAnswers('par', 2)">Revisar</button>
-  </div>
-
-  <script>
-    function checkAnswers(prefix, total) {
-      for (let i = 1; i <= total; i++) {
-        const radios = document.getElementsByName(prefix + i);
-        let correct = false;
-        for (let radio of radios) {
-          if (radio.checked && radio.value === "correct") {
-            correct = true;
-          }
+    
+    <script>
+        function checkAnswer(name, correct, resultId) {
+            const selected = document.querySelector(`input[name="${name}"]:checked`);
+            const result = document.getElementById(resultId);
+            
+            if (!selected) {
+                result.className = 'result incorrect';
+                result.textContent = 'Por favor selecciona una opción.';
+                result.style.display = 'block';
+                return;
+            }
+            
+            if (selected.value === correct) {
+                result.className = 'result correct';
+                result.textContent = '¡Correcto! Excelente comprensión.';
+            } else {
+                result.className = 'result incorrect';
+                if (name === 'fig1') {
+                    result.textContent = 'Incorrecto. La respuesta correcta es "Metáfora" - se establece una comparación directa identificando los ojos con luceros.';
+                } else if (name === 'thesis') {
+                    result.textContent = 'Incorrecto. La tesis es la idea principal que se defiende en todo el párrafo.';
+                }
+            }
+            result.style.display = 'block';
         }
-        document.getElementById(prefix + i + "res").textContent = correct ? "✅ Correcto" : "❌ Incorrecto";
-        document.getElementById(prefix + i + "res").style.color = correct ? "green" : "red";
-      }
-    }
-  </script>
+        
+        function evaluateCreative() {
+            const metaphor = document.getElementById('metaphor').value;
+            const personification = document.getElementById('personification').value;
+            const result = document.getElementById('creative-result');
+            
+            let feedback = '<strong>Ejemplos de referencia:</strong><br>';
+            feedback += '<strong>Metáfora sobre el tiempo:</strong> "El tiempo es un ladrón silencioso que roba nuestros momentos"<br>';
+            feedback += '<strong>Personificación de la naturaleza:</strong> "Las montañas contemplaban el valle con ojos milenarios"<br><br>';
+            
+            if (metaphor.trim() && personification.trim()) {
+                feedback += '¡Excelente! Has completado ambos ejercicios creativos.';
+                result.className = 'result correct';
+            } else {
+                feedback += 'Completa ambos ejercicios para desarrollar tu creatividad literaria.';
+                result.className = 'result incorrect';
+            }
+            
+            result.innerHTML = feedback;
+            result.style.display = 'block';
+        }
+        
+        function checkDebateOrder() {
+            const result = document.getElementById('debate-result1');
+            result.className = 'result correct';
+            result.innerHTML = '<strong>Orden correcto del debate:</strong><br>1. Apertura y presentación del tema<br>2. Exposición de argumentos<br>3. Refutación y contraargumentos<br>4. Conclusiones y cierre';
+            result.style.display = 'block';
+        }
+        
+        function evaluateArgument() {
+            const position = document.querySelector('input[name="position"]:checked');
+            const argument = document.getElementById('argument').value;
+            const result = document.getElementById('argument-result');
+            
+            if (!position) {
+                result.className = 'result incorrect';
+                result.textContent = 'Selecciona una posición antes de escribir tu argumento.';
+                result.style.display = 'block';
+                return;
+            }
+            
+            if (argument.trim().length < 50) {
+                result.className = 'result incorrect';
+                result.textContent = 'Desarrolla más tu argumento. Incluye evidencias y ejemplos específicos.';
+            } else {
+                result.className = 'result correct';
+                result.innerHTML = `<strong>Buen trabajo!</strong> Has desarrollado un argumento para la posición "${position.value === 'favor' ? 'a favor' : 'en contra'}" del uniforme escolar. Recuerda incluir datos, ejemplos y evidencias para fortalecer tu posición.`;
+            }
+            result.style.display = 'block';
+        }
+        
+        function evaluateParagraph() {
+            const paragraph = document.getElementById('argumentative-paragraph').value;
+            const result = document.getElementById('paragraph-result');
+            
+            if (paragraph.trim().length < 100) {
+                result.className = 'result incorrect';
+                result.textContent = 'Tu párrafo necesita más desarrollo. Asegúrate de incluir tesis, argumentos, evidencias y conclusión.';
+            } else {
+                result.className = 'result correct';
+                result.innerHTML = '<strong>¡Excelente!</strong> Has desarrollado un párrafo argumentativo. Revisa que incluya: tesis clara al inicio, argumentos sólidos, evidencias específicas y una conclusión que refuerce tu posición.';
+            }
+            result.style.display = 'block';
+        }
+        
+        function checkConversatorio() {
+            const checkboxes = document.querySelectorAll('input[name="conv1"]:checked');
+            const result = document.getElementById('conv-result1');
+            const correct = ['correct1', 'correct2', 'correct3'];
+            const selected = Array.from(checkboxes).map(cb => cb.value);
+            
+            const correctSelected = selected.filter(val => correct.includes(val));
+            const incorrectSelected = selected.filter(val => !correct.includes(val));
+            
+            if (correctSelected.length === 3 && incorrectSelected.length === 0) {
+                result.className = 'result correct';
+                result.textContent = '¡Perfecto! Has identificado todas las características correctas del conversatorio.';
+            } else {
+                result.className = 'result incorrect';
+                result.innerHTML = '<strong>Revisa tu selección.</strong> Las características correctas son:<br>• Intercambio informal de ideas<br>• Participación de expertos y público<br>• Moderador que guía la conversación';
+            }
+            result.style.display = 'block';
+        }
+        
+        function evaluateConversatorio() {
+            const questions = document.getElementById('questions').value;
+            const participants = document.getElementById('participants').value;
+            const result = document.getElementById('conv-result2');
+            
+            if (questions.trim().length < 50 || participants.trim().length < 30) {
+                result.className = 'result incorrect';
+                result.textContent = 'Desarrolla más tu propuesta. Las preguntas deben ser específicas y reflexivas, y debes detallar el perfil de los participantes.';
+            } else {
+                result.className = 'result correct';
+                result.innerHTML = '<strong>¡Excelente planificación!</strong> Has considerado preguntas relevantes y participantes apropiados. Un buen conversatorio requiere preparación cuidadosa del tema, preguntas que generen reflexión y participantes diversos pero conocedores del tema.';
+            }
+            result.style.display = 'block';
+        }
+    </script><br>
+    <div class="section">
+            <h2>🎭 Análisis Avanzado de Figuras Literarias</h2><br>
+            
+            <div class="exercise">
+                <h3>Ejercicio 1: Análisis Estilístico Comparativo</h3><br>
+                <div class="question">
+                    <p><strong>Analiza los siguientes fragmentos de diferentes épocas literarias e identifica las figuras literarias y su función estética:</strong></p>
+                    <br>
+                    <div class="literary-quote">
+                        <strong>Fragmento A (Barroco - Góngora):</strong><br>
+                        "Pasos de un peregrino son errante<br>
+                        cuantos me dictó versos dulce musa:<br>
+                        en soledad confusa<br>
+                        perdidos unos, otros inspirados"
+                    </div>
+                    
+                    <div class="literary-quote">
+                        <strong>Fragmento B (Vanguardia - Huidobro):</strong><br>
+                        "El molino de viento<br>
+                        Guillotina del aire<br>
+                        Corta nubes<br>
+                        Y arma los cielos"
+                    </div>
+                    
+                    <div class="analysis-grid">
+                        <div>
+                            <p><strong>¿Qué figura predomina en el Fragmento A?</strong></p>
+                            <div class="options">
+                                <label><input type="radio" name="fig_a" value="hiperbaton"> Hipérbaton (alteración del orden sintáctico)</label><br>
+                                <label><input type="radio" name="fig_a" value="metafora"> Metáfora conceptual</label><br>
+                                <label><input type="radio" name="fig_a" value="personificacion"> Personificación</label><br>
+                                <label><input type="radio" name="fig_a" value="sinestesia"> Sinestesia</label><br>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <p><strong>¿Qué técnica vanguardista usa el Fragmento B?</strong></p>
+                            <div class="options">
+                                <label><input type="radio" name="fig_b" value="metafora_pura"> Metáfora pura (sin término real)</label><br>
+                                <label><input type="radio" name="fig_b" value="imagen_multiple"> Imagen múltiple o superpuesta</label><br>
+                                <label><input type="radio" name="fig_b" value="automatismo"> Escritura automática</label><br>
+                                <label><input type="radio" name="fig_b" value="caligrama"> Caligrama</label><br>
+                            </div>
+                        </div>
+                    </div>
+              
+                    <button onclick="checkAdvancedLiterary()">Analizar respuestas</button>
+                    <div id="literary-result1" class="result"></div>
+                </div>
+            </div>
+            <br>
+            <div class="exercise">
+                
+                <h3>Ejercicio 2: Creación y Análisis de Figuras Complejas</h3><br>
+                <div class="question">
+                    <p><strong>Crea ejemplos originales de las siguientes figuras literarias complejas y explica su efecto estético:</strong></p>
+                    <br>
+                    <div class="interactive-element">
+                        <p><strong>1. Sinestesia</strong> (mezcla de sensaciones de diferentes sentidos):</p>
+                        <textarea id="sinestesia" placeholder="Ejemplo profesional: 'El sabor azul de tu mirada' - Crea tu propio ejemplo y explica qué sensaciones mezclas..."></textarea>
+                    </div>
+                    
+                    <div class="interactive-element">
+                        <p><strong>2. Oxímoron</strong> (combinación de conceptos opuestos):</p>
+                        <textarea id="oximoron" placeholder="Ejemplo: 'Silencio ensordecedor' - Crea tu oxímoron y explica la tensión que genera..."></textarea>
+                    </div>
+                    
+                    <div class="interactive-element">
+                        <p><strong>3. Metalepsis</strong> (figura que rompe niveles narrativos):</p>
+                        <textarea id="metalepsis" placeholder="Crea un ejemplo donde el narrador interactúe con los personajes de manera imposible..."></textarea>
+                    </div>
+                    
+                    <button onclick="evaluateAdvancedCreation()">Evaluar creaciones</button>
+                    <div id="creation-result" class="result"></div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!-- DEBATE AVANZADO -->
+        <div class="section">
+            <h2>🗣️ Técnicas Avanzadas de Debate</h2><br>
+            
+            <div class="exercise">
+                <h3>Ejercicio 1: Identificación de Falacias Lógicas</h3><br>
+                <div class="question">
+                    <p><strong>Analiza los siguientes argumentos e identifica las falacias lógicas presentes:</strong></p>
+                    
+                    <div class="example-text">
+                        <strong>Argumento 1:</strong><br> "No deberíamos escuchar las propuestas del candidato López sobre educación, ya que él nunca terminó la universidad y además es conocido por sus problemas familiares."
+                    </div>
+                    
+                    <div class="options">
+                        <label><input type="radio" name="falacia1" value="ad_hominem"> Ad hominem (ataque personal)</label><br>
+                        <label><input type="radio" name="falacia1" value="autoridad"> Falacia de autoridad</label><br>
+                        <label><input type="radio" name="falacia1" value="pendiente"> Pendiente resbaladiza</label><br>
+                        <label><input type="radio" name="falacia1" value="falso_dilema"> Falso dilema</label><br>
+                    </div>
+                    
+                    <div class="example-text">
+                        <strong>Argumento 2:</strong><br> "Si permitimos que los estudiantes usen teléfonos en clase, pronto querrán usar laptops, luego videojuegos, y finalmente las aulas se convertirán en centros de entretenimiento donde nadie aprende."
+                    </div>
+                    
+                    <div class="options">
+                        <label><input type="radio" name="falacia2" value="pendiente"> Pendiente resbaladiza</label><br>
+                        <label><input type="radio" name="falacia2" value="generalizacion"> Generalización apresurada</label><br>
+                        <label><input type="radio" name="falacia2" value="falsa_causa"> Falsa causa</label><br>
+                        <label><input type="radio" name="falacia2" value="apelacion_miedo"> Apelación al miedo</label><br>
+                    </div>
+                    
+                    <button onclick="checkFallacies()">Verificar análisis</button>
+                    <div id="fallacy-result" class="result"></div>
+                </div>
+            </div>
+            <br>
+            <div class="exercise">
+                
+                <h3>Ejercicio 2: Construcción de Argumentos Sólidos</h3><br>
+                <div class="question">
+                    <p><strong>Tema controvertido:</strong> "¿Debe regularse estrictamente el uso de inteligencia artificial en la educación?"</p>
+                    <div class="advanced-note">
+                        <strong>Instrucciones:</strong> Desarrolla un argumento completo que incluya: premisas sólidas, evidencia empírica, consideración de contraargumentos, y una conclusión matizada (no absoluta).
+                    </div>
+                    
+                    <div class="analysis-grid">
+                        <div>
+                            <p><strong>Tu posición (matizada):</strong></p>
+                            <textarea id="position-advanced" placeholder="Evita posiciones extremas. Ejemplo: 'La IA debe regularse selectivamente según...'"></textarea>
+                        </div>
+                        
+                        <div>
+                            <p><strong>Evidencia empírica:</strong></p>
+                            <textarea id="evidence-advanced" placeholder="Cita estudios, estadísticas, casos reales que apoyen tu argumento..."></textarea>
+                        </div>
+                    </div>
+                    
+                    <p><strong>Contraargumento y refutación:</strong></p>
+                    <textarea id="counter-argument" placeholder="Presenta el mejor argumento contrario y explica por qué tu posición sigue siendo válida..."></textarea>
+                    <br>
+                    <button onclick="evaluateAdvancedArgument()">Evaluar argumento</button>
+                    <div id="advanced-arg-result" class="result"></div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!-- PÁRRAFOS ARGUMENTATIVOS AVANZADOS -->
+        <div class="section">
+            <h2>📝 Composición Argumentativa Compleja</h2><br>
+            
+            <div class="exercise">
+             
+                <h3>Ejercicio 1: Análisis de Estrategias Persuasivas</h3><br>
+                <div class="question">
+                    <p><strong>Analiza el siguiente párrafo de un ensayo académico e identifica las estrategias retóricas empleadas:</strong></p>
+                    
+                    <div class="example-text">
+                        "El cambio climático no es meramente una crisis ambiental; es la manifestación más dramática de nuestro fracaso colectivo como especie racional. Mientras los científicos del Panel Intergubernamental sobre Cambio Climático (IPCC) nos advierten con datos irrefutables sobre el aumento de 1.1°C en la temperatura global, nosotros continuamos comportándonos como pasajeros del Titanic debatiendo sobre la disposición de las sillas mientras el barco se hunde. Esta paradoja no solo revela nuestra incapacidad para procesar información a largo plazo, sino que también expone la tensión fundamental entre el conocimiento científico y la acción política efectiva."
+                    </div>
+                    
+                    <p><strong>¿Qué estrategias retóricas identificas? (Selecciona todas las correctas)</strong></p>
+                    <div class="options">
+                        <label><input type="checkbox" name="rhetoric" value="analogia"> Analogía (comparación con el Titanic)</label><br>
+                        <label><input type="checkbox" name="rhetoric" value="autoridad"> Apelación a la autoridad (IPCC)</label><br>
+                        <label><input type="checkbox" name="rhetoric" value="pathos"> Apelación emocional (pathos)</label><br>
+                        <label><input type="checkbox" name="rhetoric" value="redefinicion"> Redefinición del problema</label><br>
+                        <label><input type="checkbox" name="rhetoric" value="paradoja"> Presentación de paradoja</label><br>
+                        <label><input type="checkbox" name="rhetoric" value="hiperbole"> Hipérbole</label><br>
+                    </div>
+                    
+                    <button onclick="checkRhetoricStrategies()">Analizar estrategias</button>
+                    <div id="rhetoric-result" class="result"></div>
+                </div>
+            </div>
+            <br>
+            <div class="exercise">
+ 
+                <h3>Ejercicio 2: Redacción de Párrafo Argumentativo Complejo</h3><br>
+                <div class="question">
+                    <p><strong>Tema:</strong> "El impacto de las redes sociales en la formación de la identidad juvenil"</p>
+                    <div class="advanced-note">
+                        <strong>Requisitos académicos:</strong> Tu párrafo debe incluir tesis sofisticada, al menos tres tipos de evidencia diferentes, manejo de matices (no afirmaciones absolutas), y conexiones interdisciplinarias.
+                    </div>
+                    
+                    <div class="analysis-grid">
+                        <div>
+                            <p><strong>Tesis principal (compleja):</strong></p>
+                            <textarea id="complex-thesis" placeholder="Evita afirmaciones simples. Incluye condiciones, matices, y múltiples dimensiones del problema..."></textarea>
+                        </div>
+                        
+                        <div>
+                            <p><strong>Tipos de evidencia a incluir:</strong></p>
+                            <div class="interactive-element">
+                                <label><input type="checkbox" name="evidence-type" value="empirica"> Evidencia empírica (estudios)</label><br>
+                                <label><input type="checkbox" name="evidence-type" value="teorica"> Respaldo teórico (conceptos)</label><br>
+                                <label><input type="checkbox" name="evidence-type" value="comparativa"> Análisis comparativo</label><br>
+                                <label><input type="checkbox" name="evidence-type" value="interdisciplinar"> Perspectiva interdisciplinaria</label><br>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p><strong>Desarrollo del párrafo argumentativo:</strong></p>
+                    <textarea id="complex-paragraph" placeholder="Desarrolla un párrafo de al menos 200 palabras que integre todos los elementos solicitados..."></textarea>
+                    <br>
+                    <button onclick="evaluateComplexParagraph()">Evaluar párrafo académico</button>
+                    <div id="complex-par-result" class="result"></div>
+                </div>
+            </div>
+        </div>
+        
+        <br><!-- CONVERSATORIO AVANZADO -->
+        <div class="section">
+            <h2>💬 Moderación y Análisis de Conversatorios</h2><br>
+            
+            <div class="exercise">
 
-  <style>
-    body { 
-      font-family: Arial, sans-serif; 
-      margin: 0; 
-      background-color: #f4f4f9; 
-      color: #333; 
-      display: flex; 
-      justify-content: center; 
-      align-items: center; 
-      flex-direction: column;
-      padding: 20px;
-    }
-    h2 { color: #2c3e50; text-align: center; }
-    .section { 
-      width: 100%;
-      max-width: 700px;
-      margin-bottom: 40px; 
-      padding: 20px; 
-      background: white; 
-      border-radius: 10px; 
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
-    }
-    .question { margin-bottom: 15px; }
-    .btn { 
-      margin-top: 10px; 
-      padding: 8px 12px; 
-      border: none; 
-      background: #3498db; 
-      color: white; 
-      border-radius: 5px; 
-      cursor: pointer; 
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .result { font-weight: bold; margin-top: 5px; }
-  </style>
+                <h3>Ejercicio 1: Técnicas de Moderación Avanzada</h3>
+                <div class="question">
+                    <p><strong>Situación:</strong> Estás moderando un conversatorio sobre "Ética en la inteligencia artificial" cuando surge una discusión acalorada entre dos expertos con posiciones opuestas.</p>
+                    
+                    <div class="example-text">
+                        <strong>Experto A:</strong> "La IA debe ser completamente transparente. Cualquier algoritmo que tome decisiones sobre vidas humanas debe ser explicable al 100%."<br><br>
+                        <strong>Experto B:</strong> "Esa posición es ingenua. Los algoritmos de deep learning más efectivos son inherentemente opacos. Exigir transparencia total es como pedir que expliquemos cómo funciona exactamente el cerebro humano."
+                    </div>
+                    
+                    <p><strong>¿Cuál sería tu mejor estrategia de moderación?</strong></p>
+                    <div class="options">
+                        <label><input type="radio" name="moderation" value="correcta"> Reformular ambas posiciones neutralmente y buscar puntos de convergencia</label><br>
+                        <label><input type="radio" name="moderation" value="incorrecta1"> Tomar partido por la posición más convincente</label><br>
+                        <label><input type="radio" name="moderation" value="incorrecta2"> Cambiar de tema para evitar el conflicto</label><br>
+                        <label><input type="radio" name="moderation" value="incorrecta3"> Permitir que continúe el debate sin intervenir</label>
+                    </div><br>
+                    
+                    <p><strong>Redacta tu intervención como moderador:</strong></p>
+                    <textarea id="moderation-response" placeholder="Escribe cómo intervendrías para enriquecer el diálogo sin tomar partido..."></textarea>
+                    <br>
+                    <button onclick="evaluateModeration()">Evaluar moderación</button>
+                    <div id="moderation-result" class="result"></div>
+                </div>
+            </div>
+            <br>
+            <div class="exercise">
 
+                <h3>Ejercicio 2: Diseño de Conversatorio Interdisciplinario</h3><br>
+                <div class="question">
+                    <p><strong>Desafío:</strong> Diseña un conversatorio sobre "El futuro del trabajo en la era digital" que integre múltiples perspectivas disciplinarias.</p>
+                    
+                    <div class="analysis-grid">
+                        <div>
+                            <p><strong>Perfiles de participantes (4-5):</strong></p>
+                            <textarea id="interdisciplinary-participants" placeholder="Especifica disciplinas, experiencia, y por qué cada perspectiva es esencial..."></textarea>
+                        </div>
+                        
+                        <div>
+                            <p><strong>Estructura temporal (90 min):</strong></p>
+                            <textarea id="time-structure" placeholder="Detalla fases, duración de cada segmento, y objetivos específicos..."></textarea>
+                        </div>
+                    </div>
+                    
+                    <p><strong>Preguntas provocadoras (que generen debate genuino):</strong></p>
+                    <textarea id="provocative-questions" placeholder="Formula 3-4 preguntas que obliguen a los participantes a confrontar sus presupuestos..."></textarea>
+                    
+                    <p><strong>Estrategia para involucrar a la audiencia:</strong></p>
+                    <textarea id="audience-strategy" placeholder="¿Cómo lograrás que el público participe de manera significativa, no solo superficial?"></textarea>
+                    <br>
+                    <button onclick="evaluateConversatorioDesign()">Evaluar diseño</button>
+                    <div id="conv-design-result" class="result"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function checkAdvancedLiterary() {
+            const figA = document.querySelector('input[name="fig_a"]:checked');
+            const figB = document.querySelector('input[name="fig_b"]:checked');
+            const result = document.getElementById('literary-result1');
+            
+            if (!figA || !figB) {
+                result.className = 'result incorrect';
+                result.textContent = 'Completa ambos análisis para obtener retroalimentación.';
+                result.style.display = 'block';
+                return;
+            }
+            
+            let feedback = '<strong>Análisis de fragmentos:</strong><br>';
+            let score = 0;
+            
+            if (figA.value === 'hiperbaton') {
+                feedback += '✓ <strong>Fragmento A:</strong> Correcto. Góngora usa hipérbaton característico del Barroco para crear complejidad sintáctica.<br>';
+                score++;
+            } else {
+                feedback += '✗ <strong>Fragmento A:</strong> La figura predominante es el hipérbaton. Góngora altera el orden sintáctico normal.<br>';
+            }
+            
+            if (figB.value === 'metafora_pura') {
+                feedback += '✓ <strong>Fragmento B:</strong> Correcto. Huidobro emplea metáforas puras vanguardistas donde el molino se convierte en guillotina sin término de comparación explícito.<br>';
+                score++;
+            } else {
+                feedback += '✗ <strong>Fragmento B:</strong> Huidobro usa metáforas puras, técnica vanguardista que elimina el término real de la comparación.<br>';
+            }
+            
+            if (score === 2) {
+                result.className = 'result correct';
+                feedback += '<br><strong>Excelente análisis estilístico!</strong> Demuestras comprensión profunda de las técnicas de diferentes épocas literarias.';
+            } else if (score === 1) {
+                result.className = 'result partial';
+                feedback += '<br><strong>Análisis parcial.</strong> Continúa profundizando en las características estilísticas de cada período.';
+            } else {
+                result.className = 'result incorrect';
+                feedback += '<br><strong>Revisa los conceptos.</strong> Cada época literaria tiene técnicas distintivas que debes dominar.';
+            }
+            
+            result.innerHTML = feedback;
+            result.style.display = 'block';
+        }
+        
+        function evaluateAdvancedCreation() {
+            const sinestesia = document.getElementById('sinestesia').value;
+            const oximoron = document.getElementById('oximoron').value;
+            const metalepsis = document.getElementById('metalepsis').value;
+            const result = document.getElementById('creation-result');
+            
+            let feedback = '<strong>Evaluación de creaciones literarias:</strong><br>';
+            let completed = 0;
+            
+            if (sinestesia.trim().length > 30) {
+                feedback += '✓ <strong>Sinestesia:</strong> Has intentado mezclar sensaciones. Ejemplo modelo: "El rugido dorado del amanecer"<br>';
+                completed++;
+            } else {
+                feedback += '• <strong>Sinestesia:</strong> Desarrolla más tu ejemplo. Debe combinar dos sentidos diferentes.<br>';
+            }
+            
+            if (oximoron.trim().length > 20) {
+                feedback += '✓ <strong>Oxímoron:</strong> Has trabajado con conceptos contradictorios. Ejemplo: "Claridad oscura de la verdad"<br>';
+                completed++;
+            } else {
+                feedback += '• <strong>Oxímoron:</strong> Crea una expresión que combine términos opuestos de manera poética.<br>';
+            }
+            
+            if (metalepsis.trim().length > 40) {
+                feedback += '✓ <strong>Metalepsis:</strong> Has explorado la ruptura de niveles narrativos. Ejemplo: "Como autor, debo confesar que mi personaje me está desobedeciendo"<br>';
+                completed++;
+            } else {
+                feedback += '• <strong>Metalepsis:</strong> Debe mostrar interacción imposible entre niveles de realidad narrativa.<br>';
+            }
+            
+            if (completed === 3) {
+                result.className = 'result correct';
+                feedback += '<br><strong>¡Creatividad literaria excepcional!</strong> Has dominado figuras complejas que requieren sofisticación técnica.';
+            } else if (completed >= 2) {
+                result.className = 'result partial';
+                feedback += '<br><strong>Buen progreso creativo.</strong> Completa todas las figuras para perfeccionar tu técnica literaria.';
+            } else {
+                result.className = 'result incorrect';
+                feedback += '<br><strong>Desarrolla más tus creaciones.</strong> Las figuras avanzadas requieren mayor elaboración conceptual.';
+            }
+            
+            result.innerHTML = feedback;
+            result.style.display = 'block';
+        }
+        
+        function checkFallacies() {
+            const falacia1 = document.querySelector('input[name="falacia1"]:checked');
+            const falacia2 = document.querySelector('input[name="falacia2"]:checked');
+            const result = document.getElementById('fallacy-result');
+            
+            if (!falacia1 || !falacia2) {
+                result.className = 'result incorrect';
+                result.textContent = 'Analiza ambos argumentos para identificar las falacias.';
+                result.style.display = 'block';
+                return;
+            }
+            
+            let feedback = '<strong>Análisis de falacias lógicas:</strong><br>';
+            let score = 0;
+            
+            if (falacia1.value === 'ad_hominem') {
+                feedback += '✓ <strong>Argumento 1:</strong> Correcto. Es un ataque ad hominem - critica a la persona, no sus ideas.<br>';
+                score++;
+            } else {
+                feedback += '✗ <strong>Argumento 1:</strong> Es ad hominem. Ataca al candidato personalmente en lugar de evaluar sus propuestas.<br>';
+            }
+            
+            if (falacia2.value === 'pendiente') {
+                feedback += '✓ <strong>Argumento 2:</strong> Correcto. Pendiente resbaladiza - asume consecuencias extremas sin justificación.<br>';
+                score++;
+            } else {
+                feedback += '✗ <strong>Argumento 2:</strong> Es pendiente resbaladiza. Asume una cadena de consecuencias sin evidencia.<br>';
+            }
+            
+            if (score === 2) {
+                result.className = 'result correct';
+                feedback += '<br><strong>¡Excelente análisis crítico!</strong> Puedes identificar falacias que debilitan argumentos aparentemente sólidos.';
+            } else {
+                result.className = 'result incorrect';
+                feedback += '<br><strong>Practica más identificación de falacias.</strong> Son fundamentales para evaluar argumentos críticamente.';
+            }
+            
+            result.innerHTML = feedback;
+            result.style.display = 'block';
+        }
+        
+        function evaluateAdvancedArgument() {
+            const position = document.getElementById('position-advanced').value;
+            const evidence = document.getElementById('evidence-advanced').value;
+            const counter = document.getElementById('counter-argument').value;
+            const result = document.getElementById('advanced-arg-result');
+            
+            let feedback = '<strong>Evaluación de argumento avanzado:</strong><br>';
+            let criteria = 0;
+            
+            if (position.trim().length > 50) {
+                if (position.includes('debe') && !position.includes('nunca') && !position.includes('siempre')) {
+                    feedback += '✓ <strong>Posición matizada:</strong> Evitas absolutismos, bien estructurada.<br>';
+                    criteria++;
+                } else {
+                    feedback += '• <strong>Posición:</strong> Intenta ser más matizada, evita términos absolutos.<br>';
+                }
+            } else {
+                feedback += '• <strong>Posición:</strong> Desarrolla más tu planteamiento inicial.<br>';
+            }
+            
+            if (evidence.trim().length > 60) {
+                feedback += '✓ <strong>Evidencia:</strong> Has incorporado respaldo empírico a tu argumento.<br>';
+                criteria++;
+            } else {
+                feedback += '• <strong>Evidencia:</strong> Necesitas más respaldo empírico específico.<br>';
+            }
+            
+            if (counter.trim().length > 70) {
+                feedback += '✓ <strong>Contraargumento:</strong> Consideras perspectivas opuestas y las refutas.<br>';
+                criteria++;
+            } else {
+                feedback += '• <strong>Contraargumento:</strong> Desarrolla más la consideración de objeciones.<br>';
+            }
+            
+            if (criteria === 3) {
+                result.className = 'result correct';
+                feedback += '<br><strong>¡Argumentación sofisticada!</strong> Tu argumento muestra pensamiento crítico avanzado y consideración de múltiples perspectivas.';
+            } else if (criteria >= 2) {
+                result.className = 'result partial';
+                feedback += '<br><strong>Buen desarrollo argumentativo.</strong> Perfecciona los elementos faltantes para mayor rigor.';
+            } else {
+                result.className = 'result incorrect';
+                feedback += '<br><strong>Fortalece tu argumentación.</strong> Los argumentos académicos requieren mayor desarrollo y matización.';
+            }
+            
+            result.innerHTML = feedback;
+            result.style.display = 'block';
+        }
+        
+        function checkRhetoricStrategies() {
+            const selected = document.querySelectorAll('input[name="rhetoric"]:checked');
+            const result = document.getElementById('rhetoric-result');
+            const correct = ['analogia', 'autoridad', 'pathos', 'redefinicion', 'paradoja'];
+            const selectedValues = Array.from(selected).map(cb => cb.value);
+            
+            let feedback = '<strong>Análisis de estrategias retóricas:</strong><br>';
+            
+            const correctSelected = selectedValues.filter(val => correct.includes(val));
+            const incorrectSelected = selectedValues.filter(val => !correct.includes(val));
+            
+            feedback += '✓ <strong>Estrategias identificadas correctamente:</strong><br>';
+            if (correctSelected.includes('analogia')) feedback += '• Analogía con el Titanic para crear impacto emocional<br>';
+            if (correctSelected.includes('autoridad')) feedback += '• Apelación a la autoridad del IPCC para credibilidad<br>';
+            if (correctSelected.includes('pathos')) feedback += '• Apelación emocional con "fracaso colectivo"<br>';
+            if (correctSelected.includes('redefinicion')) feedback += '• Redefinición: de crisis ambiental a fracaso humano<br>';
+            if (correctSelected.includes('paradoja')) feedback += '• Paradoja entre conocimiento y acción<br>';
+            
+            if (incorrectSelected.includes('hiperbole')) {
+                feedback += '<br>✗ <strong>Hipérbole:</strong> Aunque dramático, el texto no exagera desproporcionadamente.<br>';
+            }
+            
+            if (correctSelected.length === 5 && incorrectSelected.length === 0) {
+                result.className = 'result correct';
+                feedback += '<br><strong>¡Análisis retórico excepcional!</strong> Has identificado todas las estrategias persuasivas empleadas.';
+            } else if (correctSelected.length >= 3) {
+                result.className = 'result partial';
+                feedback += '<br><strong>Buen análisis retórico.</strong> Continúa perfeccionando tu capacidad de identificar estrategias persuasivas.';
+            } else {
+                result.className = 'result incorrect';
+                feedback += '<br><strong>Desarrolla más tu análisis retórico.</strong> Las estrategias persuasivas son fundamentales en textos argumentativos.';
+            }
+            
+            result.innerHTML = feedback;
+            result.style.display = 'block';
+        }
+        
+        function evaluateComplexParagraph() {
+            const thesis = document.getElementById('complex-thesis').value;
+            const paragraph = document.getElementById('complex-paragraph').value;
+            const evidenceTypes = document.querySelectorAll('input[name="evidence-type"]:checked');
+            const result = document.getElementById('complex-par-result');
+            
+            let feedback = '<strong>Evaluación de párrafo académico:</strong><br>';
+            let criteria = 0;
+            
+            if (thesis.trim().length > 80) {
+                if (thesis.includes('sin embargo') || thesis.includes('aunque') || thesis.includes('mientras que') || thesis.includes('por un lado')) {
+                    feedback += '✓ <strong>Tesis compleja:</strong> Incorpora matices y múltiples dimensiones.<br>';
+                    criteria++;
+                } else {
+                    feedback += '• <strong>Tesis:</strong> Añade más matización y complejidad conceptual.<br>';
+                }
+            } else {
+                feedback += '• <strong>Tesis:</strong> Desarrolla una tesis más sofisticada y matizada.<br>';
+            }
+            
+            if (evidenceTypes.length >= 3) {
+                feedback += '✓ <strong>Diversidad de evidencia:</strong> Has considerado múltiples tipos de respaldo.<br>';
+                criteria++;
+            } else {
+                feedback += '• <strong>Evidencia:</strong> Incorpora más variedad de tipos de evidencia.<br>';
+            }
+            
+            if (paragraph.trim().length > 200) {
+                feedback += '✓ <strong>Desarrollo extenso:</strong> Has elaborado un párrafo de extensión académica apropiada.<br>';
+                criteria++;
+            } else {
+                feedback += '• <strong>Desarrollo:</strong> Extiende tu párrafo para cumplir estándares académicos.<br>';
+            }
+            
+            if (criteria === 3) {
+                result.className = 'result correct';
+                feedback += '<br><strong>¡Escritura académica de alto nivel!</strong> Tu párrafo muestra sofisticación conceptual y rigor argumentativo.';
+            } else if (criteria >= 2) {
+                result.className = 'result partial';
+                feedback += '<br><strong>Buen desarrollo académico.</strong> Perfecciona los elementos faltantes para mayor rigor.';
+            } else {
+                result.className = 'result incorrect';
+                feedback += '<br><strong>Desarrolla más tu escritura académica.</strong> Los párrafos complejos requieren mayor elaboración y diversidad de evidencia.';
+            }
+            
+            result.innerHTML = feedback;
+            result.style.display = 'block';
+        }
+        
+        function evaluateModeration() {
+            const strategy = document.querySelector('input[name="moderation"]:checked');
+            const response = document.getElementById('moderation-response').value;
+            const result = document.getElementById('moderation-result');
+            
+            if (!strategy) {
+                result.className = 'result incorrect';
+                result.textContent = 'Selecciona una estrategia de moderación antes de continuar.';
+                result.style.display = 'block';
+                return;
+            }
+            
+            let feedback = '<strong>Evaluación de moderación:</strong><br>';
+            
+            if (strategy.value === 'correcta') {
+                feedback += '✓ <strong>Estrategia excelente:</strong> Reformular y buscar convergencias es la técnica profesional ideal.<br>';
+                
+                if (response.trim().length > 100) {
+                    if (response.toLowerCase().includes('ambos') || response.toLowerCase().includes('tanto')) {
+                        feedback += '✓ <strong>Intervención:</strong> Has demostrado neutralidad y síntesis efectiva.<br>';
+                        result.className = 'result correct';
+                        feedback += '<br><strong>¡Moderación experta!</strong> Muestras habilidades avanzadas para facilitar diálogo constructivo.';
+                    } else {
+                        feedback += '• <strong>Intervención:</strong> Intenta ser más inclusivo con ambas perspectivas.<br>';
+                        result.className = 'result partial';
+                        feedback += '<br><strong>Buena estrategia, mejora la implementación.</strong>';
+                    }
+                } else {
+                    feedback += '• <strong>Intervención:</strong> Desarrolla más tu respuesta como moderador.<br>';
+                    result.className = 'result partial';
+                    feedback += '<br><strong>Estrategia correcta, pero desarrolla más la intervención.</strong>';
+                }
+            } else {
+                feedback += '✗ <strong>Estrategia incorrecta:</strong> ';
+                if (strategy.value === 'incorrecta1') {
+                    feedback += 'Un moderador nunca debe tomar partido.<br>';
+                } else if (strategy.value === 'incorrecta2') {
+                    feedback += 'Evitar el conflicto desperdicia oportunidades de aprendizaje.<br>';
+                } else {
+                    feedback += 'Sin intervención, el debate puede volverse improductivo.<br>';
+                }
+                result.className = 'result incorrect';
+                feedback += '<br><strong>Revisa técnicas de moderación profesional.</strong> La neutralidad activa es clave.';
+            }
+            
+            result.innerHTML = feedback;
+            result.style.display = 'block';
+        }
+        
+        function evaluateConversatorioDesign() {
+            const participants = document.getElementById('interdisciplinary-participants').value;
+            const timeStructure = document.getElementById('time-structure').value;
+            const questions = document.getElementById('provocative-questions').value;
+            const audienceStrategy = document.getElementById('audience-strategy').value;
+            const result = document.getElementById('conv-design-result');
+            
+            let feedback = '<strong>Evaluación de diseño de conversatorio:</strong><br>';
+            let criteria = 0;
+            
+            if (participants.trim().length > 100) {
+                if (participants.toLowerCase().includes('sociólog') || participants.toLowerCase().includes('psicólog') || participants.toLowerCase().includes('economista') || participants.toLowerCase().includes('tecnólog')) {
+                    feedback += '✓ <strong>Interdisciplinariedad:</strong> Has considerado múltiples perspectivas disciplinarias.<br>';
+                    criteria++;
+                } else {
+                    feedback += '• <strong>Participantes:</strong> Incluye más diversidad disciplinaria específica.<br>';
+                }
+            } else {
+                feedback += '• <strong>Participantes:</strong> Desarrolla más los perfiles interdisciplinarios.<br>';
+            }
+            
+            if (timeStructure.trim().length > 80) {
+                feedback += '✓ <strong>Estructura temporal:</strong> Has planificado la distribución del tiempo.<br>';
+                criteria++;
+            } else {
+                feedback += '• <strong>Estructura:</strong> Detalla más la organización temporal del evento.<br>';
+            }
+            
+            if (questions.trim().length > 120) {
+                if (questions.includes('?') && questions.split('?').length > 3) {
+                    feedback += '✓ <strong>Preguntas provocadoras:</strong> Has formulado preguntas que generarán debate genuino.<br>';
+                    criteria++;
+                } else {
+                    feedback += '• <strong>Preguntas:</strong> Formula más preguntas específicas y desafiantes.<br>';
+                }
+            } else {
+                feedback += '• <strong>Preguntas:</strong> Desarrolla preguntas más provocadoras y específicas.<br>';
+            }
+            
+            if (audienceStrategy.trim().length > 60) {
+                feedback += '✓ <strong>Estrategia de audiencia:</strong> Has considerado la participación activa del público.<br>';
+                criteria++;
+            } else {
+                feedback += '• <strong>Audiencia:</strong> Desarrolla más las estrategias de participación.<br>';
+            }
+            
+            if (criteria === 4) {
+                result.className = 'result correct';
+                feedback += '<br><strong>¡Diseño excepcional de conversatorio!</strong> Has creado un evento interdisciplinario sofisticado y bien estructurado.';
+            } else if (criteria >= 3) {
+                result.className = 'result partial';
+                feedback += '<br><strong>Buen diseño base.</strong> Perfecciona los elementos faltantes para mayor impacto.';
+            } else {
+                result.className = 'result incorrect';
+                feedback += '<br><strong>Desarrolla más tu diseño.</strong> Los conversatorios interdisciplinarios requieren planificación detallada y consideración de múltiples factores.';
+            }
+            
+            result.innerHTML = feedback;
+            result.style.display = 'block';
+        }
+    </script>
 
+    <!-- ENSAYO ARGUMENTATIVO -->
+        <div class="tema">
+            <h2>Ensayo Argumentativo</h2>
+            
+            <div class="ejercicio">
+                <h3>Ejercicio 1: Estructura de la Argumentación</h3>
+                <p><strong>Tema:</strong> "Las redes sociales en los adolescentes: ¿beneficio o perjuicio?"</p>
+                <p>Escribe una tesis clara y dos argumentos principales (uno a favor y uno en contra). Cada argumento debe incluir evidencia específica.</p>
+                
+                <div class="lista-criterios">
+                    <strong>Criterios a evaluar:</strong>
+                    <ul>
+                        <li>Tesis clara y específica</li>
+                        <li>Argumentos bien estructurados</li>
+                        <li>Uso de evidencia creíble</li>
+                        <li>Contraargumento considerado</li>
+                    </ul>
+                </div>
+                
+                <textarea id="ensayo1" placeholder="Escribe tu ensayo argumentativo aquí..." oninput="contarPalabras('ensayo1')"></textarea>
+                <div class="contador" id="contador-ensayo1">0 palabras</div>
+                <button class="btn" onclick="evaluarEnsayo(1)">Evaluar Estructura</button>
+                <div class="retroalimentacion" id="retro-ensayo1"></div>
+            </div>
 
+            <div class="ejercicio">
+                <h3>Ejercicio 2: Refutación y Contraargumentos</h3>
+                <p><strong>Escenario:</strong> Alguien argumenta que "Los videojuegos causan violencia en los jóvenes"</p>
+                <p>Escribe una refutación sólida usando evidencia científica, estadísticas o estudios. Presenta al menos dos contraargumentos convincentes.</p>
+                
+                <textarea id="ensayo2" placeholder="Desarrolla tu refutación aquí..." oninput="contarPalabras('ensayo2')"></textarea>
+                <div class="contador" id="contador-ensayo2">0 palabras</div>
+                <button class="btn" onclick="evaluarRefutacion()">Evaluar Refutación</button>
+                <div class="retroalimentacion" id="retro-ensayo2"></div>
+            </div>
+        </div>
 
+        <!-- TEXTO EXPOSITIVO -->
+        <div class="tema">
+            <h2>Texto Expositivo</h2>
+            
+            <div class="ejercicio">
+                <h3>Ejercicio 1: Explicación de Proceso</h3>
+                <p><strong>Tema:</strong> "Cómo funciona la fotosíntesis en las plantas"</p>
+                <p>Explica este proceso de manera clara y organizada. Usa conectores temporales y causales. Incluye al menos 3 etapas del proceso.</p>
+                
+                <div class="lista-criterios">
+                    <strong>Elementos clave:</strong>
+                    <ul>
+                        <li>Secuencia lógica y clara</li>
+                        <li>Uso de conectores apropiados</li>
+                        <li>Vocabulario técnico explicado</li>
+                        <li>Ejemplos o analogías</li>
+                    </ul>
+                </div>
+                
+                <textarea id="expositivo1" placeholder="Explica el proceso de fotosíntesis..." oninput="contarPalabras('expositivo1')"></textarea>
+                <div class="contador" id="contador-expositivo1">0 palabras</div>
+                <button class="btn" onclick="evaluarExpositivo(1)">Evaluar Claridad</button>
+                <div class="retroalimentacion" id="retro-expositivo1"></div>
+            </div>
 
+            <div class="ejercicio">
+                <h3>Ejercicio 2: Comparación y Contraste</h3>
+                <p><strong>Tema:</strong> "Educación presencial vs. Educación virtual"</p>
+                <p>Compara ambas modalidades educativas. Organiza tu texto en bloques temáticos (ventajas, desventajas, efectividad, costos).</p>
+                
+                <textarea id="expositivo2" placeholder="Desarrolla tu comparación aquí..." oninput="contarPalabras('expositivo2')"></textarea>
+                <div class="contador" id="contador-expositivo2">0 palabras</div>
+                <button class="btn" onclick="evaluarComparacion()">Evaluar Organización</button>
+                <div class="retroalimentacion" id="retro-expositivo2"></div>
+            </div>
+        </div>
 
+        <!-- MONOGRAFÍA -->
+        <div class="tema">
+            <h2>La Monografía</h2>
+            
+            <div class="ejercicio">
+                <h3>Ejercicio 1: Introducción y Planteamiento del Problema</h3>
+                <p><strong>Tema propuesto:</strong> "El impacto del cambio climático en la biodiversidad marina"</p>
+                <p>Redacta una introducción que incluya: contextualización, planteamiento del problema, objetivos y justificación del estudio.</p>
+                
+                <div class="lista-criterios">
+                    <strong>Componentes requeridos:</strong>
+                    <ul>
+                        <li>Contexto general del tema</li>
+                        <li>Problema específico identificado</li>
+                        <li>Objetivos claros</li>
+                        <li>Justificación de la importancia</li>
+                    </ul>
+                </div>
+                
+                <textarea id="monografia1" placeholder="Escribe la introducción de tu monografía..." oninput="contarPalabras('monografia1')"></textarea>
+                <div class="contador" id="contador-monografia1">0 palabras</div>
+                <button class="btn" onclick="evaluarMonografia(1)">Evaluar Introducción</button>
+                <div class="retroalimentacion" id="retro-monografia1"></div>
+            </div>
+
+            <div class="ejercicio">
+                <h3>Ejercicio 2: Marco Teórico y Metodología</h3>
+                <p><strong>Continuando el tema anterior:</strong> Desarrolla un marco teórico breve y propone una metodología de investigación.</p>
+                <p>Incluye: antecedentes, bases teóricas principales y descripción metodológica (tipo de estudio, fuentes, procedimiento).</p>
+                
+                <textarea id="monografia2" placeholder="Desarrolla el marco teórico y metodología..." oninput="contarPalabras('monografia2')"></textarea>
+                <div class="contador" id="contador-monografia2">0 palabras</div>
+                <button class="btn" onclick="evaluarMetodologia()">Evaluar Marco Teórico</button>
+                <div class="retroalimentacion" id="retro-monografia2"></div>
+            </div>
+        </div>
+
+        <!-- ESCRITURA DE PÁRRAFOS -->
+        <div class="tema">
+            <h2>Escritura de Párrafos</h2>
+            
+            <div class="ejercicio">
+                <h3>Ejercicio 1: Párrafo de Desarrollo con Estructura PIE</h3>
+                <p><strong>Tema:</strong> "La importancia del ejercicio físico en la salud mental"</p>
+                <p>Construye un párrafo usando la estructura PIE (Punto principal - Información/evidencia - Explicación/elaboración).</p>
+                
+                <div class="lista-criterios">
+                    <strong>Estructura PIE:</strong>
+                    <ul>
+                        <li><strong>P</strong>unto: Oración temática clara</li>
+                        <li><strong>I</strong>nformación: Datos, ejemplos, citas</li>
+                        <li><strong>E</strong>xplicación: Análisis y conexión</li>
+                    </ul>
+                </div>
+                
+                <textarea id="parrafo1" placeholder="Construye tu párrafo con estructura PIE..." oninput="contarPalabras('parrafo1')"></textarea>
+                <div class="contador" id="contador-parrafo1">0 palabras</div>
+                <button class="btn" onclick="evaluarParrafo(1)">Evaluar Estructura PIE</button>
+                <div class="retroalimentacion" id="retro-parrafo1"></div>
+            </div>
+
+            <div class="ejercicio">
+                <h3>Ejercicio 2: Párrafo de Transición y Cohesión</h3>
+                <p><strong>Situación:</strong> Necesitas conectar un párrafo sobre "beneficios económicos del turismo" con otro sobre "impactos ambientales negativos del turismo".</p>
+                <p>Escribe un párrafo de transición que conecte ambas ideas de manera fluida y lógica.</p>
+                
+                <textarea id="parrafo2" placeholder="Escribe tu párrafo de transición..." oninput="contarPalabras('parrafo2')"></textarea>
+                <div class="contador" id="contador-parrafo2">0 palabras</div>
+                <button class="btn" onclick="evaluarTransicion()">Evaluar Cohesión</button>
+                <div class="retroalimentacion" id="retro-parrafo2"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function contarPalabras(id) {
+            const texto = document.getElementById(id).value;
+            const palabras = texto.trim() === '' ? 0 : texto.trim().split(/\s+/).length;
+            document.getElementById('contador-' + id).textContent = palabras + ' palabras';
+        }
+
+        function mostrarRetroalimentacion(id, mensaje, tipo = 'positiva') {
+            const elemento = document.getElementById(id);
+            elemento.innerHTML = mensaje;
+            elemento.className = `retroalimentacion mostrar ${tipo}`;
+        }
+
+        function evaluarEnsayo(num) {
+            const texto = document.getElementById('ensayo' + num).value;
+            const palabras = texto.trim().split(/\s+/).length;
+            
+            if (palabras < 50) {
+                mostrarRetroalimentacion('retro-ensayo' + num, 
+                    '📝 Tu ensayo necesita más desarrollo. Un ensayo argumentativo sólido requiere al menos 150-200 palabras para desarrollar adecuadamente la tesis y los argumentos.', 
+                    'sugerencia');
+                return;
+            }
+
+            let puntuacion = 0;
+            let feedback = '<strong>Evaluación:</strong><br>';
+
+            // Evaluar tesis
+            if (texto.toLowerCase().includes('tesis') || texto.toLowerCase().includes('considero') || texto.toLowerCase().includes('sostengo')) {
+                puntuacion += 25;
+                feedback += '✅ Tesis identificable<br>';
+            } else {
+                feedback += '❌ La tesis no está claramente establecida<br>';
+            }
+
+            // Evaluar argumentos
+            if (texto.toLowerCase().includes('primer') || texto.toLowerCase().includes('segundo') || texto.toLowerCase().includes('además')) {
+                puntuacion += 25;
+                feedback += '✅ Estructura argumentativa presente<br>';
+            } else {
+                feedback += '❌ Los argumentos necesitan mejor organización<br>';
+            }
+
+            // Evaluar evidencia
+            if (texto.toLowerCase().includes('estudio') || texto.toLowerCase().includes('investigación') || texto.toLowerCase().includes('según')) {
+                puntuacion += 25;
+                feedback += '✅ Uso de evidencia detectado<br>';
+            } else {
+                feedback += '❌ Incluye más evidencia específica<br>';
+            }
+
+            // Evaluar contraargumento
+            if (texto.toLowerCase().includes('sin embargo') || texto.toLowerCase().includes('aunque') || texto.toLowerCase().includes('por otro lado')) {
+                puntuacion += 25;
+                feedback += '✅ Consideración de contraargumentos<br>';
+            } else {
+                feedback += '❌ Considera incluir contraargumentos<br>';
+            }
+
+            feedback += `<br><strong>Puntuación: ${puntuacion}/100</strong>`;
+            
+            const tipo = puntuacion >= 75 ? 'positiva' : 'sugerencia';
+            mostrarRetroalimentacion('retro-ensayo' + num, feedback, tipo);
+        }
+
+        function evaluarRefutacion() {
+            const texto = document.getElementById('ensayo2').value;
+            
+            if (texto.trim().length < 100) {
+                mostrarRetroalimentacion('retro-ensayo2', 
+                    '📝 Una refutación efectiva requiere más desarrollo. Incluye evidencia específica y múltiples contraargumentos.',
+                    'sugerencia');
+                return;
+            }
+
+            let feedback = '<strong>Análisis de Refutación:</strong><br>';
+            let fortalezas = [];
+            let sugerencias = [];
+
+            if (texto.toLowerCase().includes('estudio') || texto.toLowerCase().includes('investigación')) {
+                fortalezas.push('Uso de evidencia científica');
+            } else {
+                sugerencias.push('Incluir más evidencia científica');
+            }
+
+            if (texto.toLowerCase().includes('sin embargo') || texto.toLowerCase().includes('no obstante')) {
+                fortalezas.push('Buenos conectores de contraste');
+            }
+
+            if (texto.toLowerCase().includes('correlación') || texto.toLowerCase().includes('causalidad')) {
+                fortalezas.push('Distinción entre correlación y causalidad');
+            }
+
+            feedback += '<strong>Fortalezas:</strong> ' + (fortalezas.length > 0 ? fortalezas.join(', ') : 'Necesita más desarrollo') + '<br>';
+            feedback += '<strong>Sugerencias:</strong> ' + (sugerencias.length > 0 ? sugerencias.join(', ') : 'Buen trabajo general');
+
+            mostrarRetroalimentacion('retro-ensayo2', feedback, fortalezas.length >= 2 ? 'positiva' : 'sugerencia');
+        }
+
+        function evaluarExpositivo(num) {
+            const texto = document.getElementById('expositivo' + num).value;
+            
+            if (texto.trim().length < 100) {
+                mostrarRetroalimentacion('retro-expositivo' + num,
+                    '📝 Un texto expositivo necesita más desarrollo para explicar el proceso claramente.',
+                    'sugerencia');
+                return;
+            }
+
+            let puntuacion = 0;
+            let feedback = '<strong>Evaluación Expositiva:</strong><br>';
+
+            // Evaluar secuencia
+            const conectores = ['primero', 'segundo', 'luego', 'después', 'finalmente', 'por tanto', 'debido a'];
+            const tieneConectores = conectores.some(conector => texto.toLowerCase().includes(conector));
+            
+            if (tieneConectores) {
+                puntuacion += 30;
+                feedback += '✅ Uso de conectores secuenciales<br>';
+            } else {
+                feedback += '❌ Incluye más conectores para mejorar la secuencia<br>';
+            }
+
+            // Evaluar vocabulario técnico
+            if (texto.toLowerCase().includes('clorofila') || texto.toLowerCase().includes('dióxido')) {
+                puntuacion += 25;
+                feedback += '✅ Vocabulario técnico apropiado<br>';
+            }
+
+            // Evaluar claridad
+            const oraciones = texto.split('.').length;
+            const palabras = texto.split(' ').length;
+            const promedioPalabras = palabras / oraciones;
+            
+            if (promedioPalabras < 20) {
+                puntuacion += 25;
+                feedback += '✅ Oraciones de longitud apropiada<br>';
+            } else {
+                feedback += '❌ Algunas oraciones son muy largas<br>';
+            }
+
+            feedback += `<br><strong>Puntuación: ${puntuacion}/80</strong>`;
+            mostrarRetroalimentacion('retro-expositivo' + num, feedback, puntuacion >= 60 ? 'positiva' : 'sugerencia');
+        }
+
+        function evaluarComparacion() {
+            const texto = document.getElementById('expositivo2').value;
+            
+            let feedback = '<strong>Análisis de Comparación:</strong><br>';
+            let elementos = [];
+
+            if (texto.toLowerCase().includes('por un lado') || texto.toLowerCase().includes('por otro lado')) {
+                elementos.push('Estructura comparativa clara');
+            }
+
+            if (texto.toLowerCase().includes('ventaja') || texto.toLowerCase().includes('desventaja')) {
+                elementos.push('Análisis de pros y contras');
+            }
+
+            if (texto.toLowerCase().includes('similar') || texto.toLowerCase().includes('diferencia')) {
+                elementos.push('Identificación de similitudes y diferencias');
+            }
+
+            if (texto.toLowerCase().includes('costo') || texto.toLowerCase().includes('precio')) {
+                elementos.push('Consideración de aspectos económicos');
+            }
+
+            feedback += elementos.length > 0 ? 
+                '✅ Elementos presentes: ' + elementos.join(', ') + '<br>' :
+                '❌ Necesita mejor estructura comparativa<br>';
+
+            feedback += '<br><strong>Sugerencia:</strong> Organiza en bloques temáticos para mayor claridad.';
+
+            mostrarRetroalimentacion('retro-expositivo2', feedback, elementos.length >= 2 ? 'positiva' : 'sugerencia');
+        }
+
+        function evaluarMonografia(num) {
+            const texto = document.getElementById('monografia' + num).value;
+            
+            if (texto.trim().length < 150) {
+                mostrarRetroalimentacion('retro-monografia' + num,
+                    '📝 Una introducción de monografía requiere mayor extensión para incluir todos los componentes necesarios.',
+                    'sugerencia');
+                return;
+            }
+
+            let componentes = [];
+            let feedback = '<strong>Componentes de la Introducción:</strong><br>';
+
+            if (texto.toLowerCase().includes('cambio climático') || texto.toLowerCase().includes('biodiversidad')) {
+                componentes.push('Contextualización del tema');
+            }
+
+            if (texto.toLowerCase().includes('problema') || texto.toLowerCase().includes('problemática')) {
+                componentes.push('Planteamiento del problema');
+            }
+
+            if (texto.toLowerCase().includes('objetivo') || texto.toLowerCase().includes('propósito')) {
+                componentes.push('Objetivos establecidos');
+            }
+
+            if (texto.toLowerCase().includes('importante') || texto.toLowerCase().includes('relevante')) {
+                componentes.push('Justificación presente');
+            }
+
+            feedback += componentes.length > 0 ? 
+                '✅ ' + componentes.join('<br>✅ ') + '<br>' :
+                '❌ Faltan componentes esenciales<br>';
+
+            feedback += `<br><strong>Componentes identificados: ${componentes.length}/4</strong>`;
+
+            mostrarRetroalimentacion('retro-monografia' + num, feedback, componentes.length >= 3 ? 'positiva' : 'sugerencia');
+        }
+
+        function evaluarMetodologia() {
+            const texto = document.getElementById('monografia2').value;
+            
+            let feedback = '<strong>Análisis del Marco Teórico y Metodología:</strong><br>';
+            let elementos = [];
+
+            if (texto.toLowerCase().includes('antecedente') || texto.toLowerCase().includes('previo')) {
+                elementos.push('Antecedentes mencionados');
+            }
+
+            if (texto.toLowerCase().includes('teoría') || texto.toLowerCase().includes('teórico')) {
+                elementos.push('Base teórica establecida');
+            }
+
+            if (texto.toLowerCase().includes('metodología') || texto.toLowerCase().includes('método')) {
+                elementos.push('Metodología descrita');
+            }
+
+            if (texto.toLowerCase().includes('fuente') || texto.toLowerCase().includes('dato')) {
+                elementos.push('Fuentes de información identificadas');
+            }
+
+            feedback += elementos.length > 0 ? 
+                '✅ ' + elementos.join('<br>✅ ') + '<br>' :
+                '❌ Necesita mayor desarrollo metodológico<br>';
+
+            feedback += '<br><strong>Recomendación:</strong> Especifica el tipo de investigación (descriptiva, explicativa, etc.)';
+
+            mostrarRetroalimentacion('retro-monografia2', feedback, elementos.length >= 2 ? 'positiva' : 'sugerencia');
+        }
+
+        function evaluarParrafo(num) {
+            const texto = document.getElementById('parrafo' + num).value;
+            
+            if (texto.trim().length < 80) {
+                mostrarRetroalimentacion('retro-parrafo' + num,
+                    '📝 Un párrafo bien desarrollado necesita más extensión para incluir todos los elementos PIE.',
+                    'sugerencia');
+                return;
+            }
+
+            let feedback = '<strong>Análisis Estructura PIE:</strong><br>';
+            let puntuacion = 0;
+
+            // Evaluar punto principal (primera oración)
+            const oraciones = texto.split('.').filter(o => o.trim().length > 0);
+            if (oraciones.length >= 3) {
+                puntuacion += 30;
+                feedback += '✅ <strong>Punto:</strong> Oración temática presente<br>';
+            } else {
+                feedback += '❌ <strong>Punto:</strong> Necesita oración temática más clara<br>';
+            }
+
+            // Evaluar información/evidencia
+            if (texto.toLowerCase().includes('estudio') || texto.toLowerCase().includes('según') || 
+                texto.toLowerCase().includes('investigación') || texto.toLowerCase().includes('ejemplo')) {
+                puntuacion += 35;
+                feedback += '✅ <strong>Información:</strong> Evidencia o ejemplos incluidos<br>';
+            } else {
+                feedback += '❌ <strong>Información:</strong> Incluye datos específicos o ejemplos<br>';
+            }
+
+            // Evaluar explicación
+            if (texto.toLowerCase().includes('por tanto') || texto.toLowerCase().includes('esto significa') || 
+                texto.toLowerCase().includes('por ello') || texto.toLowerCase().includes('así')) {
+                puntuacion += 35;
+                feedback += '✅ <strong>Explicación:</strong> Análisis y conexión presentes<br>';
+            } else {
+                feedback += '❌ <strong>Explicación:</strong> Desarrolla más el análisis final<br>';
+            }
+
+            feedback += `<br><strong>Puntuación PIE: ${puntuacion}/100</strong>`;
+
+            mostrarRetroalimentacion('retro-parrafo' + num, feedback, puntuacion >= 70 ? 'positiva' : 'sugerencia');
+        }
+
+        function evaluarTransicion() {
+            const texto = document.getElementById('parrafo2').value;
+            
+            let feedback = '<strong>Evaluación de Transición:</strong><br>';
+            let elementos = [];
+
+            // Conectores de transición
+            const conectoresTransicion = ['sin embargo', 'no obstante', 'por otro lado', 'ahora bien', 'aunque'];
+            const tieneConectores = conectoresTransicion.some(conector => texto.toLowerCase().includes(conector));
+            
+            if (tieneConectores) {
+                elementos.push('Conectores de contraste apropiados');
+            }
+
+            // Referencia a ideas previas
+            if (texto.toLowerCase().includes('beneficio') || texto.toLowerCase().includes('económico')) {
+                elementos.push('Referencia al párrafo anterior');
+            }
+
+            // Introducción del nuevo tópico
+            if (texto.toLowerCase().includes('ambiental') || texto.toLowerCase().includes('ecológico') || 
+                texto.toLowerCase().includes('impacto')) {
+                elementos.push('Introducción del nuevo tema');
+            }
+
+            // Fluidez
+            const oraciones = texto.split('.').length;
+            if (oraciones >= 2 && oraciones <= 4) {
+                elementos.push('Longitud apropiada para transición');
+            }
+
+            feedback += elementos.length > 0 ? 
+                '✅ ' + elementos.join('<br>✅ ') + '<br>' :
+                '❌ Necesita mejor desarrollo de la transición<br>';
+
+            feedback += `<br><strong>Elementos de cohesión: ${elementos.length}/4</strong>`;
+            feedback += '<br><strong>Tip:</strong> Una buena transición conecta la idea anterior con la nueva de manera fluida.';
+
+            mostrarRetroalimentacion('retro-parrafo2', feedback, elementos.length >= 2 ? 'positiva' : 'sugerencia');
+        }
+    </script>
 
 
 
