@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="../img/Logo.png" />
+  <link rel="icon" type="image/svg+xml" href="./img/Logo.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>U.E.E.A</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
@@ -18,7 +18,6 @@
     <i class="bi bi-moon"></i>
     <i class="bi bi-brightness-high-fill"></i>
   </button>
-
   <!---------------------------------------->
 
   <!---------Button mobile-->
@@ -46,7 +45,7 @@
         </a>
       </li>
       <li class="item-list item-list_show">
-        <a class="link-sty link-sty_show" >
+        <a class="link-sty link-sty_show">
           <i class="bi bi-book"></i>
           <div class="text-link">Subjects</div>
           <i class="bi bi-chevron-right cont-abs"></i>
@@ -65,7 +64,7 @@
             <li><a href="../docs/CienciasNaturales.html">Ciencias Naturales</a></li>
 
           </div>
-        </ul> 
+        </ul>
       </li>
       <li class="item-list">
         <a class="link-sty link-sty_show ">
@@ -99,400 +98,465 @@
     </ol>
   </nav>
 
-  
 
-    
+
+  <!-----Content Index-->
+
+  
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cuestionario Interactivo de Biología</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            color: #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1,
+        h2 {
+            color: #0b3d91;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            width: 100%;
+        }
+
+        .question {
+            font-weight: 600;
+            color: #0b3d91;
+            margin: 20px 0 8px;
+            text-align: left;
+        }
+
+        .answers {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+            margin-bottom: 8px;
+        }
+
+        @media (max-width: 992px) {
+            .answers {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .answers {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .answer {
+            background: #f9f9f9;
+            border: 2px solid transparent;
+            border-radius: 6px;
+            padding: 12px 10px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 0.95rem;
+            color: #000;
+            user-select: none;
+            transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+        }
+
+        .answer:hover {
+            background: #e1ecfb;
+        }
+
+        .answer.correct {
+            background-color: #d4edda;
+            border-color: #28a745;
+            color: #155724;
+            cursor: default;
+        }
+
+        .answer.incorrect {
+            background-color: #f8d7da;
+            border-color: #dc3545;
+            color: #721c24;
+            cursor: default;
+        }
+
+        .answer.disabled {
+            pointer-events: none;
+        }
+
+        .feedback {
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-align: center;
+            margin-top: 4px;
+            min-height: 1.2em;
+            color: inherit;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container" role="main" aria-label="Cuestionario Interactivo de Biología">
+        <h1>CIENCIAS NATURALES</h1>
+    </div>
+
+    <div class="container" role="main" aria-label="Tema 1: La célula">
+        <section class="section">
+            <h2>1. La célula</h2>
+            <div class="question" data-correct="C">1. ¿Cuál es una de las funciones principales de las células?</div>
+            <div class="answers">
+                <div class="answer" data-value="A" tabindex="0">A) Crear tejidos nerviosos</div>
+                <div class="answer" data-value="B" tabindex="0">B) Transportar sangre</div>
+                <div class="answer" data-value="C" tabindex="0">C) Absorber nutrientes y convertirlos en energía</div>
+                <div class="answer" data-value="D" tabindex="0">D) Controlar los movimientos musculares</div>
+            </div>
+            <div class="question" data-correct="B">2. ¿Qué son los orgánulos dentro de una célula?</div>
+            <div class="answers">
+                <div class="answer" data-value="A" tabindex="0">A) Células nuevas</div>
+                <div class="answer" data-value="B" tabindex="0">B) Estructuras especializadas que realizan funciones internas</div>
+                <div class="answer" data-value="C" tabindex="0">C) Tipos de membranas celulares</div>
+                <div class="answer" data-value="D" tabindex="0">D) Sistemas nerviosos celulares</div>
+            </div>
+            <div class="feedback"></div>
+        </section>
+    </div>
+
+    <div class="container" role="main" aria-label="Tema 2: Tipos de células">
+        <section class="section">
+            <h2>2. Tipos de células</h2>
+            <div class="question" data-correct="A">1. ¿Qué característica distingue a las células procariotas?</div>
+            <div class="answers">
+                <div class="answer" data-value="A" tabindex="0">A) No tienen membrana nuclear</div>
+                <div class="answer" data-value="B" tabindex="0">B) Son multicelulares</div>
+                <div class="answer" data-value="C" tabindex="0">C) Tienen orgánulos con membrana</div>
+                <div class="answer" data-value="D" tabindex="0">D) Su ADN está en el núcleo</div>
+            </div>
+            <div class="question" data-correct="D">2. ¿Qué tienen en común todas las células eucariotas?</div>
+            <div class="answers">
+                <div class="answer" data-value="A" tabindex="0">A) Son más pequeñas que las procariotas</div>
+                <div class="answer" data-value="B" tabindex="0">B) No tienen núcleo definido</div>
+                <div class="answer" data-value="C" tabindex="0">C) No tienen orgánulos</div>
+                <div class="answer" data-value="D" tabindex="0">D) Tienen el material genético dentro de un núcleo con membrana</div>
+            </div>
+            <div class="feedback"></div>
+        </section>
+    </div>
+
+    <div class="container" role="main" aria-label="Tema 3: Niveles de organización biológica">
+        <section class="section">
+            <h2>3. Niveles de organización biológica</h2>
+            <div class="question" data-correct="B">1. ¿Cuál es el nivel más simple de organización biológica?</div>
+            <div class="answers">
+                <div class="answer" data-value="A" tabindex="0">A) Tejido</div>
+                <div class="answer" data-value="B" tabindex="0">B) Nivel subatómico</div>
+                <div class="answer" data-value="C" tabindex="0">C) Órgano</div>
+                <div class="answer" data-value="D" tabindex="0">D) Aparato</div>
+            </div>
+            <div class="question" data-correct="C">2. ¿Qué nivel representa un conjunto de órganos con una función común?</div>
+            <div class="answers">
+                <div class="answer" data-value="A" tabindex="0">A) Población</div>
+                <div class="answer" data-value="B" tabindex="0">B) Comunidad</div>
+                <div class="answer" data-value="C" tabindex="0">C) Aparato o sistema</div>
+                <div class="answer" data-value="D" tabindex="0">D) Tejido</div>
+            </div>
+            <div class="feedback"></div>
+        </section>
+    </div>
+
+    <div class="container" role="main" aria-label="Tema 4: Los ecosistemas">
+        <section class="section">
+            <h2>4. Los ecosistemas</h2>
+            <div class="question" data-correct="C">1. ¿Qué es un ecosistema?</div>
+            <div class="answers">
+                <div class="answer" data-value="A" tabindex="0">A) Un grupo de plantas</div>
+                <div class="answer" data-value="B" tabindex="0">B) Un grupo de personas</div>
+                <div class="answer" data-value="C" tabindex="0">C) Un sistema formado por seres vivos, su hábitat y sus relaciones</div>
+                <div class="answer" data-value="D" tabindex="0">D) Solo un tipo de clima</div>
+            </div>
+            <div class="question" data-correct="B">2. ¿Qué elementos componen un ecosistema?</div>
+            <div class="answers">
+                <div class="answer" data-value="A" tabindex="0">A) Solo animales</div>
+                <div class="answer" data-value="B" tabindex="0">B) Factores bióticos y abióticos</div>
+                <div class="answer" data-value="C" tabindex="0">C) Solo plantas y agua</div>
+                <div class="answer" data-value="D" tabindex="0">D) Solo humanos y animales</div>
+            </div>
+            <div class="feedback"></div>
+        </section>
+    </div>
+
+    <div class="container" role="main" aria-label="Tema 5: Tipos de ecosistemas">
+        <section class="section">
+            <h2>5. Tipos de ecosistemas</h2>
+            <div class="question" data-correct="A">1. ¿Qué tipo de ecosistema se encuentra en la tierra?</div>
+            <div class="answers">
+                <div class="answer" data-value="A" tabindex="0">A) Ecosistema terrestre</div>
+                <div class="answer" data-value="B" tabindex="0">B) Ecosistema marino</div>
+                <div class="answer" data-value="C" tabindex="0">C) Ecosistema artificial</div>
+                <div class="answer" data-value="D" tabindex="0">D) Ecosistema subterráneo</div>
+            </div>
+            <div class="question" data-correct="B">2. ¿Qué tipo de ecosistema es un acuario?</div>
+            <div class="answers">
+                <div class="answer" data-value="A" tabindex="0">A) Natural</div>
+                <div class="answer" data-value="B" tabindex="0">B) Artificial</div>
+                <div class="answer" data-value="C" tabindex="0">C) Terrestre</div>
+                <div class="answer" data-value="D" tabindex="0">D) Subatómico</div>
+            </div>
+            <div class="feedback"></div>
+        </section>
+    </div>
+
+    <div class="container" role="main" aria-label="Tema 6: Los biomas del Ecuador">
+        <section class="section">
+            <h2>6. Los biomas del Ecuador</h2>
+            <div class="question" data-correct="B">1. ¿Qué es un bioma?</div>
+            <div class="answers">
+                <div class="answer" data-value="A" tabindex="0">A) Una zona sin vida</div>
+                <div class="answer" data-value="B" tabindex="0">B) Una región con clima, flora y fauna características</div>
+                <div class="answer" data-value="C" tabindex="0">C) Un espacio solo con humanos</div>
+                <div class="answer" data-value="D" tabindex="0">D) Una comunidad vegetal</div>
+            </div>
+            <div class="question" data-correct="C">2. ¿Qué permite identificar un bioma?</div>
+            <div class="answers">
+                <div class="answer" data-value="A" tabindex="0">A) La altitud únicamente</div>
+                <div class="answer" data-value="B" tabindex="0">B) La cultura local</div>
+                <div class="answer" data-value="C" tabindex="0">C) La combinación de clima, flora y fauna</div>
+                <div class="answer" data-value="D" tabindex="0">D) La cantidad de agua</div>
+            </div>
+            <div class="feedback"></div>
+        </section>
+    </div>
+
+    <div class="container" role="main" aria-label="Tema 7: Biomas terrestres">
+        <section class="section">
+            <h2>7. Biomas terrestres</h2>
+            <div class="question" data-correct="B">1. ¿Cuál es una característica del bosque tropical lluvioso?</div>
+            <div class="answers">
+                <div class="answer" data-value="A" tabindex="0">A) Clima seco y frío</div>
+                <div class="answer" data-value="B" tabindex="0">B) Cálido y húmedo todo el año</div>
+                <div class="answer" data-value="C" tabindex="0">C) Vegetación escasa</div>
+                <div class="answer" data-value="D" tabindex="0">D) Árboles pequeños</div>
+            </div>
+            <div class="question" data-correct="B">2. ¿Dónde se encuentra el bioma de tundra?</div>
+            <div class="answers">
+                <div class="answer" data-value="A" tabindex="0">A) En selvas tropicales</div>
+                <div class="answer" data-value="B" tabindex="0">B) En zonas árticas, con clima muy frío</div>
+                <div class="answer" data-value="C" tabindex="0">C) En lagunas</div>
+                <div class="answer" data-value="D" tabindex="0">D) En desiertos</div>
+            </div>
+            <div class="feedback"></div>
+        </section>
+    </div>
+
+    <div class="container" role="main" aria-label="Tema 8: Biomas acuáticos">
+        <section class="section">
+            <h2>8. Biomas acuáticos</h2>
+            <div class="question" data-correct="B">1. ¿Qué caracteriza al bioma marino?</div>
+            <div class="answers">
+                <div class="answer" data-value="A" tabindex="0">A) Alta altitud</div>
+                <div class="answer" data-value="B" tabindex="0">B) Presencia de mares y océanos con gran biodiversidad</div>
+                <div class="answer" data-value="C" tabindex="0">C) Falta de vida</div>
+                <div class="answer" data-value="D" tabindex="0">D) Ríos secos</div>
+            </div>
+            <div class="question" data-correct="B">2. ¿Cuál es un ejemplo de bioma de agua dulce?</div>
+            <div class="answers">
+                <div class="answer" data-value="A" tabindex="0">A) Océano Pacífico</div>
+                <div class="answer" data-value="B" tabindex="0">B) Lago Titicaca</div>
+                <div class="answer" data-value="C" tabindex="0">C) Arrecife de coral</div>
+                <div class="answer" data-value="D" tabindex="0">D) Mar Caribe</div>
+            </div>
+            <div class="feedback"></div>
+        </section>
+    </div>
+
+    <div class="container" role="main" aria-label="Tema 9: La sexualidad">
+        <section class="section">
+            <h2>9. La sexualidad</h2>
+            <div class="question" data-correct="B">1. ¿Qué incluye el concepto de sexualidad humana?</div>
+            <div class="answers">
+                <div class="answer" data-value="A" tabindex="0">A) Solo órganos sexuales</div>
+                <div class="answer" data-value="B" tabindex="0">B) Emociones, cultura, conducta y reproducción</div>
+                <div class="answer" data-value="C" tabindex="0">C) Lenguaje verbal</div>
+                <div class="answer" data-value="D" tabindex="0">D) Costumbres alimenticias</div>
+            </div>
+            <div class="question" data-correct="B">2. ¿Por qué es importante hablar de sexualidad?</div>
+            <div class="answers">
+                <div class="answer" data-value="A" tabindex="0">A) Para aprender a leer</div>
+                <div class="answer" data-value="B" tabindex="0">B) Porque forma parte del desarrollo humano integral</div>
+                <div class="answer" data-value="C" tabindex="0">C) Para evitar hablar en público</div>
+                <div class="answer" data-value="D" tabindex="0">D) Para fomentar el deporte</div>
+            </div>
+            <div class="feedback"></div>
+        </section>
+    </div>
+
+    <div class="container" role="main" aria-label="Tema 10: La adolescencia">
+        <section class="section">
+            <h2>10. La adolescencia</h2>
+            <div class="question" data-correct="A">1. ¿Qué es la adolescencia?</div>
+            <div class="answers">
+                <div class="answer" data-value="A" tabindex="0">A) Etapa entre la niñez y la adultez</div>
+                <div class="answer" data-value="B" tabindex="0">B) Un cambio hormonal leve</div>
+                <div class="answer" data-value="C" tabindex="0">C) El crecimiento de los huesos</div>
+                <div class="answer" data-value="D" tabindex="0">D) La vejez temprana</div>
+            </div>
+            <div class="question" data-correct="C">2. ¿Qué cambio ocurre en el pensamiento durante la adolescencia?</div>
+            <div class="answers">
+                <div class="answer" data-value="A" tabindex="0">A) Disminuye la concentración</div>
+                <div class="answer" data-value="B" tabindex="0">B) Se pierde memoria</div>
+                <div class="answer" data-value="C" tabindex="0">C) Se desarrolla el razonamiento lógico y abstracto</div>
+                <div class="answer" data-value="D" tabindex="0">D) Se olvida la infancia</div>
+            </div>
+            <div class="feedback"></div>
+        </section>
+    </div>
+
+    <div class="container" role="main" aria-label="Tema 11: La citología">
+        <section class="section">
+            <h2>11. La citología</h2>
+            <div class="question" data-correct="C">1. ¿Qué estudia la citología?</div>
+            <div class="answers">
+                <div class="answer" data-value="A" tabindex="0">A) El ADN</div>
+                <div class="answer" data-value="B" tabindex="0">B) El sistema digestivo</div>
+                <div class="answer" data-value="C" tabindex="0">C) Las células observadas al microscopio</div>
+                <div class="answer" data-value="D" tabindex="0">D) Los virus</div>
+            </div>
+            <div class="question" data-correct="B">2. ¿Qué es el frotis de Papanicolaou?</div>
+            <div class="answers">
+                <div class="answer" data-value="A" tabindex="0">A) Una biopsia</div>
+                <div class="answer" data-value="B" tabindex="0">B) Una citología del cuello uterino</div>
+                <div class="answer" data-value="C" tabindex="0">C) Un examen de sangre</div>
+                <div class="answer" data-value="D" tabindex="0">D) Una prueba de visión</div>
+            </div>
+            <div class="feedback"></div>
+        </section>
+    </div>
+
+    <div class="container" role="main" aria-label="Tema 12: La división celular">
+        <section class="section">
+            <h2>12. La división celular</h2>
+            <div class="question" data-correct="C">1. ¿Qué ocurre durante la mitosis?</div>
+            <div class="answers">
+                <div class="answer" data-value="A" tabindex="0">A) Se forman cuatro células distintas</div>
+                <div class="answer" data-value="B" tabindex="0">B) El número de cromosomas se reduce</div>
+                <div class="answer" data-value="C" tabindex="0">C) Se forman dos células hijas idénticas</div>
+                <div class="answer" data-value="D" tabindex="0">D) No se duplica el ADN</div>
+            </div>
+            <div class="question" data-correct="B">2. ¿Qué es una función de la meiosis?</div>
+            <div class="answers">
+                <div class="answer" data-value="A" tabindex="0">A) Reparar tejidos dañados</div>
+                <div class="answer" data-value="B" tabindex="0">B) Formar gametos con la mitad de cromosomas</div>
+                <div class="answer" data-value="C" tabindex="0">C) Multiplicar células somáticas</div>
+                <div class="answer" data-value="D" tabindex="0">D) Almacenar energía</div>
+            </div>
+            <div class="feedback"></div>
+        </section>
+    </div>
+
+<script>
+document.querySelectorAll('.container').forEach(container => {
+    const sections = container.querySelectorAll('.section');
+    sections.forEach(section => {
+        const questions = section.querySelectorAll('.question');
+        const answersGroups = section.querySelectorAll('.answers');
+        const feedbackEl = section.querySelector('.feedback');
+
+        questions.forEach((questionEl, index) => {
+            const correctAnswer = questionEl.dataset.correct;
+            const answersEl = answersGroups[index];
+
+            if (!answersEl) return;
+
+            answersEl.querySelectorAll('.answer').forEach(answerEl => {
+                answerEl.addEventListener('click', () => selectAnswer(answersEl, answerEl, correctAnswer, feedbackEl));
+                answerEl.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        selectAnswer(answersEl, answerEl, correctAnswer, feedbackEl);
+                    }
+                });
+            });
+        });
+    });
+
+    function selectAnswer(answersEl, selectedAnswerEl, correctAnswer, feedbackEl) {
+        if (answersEl.classList.contains('answered')) return;
+
+        answersEl.querySelectorAll('.answer').forEach(answer => {
+            answer.classList.add('disabled');
+            if (answer.dataset.value === correctAnswer) {
+                answer.classList.add('correct');
+            } else if (answer === selectedAnswerEl) {
+                answer.classList.add('incorrect');
+            }
+        });
+
+        answersEl.classList.add('answered');
+
+        if (feedbackEl) {
+            if (selectedAnswerEl.dataset.value === correctAnswer) {
+                feedbackEl.textContent = '¡Respuesta correcta!';
+                feedbackEl.style.color = '#28a745';
+            } else {
+                feedbackEl.textContent = 'Respuesta incorrecta. Intenta de nuevo.';
+                feedbackEl.style.color = '#dc3545';
+            }
+        }
+    }
+});
+</script>
+
+</body>
+
+</html>
+
+
+     
+ 
     <!------Footer-->
 
     <footer class="footer">
       <div>
 
+        <a href="">
+          <span>
+            Repositorio&
+          </span>
+          <i class="bi bi-github"></i></a>
 
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Cuestionario Interactivo de Biología</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 20px;
-      display: flex;
-      justify-content: center;
-    }
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 0;
-    }
-    .section {
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      padding: 20px;
-      margin-bottom: 60px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    h2 {
-      margin-bottom: 15px;
-      color: #0b3d91;
-      text-align: center;
-    }
-    .question {
-      font-weight: 600;
-      color: #0b3d91;
-      margin-top: 20px;
-      width: 100%;
-      text-align: left;
-    }
-    .answers {
-      margin-top: 8px;
-      width: 100%;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 12px;
-    }
-    .answer {
-      background: #f9f9f9;
-      border: 2px solid transparent;
-      border-radius: 6px;
-      padding: 12px 10px;
-      cursor: pointer;
-      text-align: center;
-      user-select: none;
-      transition: background-color 0.3s ease, border-color 0.3s ease;
-      font-size: 0.95rem;
-      word-break: break-word;
-    }
-    .answer:hover:not(.disabled) {
-      background: #e1ecfb;
-    }
-    .answer.correct {
-      background-color: #d4edda;
-      border-color: #28a745;
-      color: #155724;
-      cursor: default;
-    }
-    .answer.incorrect {
-      background-color: #f8d7da;
-      border-color: #dc3545;
-      color: #721c24;
-      cursor: default;
-    }
-    .answer.disabled {
-      pointer-events: none;
-    }
-    .feedback {
-      margin-top: 6px;
-      font-weight: 600;
-      font-size: 0.9rem;
-      text-align: center;
-    }
-    @media (max-width: 992px) {
-      .answers {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-    @media (max-width: 480px) {
-      .answers {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
-</head>
-<body>
-    <h2 class="">CIENCIAS NATURALES</h2>
-  <div class="container">
-
-    <div class="section">
-      <h2>1. La célula</h2>
-      <div class="question" data-correct="C">1. ¿Cuál de las siguientes afirmaciones describe mejor la función general de las células?</div>
-      <div class="answers">
-        <div class="answer" data-value="A" tabindex="0">A) Regular la temperatura corporal</div>
-        <div class="answer" data-value="B" tabindex="0">B) Transportar oxígeno únicamente</div>
-        <div class="answer" data-value="C" tabindex="0">C) Brindar estructura, absorber nutrientes y realizar funciones especializadas</div>
-        <div class="answer" data-value="D" tabindex="0">D) Controlar las emociones humanas</div>
       </div>
-      <div class="question" data-correct="B">2. ¿Cuál es una diferencia principal entre las células procariotas y eucariotas?</div>
-      <div class="answers">
-        <div class="answer" data-value="A" tabindex="0">A) Las procariotas tienen núcleo definido, las eucariotas no</div>
-        <div class="answer" data-value="B" tabindex="0">B) Las eucariotas tienen membrana nuclear, las procariotas no</div>
-        <div class="answer" data-value="C" tabindex="0">C) Las procariotas son más grandes que las eucariotas</div>
-        <div class="answer" data-value="D" tabindex="0">D) Las eucariotas no tienen citoplasma</div>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2>2. Niveles de organización biológica</h2>
-      <div class="question" data-correct="C">1. ¿Cuál de los siguientes representa un nivel biótico de organización?</div>
-      <div class="answers">
-        <div class="answer" data-value="A" tabindex="0">A) Nivel atómico</div>
-        <div class="answer" data-value="B" tabindex="0">B) Nivel molecular</div>
-        <div class="answer" data-value="C" tabindex="0">C) Nivel órgano</div>
-        <div class="answer" data-value="D" tabindex="0">D) Nivel subatómico</div>
-      </div>
-      <div class="question" data-correct="B">2. ¿Qué nivel de organización agrupa diferentes poblaciones en un mismo espacio?</div>
-      <div class="answers">
-        <div class="answer" data-value="A" tabindex="0">A) Nivel individuo</div>
-        <div class="answer" data-value="B" tabindex="0">B) Nivel comunidad</div>
-        <div class="answer" data-value="C" tabindex="0">C) Nivel sistema</div>
-        <div class="answer" data-value="D" tabindex="0">D) Nivel órgano</div>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2>3. Los ecosistemas</h2>
-      <div class="question" data-correct="B">1. ¿Qué elementos conforman un ecosistema?</div>
-      <div class="answers">
-        <div class="answer" data-value="A" tabindex="0">A) Solo animales y plantas</div>
-        <div class="answer" data-value="B" tabindex="0">B) Factores bióticos y abióticos</div>
-        <div class="answer" data-value="C" tabindex="0">C) Factores químicos únicamente</div>
-        <div class="answer" data-value="D" tabindex="0">D) Solo el medio ambiente</div>
-      </div>
-      <div class="question" data-correct="C">2. ¿Cuál es un ejemplo de un ecosistema artificial?</div>
-      <div class="answers">
-        <div class="answer" data-value="A" tabindex="0">A) Selva amazónica</div>
-        <div class="answer" data-value="B" tabindex="0">B) Arrecife de coral</div>
-        <div class="answer" data-value="C" tabindex="0">C) Acuario</div>
-        <div class="answer" data-value="D" tabindex="0">D) Bosque templado</div>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2>4. Los biomas del Ecuador</h2>
-      <div class="question" data-correct="C">1. ¿Qué caracteriza al bioma de tundra?</div>
-      <div class="answers">
-        <div class="answer" data-value="A" tabindex="0">A) Alta humedad y mucha vegetación</div>
-        <div class="answer" data-value="B" tabindex="0">B) Temperaturas cálidas y estaciones secas</div>
-        <div class="answer" data-value="C" tabindex="0">C) Clima muy frío y ausencia de árboles</div>
-        <div class="answer" data-value="D" tabindex="0">D) Bosques de coníferas</div>
-      </div>
-      <div class="question" data-correct="C">2. ¿Cuál es un ejemplo de bioma acuático de agua dulce?</div>
-      <div class="answers">
-        <div class="answer" data-value="A" tabindex="0">A) Arrecife de coral</div>
-        <div class="answer" data-value="B" tabindex="0">B) Océano Pacífico</div>
-        <div class="answer" data-value="C" tabindex="0">C) Lago Titicaca</div>
-        <div class="answer" data-value="D" tabindex="0">D) Mar Mediterráneo</div>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2>5. La sexualidad</h2>
-      <div class="question" data-correct="D">1. ¿Qué aspecto NO está incluido en el concepto amplio de sexualidad?</div>
-      <div class="answers">
-        <div class="answer" data-value="A" tabindex="0">A) La reproducción</div>
-        <div class="answer" data-value="B" tabindex="0">B) La identidad y relaciones culturales</div>
-        <div class="answer" data-value="C" tabindex="0">C) El comportamiento emocional</div>
-        <div class="answer" data-value="D" tabindex="0">D) Solo los órganos sexuales</div>
-      </div>
-      <div class="question" data-correct="B">2. ¿A qué se refiere principalmente la sexualidad humana?</div>
-      <div class="answers">
-        <div class="answer" data-value="A" tabindex="0">A) A los hábitos alimenticios</div>
-        <div class="answer" data-value="B" tabindex="0">B) A la conducta, emociones y cultura relacionadas con el sexo</div>
-        <div class="answer" data-value="C" tabindex="0">C) A la capacidad de aprender idiomas</div>
-        <div class="answer" data-value="D" tabindex="0">D) A los deportes practicados según el sexo</div>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2>6. La adolescencia</h2>
-      <div class="question" data-correct="C">1. ¿Cuál es una característica biológica de la adolescencia?</div>
-      <div class="answers">
-        <div class="answer" data-value="A" tabindex="0">A) Aumento de productividad</div>
-        <div class="answer" data-value="B" tabindex="0">B) Inicio del razonamiento abstracto</div>
-        <div class="answer" data-value="C" tabindex="0">C) Cambios físicos por la pubertad</div>
-        <div class="answer" data-value="D" tabindex="0">D) Estabilidad emocional constante</div>
-      </div>
-      <div class="question" data-correct="B">2. Desde el punto de vista social, ¿qué representa la adolescencia?</div>
-      <div class="answers">
-        <div class="answer" data-value="A" tabindex="0">A) La fase de aprendizaje de normas básicas</div>
-        <div class="answer" data-value="B" tabindex="0">B) La preparación para los roles adultos</div>
-        <div class="answer" data-value="C" tabindex="0">C) El inicio de la niñez</div>
-        <div class="answer" data-value="D" tabindex="0">D) El final del desarrollo corporal</div>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2>7. La citología</h2>
-      <div class="question" data-correct="C">1. ¿Con qué fin se utiliza principalmente la citología?</div>
-      <div class="answers">
-        <div class="answer" data-value="A" tabindex="0">A) Para analizar tejidos completos</div>
-        <div class="answer" data-value="B" tabindex="0">B) Para estudiar la atmósfera</div>
-        <div class="answer" data-value="C" tabindex="0">C) Para examinar células y detectar enfermedades</div>
-        <div class="answer" data-value="D" tabindex="0">D) Para identificar planetas</div>
-      </div>
-      <div class="question" data-correct="C">2. ¿Qué técnica citológica se utiliza comúnmente en ginecología?</div>
-      <div class="answers">
-        <div class="answer" data-value="A" tabindex="0">A) Radiografía</div>
-        <div class="answer" data-value="B" tabindex="0">B) Ultrasonido</div>
-        <div class="answer" data-value="C" tabindex="0">C) Frotis de Papanicolaou</div>
-        <div class="answer" data-value="D" tabindex="0">D) Electrocardiograma</div>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2>8. La mitosis</h2>
-      <div class="question" data-correct="B">1. ¿Cuál es el resultado final de la mitosis?</div>
-      <div class="answers">
-        <div class="answer" data-value="A" tabindex="0">A) Una célula madre idéntica</div>
-        <div class="answer" data-value="B" tabindex="0">B) Dos células hijas idénticas</div>
-        <div class="answer" data-value="C" tabindex="0">C) Cuatro células diferentes</div>
-        <div class="answer" data-value="D" tabindex="0">D) Un solo núcleo duplicado</div>
-      </div>
-      <div class="question" data-correct="B">2. ¿Qué ocurre durante la metafase?</div>
-      <div class="answers">
-        <div class="answer" data-value="A" tabindex="0">A) Los cromosomas se duplican</div>
-        <div class="answer" data-value="B" tabindex="0">B) Los cromosomas se alinean en el centro</div>
-        <div class="answer" data-value="C" tabindex="0">C) El citoplasma se divide</div>
-        <div class="answer" data-value="D" tabindex="0">D) Desaparece la membrana nuclear</div>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2>9. La meiosis</h2>
-      <div class="question" data-correct="C">1. ¿Cuántas células hijas se obtienen al final de la meiosis?</div>
-      <div class="answers">
-        <div class="answer" data-value="A" tabindex="0">A) Dos células idénticas</div>
-        <div class="answer" data-value="B" tabindex="0">B) Una célula hija</div>
-        <div class="answer" data-value="C" tabindex="0">C) Cuatro células diferentes</div>
-        <div class="answer" data-value="D" tabindex="0">D) Ocho células diploides</div>
-      </div>
-      <div class="question" data-correct="C">2. ¿Cuál es una función principal de la meiosis?</div>
-      <div class="answers">
-        <div class="answer" data-value="A" tabindex="0">A) Eliminar células viejas</div>
-        <div class="answer" data-value="B" tabindex="0">B) Reparar tejidos</div>
-        <div class="answer" data-value="C" tabindex="0">C) Formar gametos y generar diversidad genética</div>
-        <div class="answer" data-value="D" tabindex="0">D) Duplicar los cromosomas</div>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2>10. La morfología</h2>
-      <div class="question" data-correct="C">1. ¿A qué se dedica la morfología flexiva?</div>
-      <div class="answers">
-        <div class="answer" data-value="A" tabindex="0">A) A la formación de palabras nuevas</div>
-        <div class="answer" data-value="B" tabindex="0">B) Al estudio de estructuras celulares</div>
-        <div class="answer" data-value="C" tabindex="0">C) A las variaciones gramaticales de las palabras</div>
-        <div class="answer" data-value="D" tabindex="0">D) A la creación de poemas</div>
-      </div>
-      <div class="question" data-correct="B">2. ¿Por qué es importante la morfología en biología?</div>
-      <div class="answers">
-        <div class="answer" data-value="A" tabindex="0">A) Para formar oraciones</div>
-        <div class="answer" data-value="B" tabindex="0">B) Para clasificar y comparar organismos</div>
-        <div class="answer" data-value="C" tabindex="0">C) Para enseñar matemáticas</div>
-        <div class="answer" data-value="D" tabindex="0">D) Para identificar sonidos</div>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2>11. Fisiología humana</h2>
-      <div class="question" data-correct="C">1. ¿En qué consiste principalmente la fisiología humana?</div>
-      <div class="answers">
-        <div class="answer" data-value="A" tabindex="0">A) En estudiar el lenguaje humano</div>
-        <div class="answer" data-value="B" tabindex="0">B) En analizar las emociones</div>
-        <div class="answer" data-value="C" tabindex="0">C) En estudiar el funcionamiento del cuerpo humano</div>
-        <div class="answer" data-value="D" tabindex="0">D) En comparar culturas</div>
-      </div>
-      <div class="question" data-correct="C">2. ¿Qué es la homeostasis?</div>
-      <div class="answers">
-        <div class="answer" data-value="A" tabindex="0">A) La digestión de alimentos</div>
-        <div class="answer" data-value="B" tabindex="0">B) El crecimiento de los músculos</div>
-        <div class="answer" data-value="C" tabindex="0">C) La capacidad del cuerpo de mantener un equilibrio interno</div>
-        <div class="answer" data-value="D" tabindex="0">D) El almacenamiento de grasa</div>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2>12. Tipos de ecosistemas</h2>
-      <div class="question" data-correct="C">1. ¿Cuál de los siguientes ejemplos representa un ecosistema artificial?</div>
-      <div class="answers">
-        <div class="answer" data-value="A" tabindex="0">A) Selva tropical</div>
-        <div class="answer" data-value="B" tabindex="0">B) Arrecife de coral</div>
-        <div class="answer" data-value="C" tabindex="0">C) Campo de cultivo</div>
-        <div class="answer" data-value="D" tabindex="0">D) Bosque templado</div>
-      </div>
-      <div class="question" data-correct="C">2. ¿Cómo se clasifican los ecosistemas acuáticos según el tipo de agua?</div>
-      <div class="answers">
-        <div class="answer" data-value="A" tabindex="0">A) Bosques y desiertos</div>
-        <div class="answer" data-value="B" tabindex="0">B) Tropicales y fríos</div>
-        <div class="answer" data-value="C" tabindex="0">C) Agua dulce y agua salada</div>
-        <div class="answer" data-value="D" tabindex="0">D) Naturales y artificiales</div>
-      </div>
-    </div>
-
-  </div>
-  <script>
-    document.querySelectorAll('.answers').forEach(answersContainer => {
-      answersContainer.addEventListener('click', event => {
-        const target = event.target;
-        if (!target.classList.contains('answer') || target.classList.contains('disabled')) return;
-
-        const questionElem = target.closest('.answers').previousElementSibling;
-        const correct = questionElem.getAttribute('data-correct');
-        const allAnswers = target.parentElement.querySelectorAll('.answer');
-
-        allAnswers.forEach(a => {
-          a.classList.add('disabled');
-          a.tabIndex = -1;
-        });
-
-        if (target.getAttribute('data-value') === correct) {
-          target.classList.add('correct');
-          addFeedback(target, true);
-        } else {
-          target.classList.add('incorrect');
-          addFeedback(target, false);
-          allAnswers.forEach(a => {
-            if (a.getAttribute('data-value') === correct) {
-              a.classList.add('correct');
-            }
-          });
-        }
-      });
-
-      answersContainer.addEventListener('keydown', event => {
-        const target = event.target;
-        if ((event.key === 'Enter' || event.key === ' ') && target.classList.contains('answer') && !target.classList.contains('disabled')) {
-          target.click();
-          event.preventDefault();
-        }
-      });
-    });
-
-    function addFeedback(answerElem, isCorrect) {
-      const feedback = document.createElement('div');
-      feedback.className = 'feedback';
-      feedback.textContent = isCorrect ? 'Correcto' : 'Incorrecto';
-      answerElem.appendChild(feedback);
-    }
-  </script>
-</body>
-</html>
-</section>
-          <footer class="footer">
-            <div>
-
-                <a href="">
-                  <span>
-                    Repositorio&
-                  </span>
-                <i class="bi bi-github"></i></a>
-
-            </div>
-            <span>
-                @U.E.E.A 2025
-            </span>
-        </footer>
-    </main>
-    <script type="module" src="../main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-  
+      <span>
+        @U.E.E.A 2025
+      </span>
+    </footer>
+  </main>
+  <script type="module" src="../main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 
 </body>
 

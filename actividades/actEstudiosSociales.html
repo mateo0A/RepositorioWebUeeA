@@ -75,11 +75,11 @@
         </a>
         <ul class="sub-menu">
           <div class="items-shows">
-            <li><a href="https://mateo0a.github.io/MateriasMiasUEEA/" target="_blank">Programacion</a></li>
-            <li><a href="https://mateo0a.github.io/MateriasMiasUEEA/" target="_blank">Diseño Web</a></li>
-            <li><a href="https://mateo0a.github.io/MateriasMiasUEEA/" target="_blank">Soporte Tecnico</a></li>
-            <li><a href="https://mateo0a.github.io/MateriasMiasUEEA/" target="_blank">Sistemas Operativos</a></li>
-            <li><a href="https://mateo0a.github.io/MateriasMiasUEEA/" target="_blank">Ofimatica</a></li>
+            <li><a href="">Programacion</a></li>
+            <li><a href="">Diseño Web</a></li>
+            <li><a href="">Soporte Tecnico</a></li>
+            <li><a href="">Sistemas Operativos</a></li>
+            <li><a href="">Ofimatica</a></li>
           </div>
         </ul>
       </li>
@@ -101,7 +101,8 @@
 
 
   <!-----Content Index-->
-
+----------------------------------------------------------------------------------------------------------
+  <main class="main">
     
 
 
@@ -109,12 +110,420 @@
 
     <footer class="footer">
       <div>
+<style>
+  
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0; padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f9f9fc;
+    color: #34425a;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  h1 {
+    font-weight: 700;
+    color: #2e3a59;
+    text-align: center;
+    margin: 40px 20px 40px;
+    font-size: 2.8rem;
+  }
+  h2 {
+    font-weight: 600;
+    color: #47597e;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #d0d7e6;
+    padding-bottom: 6px;
+  }
+  main {
+    max-width: 900px;
+    margin: 0 auto 80px;
+    padding: 0 15px;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 10px 35px rgba(101, 101, 101, 0.1);
+    padding: 36px 44px;
+  }
+  .question-block {
+    margin-bottom: 30px;
+  }
+  .question-text {
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    color: #2e405f;
+  }
+  label.answer {
+    display: block;
+    background: #eef2fc;
+    padding: 13px 18px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    user-select: none;
+    border: 2px solid transparent;
+  }
+  label.answer:hover {
+    background-color: #d3dbfc;
+  }
+  input[type="radio"] {
+    margin-right: 14px;
+    accent-color: #7b90f7;
+  }
+  input[type="radio"]:focus + label.answer {
+    outline: 3px solid #7b90f7cc;
+  }
+  button.submit-btn {
+    display: block;
+    font-weight: 700;
+    background: #a4b8ff;
+    border: none;
+    color: #2e3a59;
+    padding: 16px 42px;
+    border-radius: 40px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: 25px auto 40px;
+    box-shadow: 0 10px 24px rgb(164 184 255 / 0.7);
+    transition: background-color 0.3s ease;
+  }
+  button.submit-btn:hover {
+    background-color: #7a8efc;
+    color: #f0f5ff;
+  }
+  .result-container {
+    margin-top: 20px;
+    background-color: #e6ebff;
+    border-radius: 14px;
+    padding: 22px 28px;
+    font-weight: 700;
+    font-size: 1.3rem;
+    text-align: center;
+    color: #2e3a59;
+    box-shadow: inset 0 0 15px rgb(47 88 182 / 0.15);
+  }
+  @media (max-width: 600px) {
+    main {
+      padding: 24px 18px;
+    }
+    .question-text {
+      font-size: 1rem;
+    }
+    button.submit-btn {
+      font-size: 1.1rem;
+      padding: 14px 32px;
+    }
+  }
+</style>
+</head>
+<body>
+<h1>Cuestionario de Evaluación</h1>
+<main role="main" aria-labelledby="tituloCuestionario">
+  <!-- Bloque 1: Temas 1-4 -->
+  <section aria-label="Temas 1 al 4">
+    <h2>Temas 1 al 4</h2>
 
+    <!-- Tema 1 -->
+    <h3>1. Eras Geológicas y Origen de la Humanidad</h3>
+    <div class="question-block" id="q1">
+      <div class="question-text">1.1. El Homo sapiens apareció hace aproximadamente 300,000 años en África. (Verdadero/Falso)</div>
+      <input type="radio" id="q1a1" name="q1" value="true" />
+      <label for="q1a1" class="answer">Verdadero</label>
+      <input type="radio" id="q1a2" name="q1" value="false" />
+      <label for="q1a2" class="answer">Falso</label>
+    </div>
+    <div class="question-block" id="q2">
+      <div class="question-text">1.2. El Precámbrico es la era más reciente en la historia geológica. (Verdadero/Falso)</div>
+      <input type="radio" id="q2a1" name="q2" value="false" />
+      <label for="q2a1" class="answer">Verdadero</label>
+      <input type="radio" id="q2a2" name="q2" value="true" />
+      <label for="q2a2" class="answer">Falso</label>
+    </div>
+
+    <!-- Tema 2 -->
+    <h3>2. Historia y Edades</h3>
+    <div class="question-block" id="q3">
+      <div class="question-text">2.1. La Edad Antigua comienza con la invención de la escritura. (Verdadero/Falso)</div>
+      <input type="radio" id="q3a1" name="q3" value="true" />
+      <label for="q3a1" class="answer">Verdadero</label>
+      <input type="radio" id="q3a2" name="q3" value="false" />
+      <label for="q3a2" class="answer">Falso</label>
+    </div>
+    <div class="question-block" id="q4">
+      <div class="question-text">2.2. El Renacimiento inicia la Edad Moderna. (Verdadero/Falso)</div>
+      <input type="radio" id="q4a1" name="q4" value="true" />
+      <label for="q4a1" class="answer">Verdadero</label>
+      <input type="radio" id="q4a2" name="q4" value="false" />
+      <label for="q4a2" class="answer">Falso</label>
+    </div>
+
+    <!-- Tema 3 -->
+    <h3>3. Civilizaciones Clásicas</h3>
+    <div class="question-block" id="q5">
+      <div class="question-text">3.1. La antigua Grecia aportó la filosofía y la democracia. (Verdadero/Falso)</div>
+      <input type="radio" id="q5a1" name="q5" value="true" />
+      <label for="q5a1" class="answer">Verdadero</label>
+      <input type="radio" id="q5a2" name="q5" value="false" />
+      <label for="q5a2" class="answer">Falso</label>
+    </div>
+    <div class="question-block" id="q6">
+      <div class="question-text">3.2. El Imperio Romano fue fundado en el 27 a.C. (Verdadero/Falso)</div>
+      <input type="radio" id="q6a1" name="q6" value="true" />
+      <label for="q6a1" class="answer">Verdadero</label>
+      <input type="radio" id="q6a2" name="q6" value="false" />
+      <label for="q6a2" class="answer">Falso</label>
+    </div>
+
+    <!-- Tema 4 -->
+    <h3>4. Movimientos Sociales y Religiosos</h3>
+    <div class="question-block" id="q7">
+      <div class="question-text">4.1. El feudalismo predominó en la Edad Media. (Verdadero/Falso)</div>
+      <input type="radio" id="q7a1" name="q7" value="true" />
+      <label for="q7a1" class="answer">Verdadero</label>
+      <input type="radio" id="q7a2" name="q7" value="false" />
+      <label for="q7a2" class="answer">Falso</label>
+    </div>
+    <div class="question-block" id="q8">
+      <div class="question-text">4.2. El Renacimiento fue un movimiento cultural del siglo XIV. (Verdadero/Falso)</div>
+      <input type="radio" id="q8a1" name="q8" value="true" />
+      <label for="q8a1" class="answer">Verdadero</label>
+      <input type="radio" id="q8a2" name="q8" value="false" />
+      <label for="q8a2" class="answer">Falso</label>
+    </div>
+
+    <button class="submit-btn" onclick="calcularResultados(1)">Enviar respuestas de Temas 1-4</button>
+    <div aria-live="polite" class="result-container" id="resultado1"></div>
+  </section>
+
+  <!-- Bloque 2: Temas 5-8 -->
+  <section aria-label="Temas 5 al 8">
+    <h2>Temas 5 al 8</h2>
+
+    <!-- Tema 5 -->
+    <h3>5. Población y Culturas de América</h3>
+    <div class="question-block" id="q9">
+      <div class="question-text">5.1. Los primeros pobladores llegaron desde Asia por el estrecho de Bering. (Verdadero/Falso)</div>
+      <input type="radio" id="q9a1" name="q9" value="true" />
+      <label for="q9a1" class="answer">Verdadero</label>
+      <input type="radio" id="q9a2" name="q9" value="false" />
+      <label for="q9a2" class="answer">Falso</label>
+    </div>
+    <div class="question-block" id="q10">
+      <div class="question-text">5.2. Los Incas florecieron en la región andina. (Verdadero/Falso)</div>
+      <input type="radio" id="q10a1" name="q10" value="true" />
+      <label for="q10a1" class="answer">Verdadero</label>
+      <input type="radio" id="q10a2" name="q10" value="false" />
+      <label for="q10a2" class="answer">Falso</label>
+    </div>
+
+    <!-- Tema 6 -->
+    <h3>6. Geografía y Recursos Naturales de América</h3>
+    <div class="question-block" id="q11">
+      <div class="question-text">6.1. Las Montañas Rocosas están en América del Norte. (Verdadero/Falso)</div>
+      <input type="radio" id="q11a1" name="q11" value="true" />
+      <label for="q11a1" class="answer">Verdadero</label>
+      <input type="radio" id="q11a2" name="q11" value="false" />
+      <label for="q11a2" class="answer">Falso</label>
+    </div>
+    <div class="question-block" id="q12">
+      <div class="question-text">6.2. El clima en América varía desde ártico hasta tropical. (Verdadero/Falso)</div>
+      <input type="radio" id="q12a1" name="q12" value="true" />
+      <label for="q12a1" class="answer">Verdadero</label>
+      <input type="radio" id="q12a2" name="q12" value="false" />
+      <label for="q12a2" class="answer">Falso</label>
+    </div>
+
+    <!-- Tema 7 -->
+    <h3>7. Conquista, Colonización e Independencia</h3>
+    <div class="question-block" id="q13">
+      <div class="question-text">7.1. Cristóbal Colón llegó a América en el siglo XV. (Verdadero/Falso)</div>
+      <input type="radio" id="q13a1" name="q13" value="true" />
+      <label for="q13a1" class="answer">Verdadero</label>
+      <input type="radio" id="q13a2" name="q13" value="false" />
+      <label for="q13a2" class="answer">Falso</label>
+    </div>
+    <div class="question-block" id="q14">
+      <div class="question-text">7.2. La independencia latinoamericana fue un proceso complejo con luchas. (Verdadero/Falso)</div>
+      <input type="radio" id="q14a1" name="q14" value="true" />
+      <label for="q14a1" class="answer">Verdadero</label>
+      <input type="radio" id="q14a2" name="q14" value="false" />
+      <label for="q14a2" class="answer">Falso</label>
+    </div>
+
+    <!-- Tema 8 -->
+    <h3>8. Transformaciones Sociales y Políticas en el Mundo Moderno</h3>
+    <div class="question-block" id="q15">
+      <div class="question-text">8.1. La Revolución Industrial comenzó en Gran Bretaña a finales del siglo XVIII. (Verdadero/Falso)</div>
+      <input type="radio" id="q15a1" name="q15" value="true" />
+      <label for="q15a1" class="answer">Verdadero</label>
+      <input type="radio" id="q15a2" name="q15" value="false" />
+      <label for="q15a2" class="answer">Falso</label>
+    </div>
+    <div class="question-block" id="q16">
+      <div class="question-text">8.2. La Ilustración promovió ideas de razón y libertad. (Verdadero/Falso)</div>
+      <input type="radio" id="q16a1" name="q16" value="true" />
+      <label for="q16a1" class="answer">Verdadero</label>
+      <input type="radio" id="q16a2" name="q16" value="false" />
+      <label for="q16a2" class="answer">Falso</label>
+    </div>
+
+    <button class="submit-btn" onclick="calcularResultados(2)">Enviar respuestas de Temas 5-8</button>
+    <div aria-live="polite" class="result-container" id="resultado2"></div>
+  </section>
+
+  <!-- Bloque 3: Temas 9-12 -->
+  <section aria-label="Temas 9 al 12">
+    <h2>Temas 9 al 12</h2>
+
+    <!-- Tema 9 -->
+    <h3>9. Transformaciones Políticas y Sociales en el Siglo XIX y XX</h3>
+    <div class="question-block" id="q17">
+      <div class="question-text">9.1. El liberalismo político promovió la participación ciudadana. (Verdadero/Falso)</div>
+      <input type="radio" id="q17a1" name="q17" value="true" />
+      <label for="q17a1" class="answer">Verdadero</label>
+      <input type="radio" id="q17a2" name="q17" value="false" />
+      <label for="q17a2" class="answer">Falso</label>
+    </div>
+    <div class="question-block" id="q18">
+      <div class="question-text">9.2. El colonialismo se intensificó durante el siglo XIX. (Verdadero/Falso)</div>
+      <input type="radio" id="q18a1" name="q18" value="true" />
+      <label for="q18a1" class="answer">Verdadero</label>
+      <input type="radio" id="q18a2" name="q18" value="false" />
+      <label for="q18a2" class="answer">Falso</label>
+    </div>
+
+    <!-- Tema 10 -->
+    <h3>10. Conflictos Globales y sus Consecuencias</h3>
+    <div class="question-block" id="q19">
+      <div class="question-text">10.1. La Segunda Guerra Mundial llevó a la creación de la ONU. (Verdadero/Falso)</div>
+      <input type="radio" id="q19a1" name="q19" value="true" />
+      <label for="q19a1" class="answer">Verdadero</label>
+      <input type="radio" id="q19a2" name="q19" value="false" />
+      <label for="q19a2" class="answer">Falso</label>
+    </div>
+    <div class="question-block" id="q20">
+      <div class="question-text">10.2. La Guerra Fría fue una tensión política y militar indirecta. (Verdadero/Falso)</div>
+      <input type="radio" id="q20a1" name="q20" value="true" />
+      <label for="q20a1" class="answer">Verdadero</label>
+      <input type="radio" id="q20a2" name="q20" value="false" />
+      <label for="q20a2" class="answer">Falso</label>
+    </div>
+
+    <!-- Tema 11 -->
+    <h3>11. Movimientos Sociales y Ciudadanía</h3>
+    <div class="question-block" id="q21">
+      <div class="question-text">11.1. Los movimientos sociales del siglo XX buscaron inclusión y justicia. (Verdadero/Falso)</div>
+      <input type="radio" id="q21a1" name="q21" value="true" />
+      <label for="q21a1" class="answer">Verdadero</label>
+      <input type="radio" id="q21a2" name="q21" value="false" />
+      <label for="q21a2" class="answer">Falso</label>
+    </div>
+    <div class="question-block" id="q22">
+      <div class="question-text">11.2. La ciudadanía se expandió para mayor equidad en Latinoamérica. (Verdadero/Falso)</div>
+      <input type="radio" id="q22a1" name="q22" value="true" />
+      <label for="q22a1" class="answer">Verdadero</label>
+      <input type="radio" id="q22a2" name="q22" value="false" />
+      <label for="q22a2" class="answer">Falso</label>
+    </div>
+
+    <!-- Tema 12 -->
+    <h3>12. Globalización y Nuevos Desafíos</h3>
+    <div class="question-block" id="q23">
+      <div class="question-text">12.1. La globalización facilitó la interconexión mundial. (Verdadero/Falso)</div>
+      <input type="radio" id="q23a1" name="q23" value="true" />
+      <label for="q23a1" class="answer">Verdadero</label>
+      <input type="radio" id="q23a2" name="q23" value="false" />
+      <label for="q23a2" class="answer">Falso</label>
+    </div>
+    <div class="question-block" id="q24">
+      <div class="question-text">12.2. Las migraciones masivas afectan la demografía y dinámica social. (Verdadero/Falso)</div>
+      <input type="radio" id="q24a1" name="q24" value="true" />
+      <label for="q24a1" class="answer">Verdadero</label>
+      <input type="radio" id="q24a2" name="q24" value="false" />
+      <label for="q24a2" class="answer">Falso</label>
+    </div>
+
+    <button class="submit-btn" onclick="calcularResultados(3)">Enviar respuestas de Temas 9-12</button>
+    <div aria-live="polite" class="result-container" id="resultado3"></div>
+  </section>
+</main>
+
+<script>
+  function calcularResultados(bloque) {
+    // Define preguntas por bloque
+    const bloques = {
+      1: [ "q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8" ],
+      2: [ "q9", "q10", "q11", "q12", "q13", "q14", "q15", "q16" ],
+      3: [ "q17", "q18", "q19", "q20", "q21", "q22", "q23", "q24" ]
+    };
+    const preguntas = bloques[bloque];
+    const resultadoDiv = document.getElementById('resultado'+bloque);
+    let respondidas = 0;
+    let correctas = 0;
+
+    // Clave con respuesta correcta para cada pregunta
+    const respuestasCorrectas = {
+      q1: 'true', q2: 'false',
+      q3: 'true', q4: 'true',
+      q5: 'true', q6: 'true',
+      q7: 'true', q8: 'true',
+      q9: 'true', q10:'true',
+      q11:'true', q12:'true',
+      q13:'true', q14:'true',
+      q15:'true', q16:'true',
+      q17:'true', q18:'true',
+      q19:'true', q20:'true',
+      q21:'true', q22:'true',
+      q23:'true', q24:'true'
+    };
+
+    for (let pregunta of preguntas) {
+      const opcionSeleccionada = document.querySelector(`input[name="${pregunta}"]:checked`);
+      if (!opcionSeleccionada) {
+        resultadoDiv.style.color = '#d9534f';
+        resultadoDiv.textContent = `Por favor, responde todas las preguntas del bloque antes de enviar.`;
+        return;
+      }
+      respondidas++;
+      if (opcionSeleccionada.value === respuestasCorrectas[pregunta]) {
+        correctas++;
+      }
+    }
+
+    const total = preguntas.length;
+    const porcentaje = ((correctas / total) * 100).toFixed(1);
+
+    let mensaje = `Respondiste correctamente ${correctas} de ${total} preguntas. (${porcentaje}%) `;
+    if (porcentaje === "100.0") {
+      mensaje += "¡Excelente trabajo!";
+      resultadoDiv.style.color = "#2e7d32";
+    } else if (porcentaje >= 75) {
+      mensaje += "Buen trabajo, buen dominio del tema.";
+      resultadoDiv.style.color = "#388e3c";
+    } else if (porcentaje >= 50) {
+      mensaje += "Podrías mejorar. Repasa los temas con dudas.";
+      resultadoDiv.style.color = "#f9a825";
+    } else {
+      mensaje += "Estudia los contenidos con más detalle.";
+      resultadoDiv.style.color = "#d32f2f";
+    }
+    resultadoDiv.textContent = mensaje;
+    resultadoDiv.scrollIntoView({behavior: "smooth", block: "center"});
+  }
+</script>
+</body>
+</html>
         <a href="">
           <span>
             Repositorio&
           </span>
           <i class="bi bi-github"></i></a>
+
       </div>
       <span>
         @U.E.E.A 2025
