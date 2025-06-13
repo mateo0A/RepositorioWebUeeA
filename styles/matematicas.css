@@ -15,22 +15,6 @@
 
 
 
-
-.iii{
-    grid-area: subt;
-    background: red;
-    width: 100%;
-    height: 100%;
-    overflow: ellipsis;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--bck-ContMain);
-    
-    border-radius: 10px ;
-    box-sizing: border-box;
-}
-}
 .infDoc{
     display: grid;  
     grid-template-columns: 1fr 400px;
