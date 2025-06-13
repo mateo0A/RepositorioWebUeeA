@@ -17,21 +17,19 @@
 
 
 .iii{
-    display: grid;  
-    grid-template-columns: 1fr 400px;
-    grid-template-rows:40px auto auto ;
-    min-width: 100%;
-    max-width: 100%;
-    grid-template-areas:
-    "subt subt"
-    "res igDo" 
-    "desc desc"
-    ;
-    align-items: center;
-    gap: 5px;
+    grid-area: subt;
+    background: red;
+    width: 100%;
+    height: 100%;
+    overflow: ellipsis;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    background: var(--bck-ContMain);
+    
+    border-radius: 10px ;
     box-sizing: border-box;
-    padding: 15px;
+}
 }
 .infDoc{
     display: grid;  
