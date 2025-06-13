@@ -116,9 +116,14 @@
             background-color: #f4f4f4;
             margin: 0;
             padding: 20px;
-            display: flex;
-            justify-content: center;
             color: #000;
+            /* Organizar verticalmente los cuadros */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* espacio entre cuadros */
+            gap: 24px;
+            min-height: 100vh;
         }
 
         .container {
@@ -129,6 +134,9 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             padding: 20px;
             box-sizing: border-box;
+            /* centrar contenido textual */
+            display: flex;
+            flex-direction: column;
         }
 
         h1,
@@ -139,10 +147,8 @@
         }
 
         .section {
-          flex: auto;
-            flex-direction: column;
-
             margin-bottom: 40px;
+            width: 100%;
         }
 
         .question {
@@ -218,10 +224,12 @@
 </head>
 
 <body>
+
     <div class="container" role="main" aria-label="Cuestionario Interactivo de Biología">
         <h1>CIENCIAS NATURALES</h1>
+    </div>
 
-        <!-- Tema 1 -->
+    <div class="container" role="main" aria-label="Tema 1: La célula">
         <section class="section">
             <h2>1. La célula</h2>
             <div class="question" data-correct="C">1. ¿Cuál es una de las funciones principales de las células?</div>
@@ -240,10 +248,9 @@
             </div>
             <div class="feedback"></div>
         </section>
-        <br>
-      </div>
-      <div class="container" role="main" aria-label="Cuestionario Interactivo de Biología">
-        <!-- Tema 2 -->
+    </div>
+
+    <div class="container" role="main" aria-label="Tema 2: Tipos de células">
         <section class="section">
             <h2>2. Tipos de células</h2>
             <div class="question" data-correct="A">1. ¿Qué característica distingue a las células procariotas?</div>
@@ -262,62 +269,60 @@
             </div>
             <div class="feedback"></div>
         </section>
-      </div>
-        <!-- Los demás temas similares -->
-      
+    </div>
+
+    <!-- Aquí puedes agregar más contenedores .container para los demás temas -->
 
 <script>
-document.querySelectorAll('.section').forEach(section => {
-  // Obtiene todas las preguntas y respuestas dentro de la sección
-  const questions = section.querySelectorAll('.question');
-  const answersGroups = section.querySelectorAll('.answers');
-  const feedbackEl = section.querySelector('.feedback');
+document.querySelectorAll('.container').forEach(container => {
+    const sections = container.querySelectorAll('.section');
+    sections.forEach(section => {
+        const questions = section.querySelectorAll('.question');
+        const answersGroups = section.querySelectorAll('.answers');
+        const feedbackEl = section.querySelector('.feedback');
 
-  // Se asume que cada pregunta tiene su grupo de respuestas inmediatamente después
-  questions.forEach((questionEl, index) => {
-    const correctAnswer = questionEl.dataset.correct;
-    const answersEl = answersGroups[index];
+        questions.forEach((questionEl, index) => {
+            const correctAnswer = questionEl.dataset.correct;
+            const answersEl = answersGroups[index];
 
-    if (!answersEl) return;
+            if (!answersEl) return;
 
-    answersEl.querySelectorAll('.answer').forEach(answerEl => {
-      // Añadir eventos click y teclado para accesibilidad
-      answerEl.addEventListener('click', () => selectAnswer(questionEl, answersEl, answerEl, correctAnswer, feedbackEl));
-      answerEl.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          selectAnswer(questionEl, answersEl, answerEl, correctAnswer, feedbackEl);
+            answersEl.querySelectorAll('.answer').forEach(answerEl => {
+                answerEl.addEventListener('click', () => selectAnswer(answersEl, answerEl, correctAnswer, feedbackEl));
+                answerEl.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        selectAnswer(answersEl, answerEl, correctAnswer, feedbackEl);
+                    }
+                });
+            });
+        });
+    });
+
+    function selectAnswer(answersEl, selectedAnswerEl, correctAnswer, feedbackEl) {
+        if (answersEl.classList.contains('answered')) return;
+
+        answersEl.querySelectorAll('.answer').forEach(answer => {
+            answer.classList.add('disabled');
+            if (answer.dataset.value === correctAnswer) {
+                answer.classList.add('correct');
+            } else if (answer === selectedAnswerEl) {
+                answer.classList.add('incorrect');
+            }
+        });
+
+        answersEl.classList.add('answered');
+
+        if (feedbackEl) {
+            if (selectedAnswerEl.dataset.value === correctAnswer) {
+                feedbackEl.textContent = '¡Respuesta correcta!';
+                feedbackEl.style.color = '#28a745';
+            } else {
+                feedbackEl.textContent = 'Respuesta incorrecta. Intenta de nuevo.';
+                feedbackEl.style.color = '#dc3545';
+            }
         }
-      });
-    });
-  });
-
-  function selectAnswer(questionEl, answersEl, selectedAnswerEl, correctAnswer, feedbackEl) {
-    // Si ya está seleccionado (disabled), no hacer nada
-    if (selectedAnswerEl.classList.contains('disabled')) return;
-
-    // Deshabilitar todos los answers en este grupo
-    answersEl.querySelectorAll('.answer').forEach(answer => {
-      answer.classList.add('disabled');
-      // Marcar correctas e incorrectas
-      if (answer.dataset.value === correctAnswer) {
-        answer.classList.add('correct');
-      } else if (answer === selectedAnswerEl) {
-        answer.classList.add('incorrect');
-      }
-    });
-
-    // Mostrar retroalimentación opcional
-    if (feedbackEl) {
-      if (selectedAnswerEl.dataset.value === correctAnswer) {
-        feedbackEl.textContent = '¡Respuesta correcta!';
-        feedbackEl.style.color = '#28a745'; // verde
-      } else {
-        feedbackEl.textContent = 'Respuesta incorrecta. Intenta de nuevo.';
-        feedbackEl.style.color = '#dc3545'; // rojo
-      }
     }
-  }
 });
 </script>
 
