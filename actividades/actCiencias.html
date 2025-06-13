@@ -120,11 +120,6 @@
       transition: background-color 0.3s ease, color 0.3s ease;
     }
 
-    body.dark {
-      background-color: #121212;
-      color: #ffffff;
-    }
-
     .container {
       max-width: 800px;
       margin: 0 auto;
@@ -142,23 +137,12 @@
       flex-direction: column;
       align-items: center;
       color: #000000;
-      transition: background-color 0.3s ease, color 0.3s ease;
-    }
-
-    body.dark .section {
-      background: #1e1e1e;
-      color: #ffffff;
     }
 
     h2 {
       margin-bottom: 15px;
       color: #0b3d91;
       text-align: center;
-      transition: color 0.3s ease;
-    }
-
-    body.dark h2 {
-      color: #bb86fc;
     }
 
     .question {
@@ -167,11 +151,6 @@
       margin-top: 20px;
       width: 100%;
       text-align: left;
-      transition: color 0.3s ease;
-    }
-
-    body.dark .question {
-      color: #bb86fc;
     }
 
     .answers {
@@ -207,48 +186,16 @@
       color: #000000;
     }
 
-    body.dark .answer {
-      background: #2c2c2c;
-      color: #ffffff;
-      border-color: transparent;
-    }
-
-    .answer:hover:not(.disabled) {
-      background: #e1ecfb;
-    }
-
-    body.dark .answer:hover:not(.disabled) {
-      background: #3a3a3a;
-    }
-
     .answer.correct {
       background-color: #d4edda;
       border-color: #28a745;
       color: #155724;
-      cursor: default;
-    }
-
-    body.dark .answer.correct {
-      background-color: #388e3c;
-      border-color: #81c784;
-      color: #ffffff;
     }
 
     .answer.incorrect {
       background-color: #f8d7da;
       border-color: #dc3545;
       color: #721c24;
-      cursor: default;
-    }
-
-    body.dark .answer.incorrect {
-      background-color: #b00020;
-      border-color: #ef5350;
-      color: #ffffff;
-    }
-
-    .answer.disabled {
-      pointer-events: none;
     }
 
     .feedback {
@@ -271,13 +218,7 @@
         <div class="answer" data-value="C" tabindex="0">C) Brindar estructura, absorber nutrientes y realizar funciones especializadas</div>
         <div class="answer" data-value="D" tabindex="0">D) Controlar las emociones humanas</div>
       </div>
-      <div class="question" data-correct="B">2. ¿Cuál es una diferencia principal entre las células procariotas y eucariotas?</div>
-      <div class="answers">
-        <div class="answer" data-value="A" tabindex="0">A) Las procariotas tienen núcleo definido, las eucariotas no</div>
-        <div class="answer" data-value="B" tabindex="0">B) Las eucariotas tienen membrana nuclear, las procariotas no</div>
-        <div class="answer" data-value="C" tabindex="0">C) Las procariotas son más grandes que las eucariotas</div>
-        <div class="answer" data-value="D" tabindex="0">D) Las eucariotas no tienen citoplasma</div>
-      </div>
+      <div class="feedback"></div>
     </div>
 
     <div class="section">
@@ -289,13 +230,7 @@
         <div class="answer" data-value="C" tabindex="0">C) Nivel órgano</div>
         <div class="answer" data-value="D" tabindex="0">D) Nivel subatómico</div>
       </div>
-      <div class="question" data-correct="B">2. ¿Qué nivel de organización agrupa diferentes poblaciones en un mismo espacio?</div>
-      <div class="answers">
-        <div class="answer" data-value="A" tabindex="0">A) Nivel individuo</div>
-        <div class="answer" data-value="B" tabindex="0">B) Nivel comunidad</div>
-        <div class="answer" data-value="C" tabindex="0">C) Nivel sistema</div>
-        <div class="answer" data-value="D" tabindex="0">D) Nivel órgano</div>
-      </div>
+      <div class="feedback"></div>
     </div>
 
     <div class="section">
@@ -307,13 +242,7 @@
         <div class="answer" data-value="C" tabindex="0">C) Factores químicos únicamente</div>
         <div class="answer" data-value="D" tabindex="0">D) Solo el medio ambiente</div>
       </div>
-      <div class="question" data-correct="C">2. ¿Cuál es un ejemplo de un ecosistema artificial?</div>
-      <div class="answers">
-        <div class="answer" data-value="A" tabindex="0">A) Selva amazónica</div>
-        <div class="answer" data-value="B" tabindex="0">B) Arrecife de coral</div>
-        <div class="answer" data-value="C" tabindex="0">C) Acuario</div>
-        <div class="answer" data-value="D" tabindex="0">D) Bosque templado</div>
-      </div>
+      <div class="feedback"></div>
     </div>
 
     <div class="section">
@@ -325,13 +254,7 @@
         <div class="answer" data-value="C" tabindex="0">C) Clima muy frío y ausencia de árboles</div>
         <div class="answer" data-value="D" tabindex="0">D) Bosques de coníferas</div>
       </div>
-      <div class="question" data-correct="C">2. ¿Cuál es un ejemplo de bioma acuático de agua dulce?</div>
-      <div class="answers">
-        <div class="answer" data-value="A" tabindex="0">A) Arrecife de coral</div>
-        <div class="answer" data-value="B" tabindex="0">B) Océano Pacífico</div>
-        <div class="answer" data-value="C" tabindex="0">C) Lago Titicaca</div>
-        <div class="answer" data-value="D" tabindex="0">D) Mar Mediterráneo</div>
-      </div>
+      <div class="feedback"></div>
     </div>
 
     <div class="section">
@@ -343,13 +266,7 @@
         <div class="answer" data-value="C" tabindex="0">C) El comportamiento emocional</div>
         <div class="answer" data-value="D" tabindex="0">D) Solo los órganos sexuales</div>
       </div>
-      <div class="question" data-correct="B">2. ¿A qué se refiere principalmente la sexualidad humana?</div>
-      <div class="answers">
-        <div class="answer" data-value="A" tabindex="0">A) A los hábitos alimenticios</div>
-        <div class="answer" data-value="B" tabindex="0">B) A la conducta, emociones y cultura relacionadas con el sexo</div>
-        <div class="answer" data-value="C" tabindex="0">C) A la capacidad de aprender idiomas</div>
-        <div class="answer" data-value="D" tabindex="0">D) A los deportes practicados según el sexo</div>
-      </div>
+      <div class="feedback"></div>
     </div>
 
     <div class="section">
@@ -361,13 +278,7 @@
         <div class="answer" data-value="C" tabindex="0">C) Cambios físicos por la pubertad</div>
         <div class="answer" data-value="D" tabindex="0">D) Estabilidad emocional constante</div>
       </div>
-      <div class="question" data-correct="B">2. Desde el punto de vista social, ¿qué representa la adolescencia?</div>
-      <div class="answers">
-        <div class="answer" data-value="A" tabindex="0">A) La fase de aprendizaje de normas básicas</div>
-        <div class="answer" data-value="B" tabindex="0">B) La preparación para los roles adultos</div>
-        <div class="answer" data-value="C" tabindex="0">C) El inicio de la niñez</div>
-        <div class="answer" data-value="D" tabindex="0">D) El final del desarrollo corporal</div>
-      </div>
+      <div class="feedback"></div>
     </div>
 
     <div class="section">
@@ -379,13 +290,7 @@
         <div class="answer" data-value="C" tabindex="0">C) Para examinar células y detectar enfermedades</div>
         <div class="answer" data-value="D" tabindex="0">D) Para identificar planetas</div>
       </div>
-      <div class="question" data-correct="C">2. ¿Qué técnica citológica se utiliza comúnmente en ginecología?</div>
-      <div class="answers">
-        <div class="answer" data-value="A" tabindex="0">A) Radiografía</div>
-        <div class="answer" data-value="B" tabindex="0">B) Ultrasonido</div>
-        <div class="answer" data-value="C" tabindex="0">C) Frotis de Papanicolaou</div>
-        <div class="answer" data-value="D" tabindex="0">D) Electrocardiograma</div>
-      </div>
+      <div class="feedback"></div>
     </div>
 
     <div class="section">
@@ -397,13 +302,7 @@
         <div class="answer" data-value="C" tabindex="0">C) Cuatro células diferentes</div>
         <div class="answer" data-value="D" tabindex="0">D) Un solo núcleo duplicado</div>
       </div>
-      <div class="question" data-correct="B">2. ¿Qué ocurre durante la metafase?</div>
-      <div class="answers">
-        <div class="answer" data-value="A" tabindex="0">A) Los cromosomas se duplican</div>
-        <div class="answer" data-value="B" tabindex="0">B) Los cromosomas se alinean en el centro</div>
-        <div class="answer" data-value="C" tabindex="0">C) El citoplasma se divide</div>
-        <div class="answer" data-value="D" tabindex="0">D) Desaparece la membrana nuclear</div>
-      </div>
+      <div class="feedback"></div>
     </div>
 
     <div class="section">
@@ -415,13 +314,7 @@
         <div class="answer" data-value="C" tabindex="0">C) Cuatro células diferentes</div>
         <div class="answer" data-value="D" tabindex="0">D) Ocho células diploides</div>
       </div>
-      <div class="question" data-correct="C">2. ¿Cuál es una función principal de la meiosis?</div>
-      <div class="answers">
-        <div class="answer" data-value="A" tabindex="0">A) Eliminar células viejas</div>
-        <div class="answer" data-value="B" tabindex="0">B) Reparar tejidos</div>
-        <div class="answer" data-value="C" tabindex="0">C) Formar gametos y generar diversidad genética</div>
-        <div class="answer" data-value="D" tabindex="0">D) Duplicar los cromosomas</div>
-      </div>
+      <div class="feedback"></div>
     </div>
 
     <div class="section">
@@ -433,9 +326,63 @@
         <div class="answer" data-value="C" tabindex="0">C) La derivación y composición de palabras</div>
         <div class="answer" data-value="D" tabindex="0">D) El cambio climático</div>
       </div>
-      <div class="question" data-correct="C">2. ¿Qué analiza la morfología flexiva?</div>
+      <div class="feedback"></div>
+    </div>
+
+    <div class="section">
+      <h2>11. La fisiología humana</h2>
+      <div class="question" data-correct="B">1. ¿Qué estudia la fisiología humana?</div>
       <div class="answers">
-        <div class="answer" data-value="A" tabindex="0">A) La estructura
+        <div class="answer" data-value="A" tabindex="0">A) Las palabras y su estructura</div>
+        <div class="answer" data-value="B" tabindex="0">B) El funcionamiento de los órganos y sistemas</div>
+        <div class="answer" data-value="C" tabindex="0">C) La reproducción celular</div>
+        <div class="answer" data-value="D" tabindex="0">D) La evolución de las especies</div>
+      </div>
+      <div class="feedback"></div>
+    </div>
+
+    <div class="section">
+      <h2>12. Homeostasis</h2>
+      <div class="question" data-correct="C">1. ¿Qué es la homeostasis?</div>
+      <div class="answers">
+        <div class="answer" data-value="A" tabindex="0">A) El crecimiento celular</div>
+        <div class="answer" data-value="B" tabindex="0">B) La producción de energía</div>
+        <div class="answer" data-value="C" tabindex="0">C) El mantenimiento del equilibrio interno del cuerpo</div>
+        <div class="answer" data-value="D" tabindex="0">D) La división del núcleo</div>
+      </div>
+      <div class="feedback"></div>
+    </div>
+  </div>
+
+  <script>
+    const sections = document.querySelectorAll('.section');
+
+    sections.forEach(section => {
+      const answers = section.querySelectorAll('.answer');
+      const correctAnswer = section.querySelector('.question').getAttribute('data-correct');
+
+      answers.forEach(answer => {
+        answer.addEventListener('click', () => {
+          // Reset previous feedback
+          answers.forEach(a => {
+            a.classList.remove('correct', 'incorrect');
+          });
+          const selectedValue = answer.getAttribute('data-value');
+
+          if (selectedValue === correctAnswer) {
+            answer.classList.add('correct');
+            section.querySelector('.feedback').textContent = '¡Correcto!';
+          } else {
+            answer.classList.add('incorrect');
+            section.querySelector('.feedback').textContent = 'Incorrecto. Intenta de nuevo.';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
+
 
     
      
