@@ -14,6 +14,25 @@
 }
 
 
+
+
+.iii{
+    display: grid;  
+    grid-template-columns: 1fr 400px;
+    grid-template-rows:40px auto auto ;
+    min-width: 100%;
+    max-width: 100%;
+    grid-template-areas:
+    "subt subt"
+    "res igDo" 
+    "desc desc"
+    ;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 15px;
+}
 .infDoc{
     display: grid;  
     grid-template-columns: 1fr 400px;
