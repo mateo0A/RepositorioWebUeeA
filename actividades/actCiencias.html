@@ -104,111 +104,111 @@
     
     <!------Footer-->
 
-    <footer class="footer">
-      <div>
+    <!-----Content Index-->
+
+<main class="main2">
 
 
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Cuestionario Interactivo de Biología</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 20px;
-      display: flex;
-      justify-content: center;
-    }
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 0;
-    }
-    .section {
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      padding: 20px;
-      margin-bottom: 60px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    h2 {
-      margin-bottom: 15px;
-      color: #0b3d91;
-      text-align: center;
-    }
-    .question {
-      font-weight: 600;
-      color: #0b3d91;
-      margin-top: 20px;
-      width: 100%;
-      text-align: left;
-    }
-    .answers {
-      margin-top: 8px;
-      width: 100%;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 12px;
-    }
-    .answer {
-      background: #f9f9f9;
-      border: 2px solid transparent;
-      border-radius: 6px;
-      padding: 12px 10px;
-      cursor: pointer;
-      text-align: center;
-      user-select: none;
-      transition: background-color 0.3s ease, border-color 0.3s ease;
-      font-size: 0.95rem;
-      word-break: break-word;
-    }
-    .answer:hover:not(.disabled) {
-      background: #e1ecfb;
-    }
-    .answer.correct {
-      background-color: #d4edda;
-      border-color: #28a745;
-      color: #155724;
-      cursor: default;
-    }
-    .answer.incorrect {
-      background-color: #f8d7da;
-      border-color: #dc3545;
-      color: #721c24;
-      cursor: default;
-    }
-    .answer.disabled {
-      pointer-events: none;
-    }
-    .feedback {
-      margin-top: 6px;
-      font-weight: 600;
-      font-size: 0.9rem;
-      text-align: center;
-    }
-    @media (max-width: 992px) {
+  <!DOCTYPE html>
+  <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cuestionario Interactivo de Biología</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0;
+      }
+      .section {
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        padding: 20px;
+        margin-bottom: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      h2 {
+        margin-bottom: 15px;
+        color: #0b3d91;
+        text-align: center;
+      }
+      .question {
+        font-weight: 600;
+        color: #0b3d91;
+        margin-top: 20px;
+        width: 100%;
+        text-align: left;
+      }
       .answers {
+        margin-top: 8px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+      }
+      .answer {
+        background: #f9f9f9;
+        border: 2px solid transparent;
+        border-radius: 6px;
+        padding: 12px 10px;
+        cursor: pointer;
+        text-align: center;
+        user-select: none;
+        transition: background-color 0.3s ease, border-color 0.3s ease;
+        font-size: 0.95rem;
+        word-break: break-word;
+      }
+      .answer:hover:not(.disabled) {
+        background: #e1ecfb;
+      }
+      .answer.correct {
+        background-color: #d4edda;
+        border-color: #28a745;
+        color: #155724;
+        cursor: default;
+      }
+      .answer.incorrect {
+        background-color: #f8d7da;
+        border-color: #dc3545;
+        color: #721c24;
+        cursor: default;
+      }
+      .answer.disabled {
+        pointer-events: none;
+      }
+      .feedback {
+        margin-top: 6px;
+        font-weight: 600;
+        font-size: 0.9rem;
+        text-align: center;
+      }
+      @media (max-width: 992px) {
+        .answers {
         grid-template-columns: repeat(2, 1fr);
       }
-    }
-    @media (max-width: 480px) {
-      .answers {
+      }
+      @media (max-width: 480px) {
+        .answers {
         grid-template-columns: 1fr;
       }
-    }
-  </style>
-</head>
-<body>
+      }
+    </style>
+  </head>
+  <body>
     <h2 class="">CIENCIAS NATURALES</h2>
-  <div class="container">
+    <div class="container">
 
     <div class="section">
       <h2>1. La célula</h2>
@@ -426,8 +426,8 @@
       </div>
     </div>
 
-  </div>
-  <script>
+    </div>
+    <script>
     document.querySelectorAll('.answers').forEach(answersContainer => {
       answersContainer.addEventListener('click', event => {
         const target = event.target;
@@ -471,10 +471,10 @@
       feedback.textContent = isCorrect ? 'Correcto' : 'Incorrecto';
       answerElem.appendChild(feedback);
     }
-  </script>
-</body>
-</html>
-</section>
+    </script>
+  </body>
+  </html>
+  </section>
           <footer class="footer">
             <div>
 
@@ -489,7 +489,7 @@
                 @U.E.E.A 2025
             </span>
         </footer>
-    </main>
+</main>
     <script type="module" src="../main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
   
