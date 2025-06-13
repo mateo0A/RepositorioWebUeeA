@@ -99,6 +99,147 @@
     </ol>
   </nav>
 
+
+  <!-----Content Index-->
+
+  <main class="main2">
+    <header class="tittleAc">
+      <h1>Matematicas</h1>
+    </header>
+    <!-- ACTIVIDADES INTERACTIVAS DE QUÍMICA -->
+    <section class="actividades-ciencias">
+      <h2>Actividades Interactivas de Matemáticas</h2>
+      <!-- 1. Serie aritmética -->
+      <div class="actividad">
+        <p><strong>1. ¿Cuál es el siguiente número en la serie: 4, 7, 10, 13, __?</strong></p>
+        <form>
+          <input type="radio" name="q1" value="a"> a) 15<br>
+          <input type="radio" name="q1" value="b"> b) 16<br>
+          <input type="radio" name="q1" value="c"> c) 18<br>
+        </form>
+      </div>
+      <!-- 2. Serie geométrica -->
+      <div class="actividad">
+        <p><strong>2. ¿Cuál es el siguiente número en la serie: 2, 4, 8, 16, __?</strong></p>
+        <form>
+          <input type="radio" name="q2" value="a"> a) 20<br>
+          <input type="radio" name="q2" value="b"> b) 24<br>
+          <input type="radio" name="q2" value="c"> c) 32<br>
+        </form>
+      </div>
+      <!-- 3. Serie alternada -->
+      <div class="actividad">
+        <p><strong>3. ¿Cuál es el siguiente número en la serie: 2, 5, 4, 7, 6, __?</strong></p>
+        <form>
+          <input type="radio" name="q3" value="a"> a) 7<br>
+          <input type="radio" name="q3" value="b"> b) 8<br>
+          <input type="radio" name="q3" value="c"> c) 9<br>
+        </form>
+      </div>
+      <!-- 4. Serie cuadrática -->
+      <div class="actividad">
+        <p><strong>4. ¿Cuál es el siguiente número en la serie: 1, 4, 9, 16, __?</strong></p>
+        <form>
+          <input type="radio" name="q4" value="a"> a) 20<br>
+          <input type="radio" name="q4" value="b"> b) 25<br>
+          <input type="radio" name="q4" value="c"> c) 36<br>
+        </form>
+      </div>
+      <!-- 5. Serie Fibonacci -->
+      <div class="actividad">
+        <p><strong>5. ¿Cuál es el siguiente número en la serie: 1, 1, 2, 3, 5, __?</strong></p>
+        <form>
+          <input type="radio" name="q5" value="a"> a) 6<br>
+          <input type="radio" name="q5" value="b"> b) 7<br>
+          <input type="radio" name="q5" value="c"> c) 8<br>
+        </form>
+      </div>
+      <!-- 6. Analogía numérica -->
+      <div class="actividad">
+        <p><strong>6. Completa la analogía: 2 : 8 :: 3 : __</strong></p>
+        <form>
+          <input type="radio" name="q6" value="a"> a) 9<br>
+          <input type="radio" name="q6" value="b"> b) 12<br>
+          <input type="radio" name="q6" value="c"> c) 27<br>
+        </form>
+      </div>
+      <!-- 7. Problema de porcentaje -->
+      <div class="actividad">
+        <p><strong>7. ¿Cuál es el 20% de 150?</strong></p>
+        <form>
+          <input type="radio" name="q7" value="a"> a) 30<br>
+          <input type="radio" name="q7" value="b"> b) 15<br>
+          <input type="radio" name="q7" value="c"> c) 20<br>
+        </form>
+      </div>
+      <!-- 8. Problema de interés simple -->
+      <div class="actividad">
+        <p><strong>8. Si inviertes $100 a una tasa del 5% anual durante 2 años, ¿cuánto interés simple obtienes?</strong></p>
+        <form>
+          <input type="radio" name="q8" value="a"> a) $5<br>
+          <input type="radio" name="q8" value="b"> b) $10<br>
+          <input type="radio" name="q8" value="c"> c) $20<br>
+        </form>
+      </div>
+      <!-- 9. Regla de tres simple -->
+      <div class="actividad">
+        <p><strong>9. Si 3 manzanas cuestan $6, ¿cuánto cuestan 8 manzanas?</strong></p>
+        <form>
+          <input type="radio" name="q9" value="a"> a) $12<br>
+          <input type="radio" name="q9" value="b"> b) $16<br>
+          <input type="radio" name="q9" value="c"> c) $18<br>
+        </form>
+      </div>
+      <!-- 10. Planteamiento de ecuaciones (edades) -->
+      <div class="actividad">
+        <p><strong>10. Dentro de 8 años, Ana tendrá el triple de la edad que tenía su hija hace 4 años. Si Ana tiene 32 años, ¿qué edad tiene su hija?</strong></p>
+        <form>
+          <input type="radio" name="q10" value="a"> a) 8<br>
+          <input type="radio" name="q10" value="b"> b) 10<br>
+          <input type="radio" name="q10" value="c"> c) 12<br>
+        </form>
+      </div>
+      <!-- Botón para mostrar resultados -->
+      <button onclick="mostrarResultadosMatematicas()">Ver resultados</button>
+      <div id="resultadosMatematicas"></div>
+    </section>
+    <script>
+      function mostrarResultadosMatematicas() {
+        let correctas = 0;
+        if (document.querySelector('input[name="q1"]:checked')?.value === 'b') correctas++;
+        if (document.querySelector('input[name="q2"]:checked')?.value === 'c') correctas++;
+        if (document.querySelector('input[name="q3"]:checked')?.value === 'c') correctas++;
+        if (document.querySelector('input[name="q4"]:checked')?.value === 'b') correctas++;
+        if (document.querySelector('input[name="q5"]:checked')?.value === 'c') correctas++;
+        if (document.querySelector('input[name="q6"]:checked')?.value === 'c') correctas++;
+        if (document.querySelector('input[name="q7"]:checked')?.value === 'a') correctas++;
+        if (document.querySelector('input[name="q8"]:checked')?.value === 'b') correctas++;
+        if (document.querySelector('input[name="q9"]:checked')?.value === 'b') correctas++;
+        if (document.querySelector('input[name="q10"]:checked')?.value === 'a') correctas++;
+        document.getElementById('resultadosMatematicas').innerHTML = `<h3>Respuestas correctas: ${correctas} de 10</h3>`;
+      }
+    </script>
+    <!------Footer-->
+
+    <footer class="footer">
+      <div>
+
+        <a href="">
+          <span>
+            Repositorio&
+          </span>
+          <i class="bi bi-github"></i></a>
+
+      </div>
+      <span>
+        @U.E.E.A 2025
+      </span>
+    </footer>
+  </main>
+  <script type="module" src="../main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+</body>
   
 
     
@@ -493,8 +634,5 @@
 </main>
     <script type="module" src="../main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-  
-
 </body>
-
 </html>
